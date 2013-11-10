@@ -1,4 +1,5 @@
 <?php
+/*
 echo memory_get_usage()."\n";
 $a = str_repeat("A", 1000);
 echo memory_get_usage()."\n";
@@ -7,4 +8,9 @@ unset($a);
 echo memory_get_usage()."\n";
 unset($b);
 echo memory_get_usage()."\n";
+*/
+
+$a = array('a'=>'a', 'b'=>'b');
+unset($a['c']);
+print_r($a);
 ?>

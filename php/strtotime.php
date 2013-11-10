@@ -26,6 +26,10 @@ $str="test";
 $test = 'yes';
 $yes = 'yes2';
 $result = $$$str;
-echo $result; 
+
+$t = strtotime("-1 month");
+echo $t;
+echo "\n";
+echo date("Y-m-d H:i:s", $t);
 
 ?>
