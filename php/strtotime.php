@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set('America/Los_Angeles');
 /*
 echo strtotime("now"), "\n";
 echo strtotime("10 September 2000"), "\n";
@@ -28,8 +29,11 @@ $yes = 'yes2';
 $result = $$$str;
 
 $t = strtotime("-1 month");
+$t = strtotime("20140106");
 echo $t;
 echo "\n";
+echo "\n";
 echo date("Y-m-d H:i:s", $t);
+echo "\n";
 
 ?>
