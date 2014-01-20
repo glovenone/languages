@@ -13,7 +13,7 @@ soup = BeautifulSoup(page)
 soup.originalEncoding
 soup.prettify
 
-url_list = soup.findAll(name='a',href=re.compile('^http://'))
+url_list = soup.findAll(name='a',href=re.compile('^(http|https|ftp)://'))
 for each_url in url_list:
     str_url = str(each_url).split('"')
     print str_url[1]
