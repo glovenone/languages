@@ -6,15 +6,19 @@ $replace = '我在这里:http';
 
 $res1 = str_replace($replace, 'tobedeleted_iamhere', $str);
 
-print_r($res1);
-echo '<br/>';
+//print_r($res1);
 
 $reg = "/tobedeleted_iamhere:[a-zA-Z.\/0-9]*/";
 
 $res2 = preg_replace($reg, '', $res1);
 
+//print_r($res2);
+echo "\n";
+
+$str = 'aL15bL12cL3';
+$reg = '/L\d+/';
+$res2 = preg_replace($reg, '', $str);
 print_r($res2);
-
-
+echo "\n";
 
 ?>
