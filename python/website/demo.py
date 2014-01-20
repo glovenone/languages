@@ -5,9 +5,11 @@
 from urllib import FancyURLopener
 import sys
 import re
-from BeautifulSoup import BeautifulSoup,NavigableString,Comment
+#from BeautifulSoup import BeautifulSoup,NavigableString,Comment
+from bs4 import BeautifulSoup,NavigableString,Comment
 import chardet
 #from pysqlite2 import dbapi2 as sqlite3
+
 
 class Myerror(Exception):
      def __init__(self, value):

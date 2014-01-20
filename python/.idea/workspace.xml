@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/demo.py" />
+    <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="soup.findAll">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/demo.py" afterPath="$PROJECT_DIR$/website/demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/test2.py" afterPath="$PROJECT_DIR$/website/test2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -41,8 +41,10 @@
       <file leaf-file-name="test2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="684" selection-end="687" vertical-scroll-proportion="0.5092593" vertical-offset="0" max-vertical-offset="648">
-              <folding />
+            <state line="18" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="648">
+              <folding>
+                <element signature="e#22#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +52,10 @@
       <file leaf-file-name="demo.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="22" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.0" vertical-offset="1287" max-vertical-offset="1995">
-              <folding />
+            <state line="31" column="0" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085">
+              <folding>
+                <element signature="e#79#112#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +80,9 @@
       <list>
         <option value="$PROJECT_DIR$/website/crawler.py" />
         <option value="$PROJECT_DIR$/website/test.py" />
-        <option value="$PROJECT_DIR$/website/test2.py" />
         <option value="$PROJECT_DIR$/website/data/demo.py" />
+        <option value="$PROJECT_DIR$/website/demo.py" />
+        <option value="$PROJECT_DIR$/website/test2.py" />
       </list>
     </option>
   </component>
@@ -199,7 +204,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="FullScreen" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -441,7 +446,11 @@
       <created>1390215541159</created>
       <updated>1390215541159</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="soup.findAll">
+      <created>1390216661396</created>
+      <updated>1390216661396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -511,7 +520,9 @@
     <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="360">
-          <folding />
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -536,7 +547,9 @@
     <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="9" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="345">
-          <folding />
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -599,15 +612,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="22" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.0" vertical-offset="1287" max-vertical-offset="1995">
-          <folding />
+        <state line="31" column="0" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085">
+          <folding>
+            <element signature="e#79#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="684" selection-end="687" vertical-scroll-proportion="0.5092593" vertical-offset="0" max-vertical-offset="648">
-          <folding />
+        <state line="18" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="648">
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

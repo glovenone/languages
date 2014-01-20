@@ -13,7 +13,11 @@ soup = BeautifulSoup(page)
 soup.originalEncoding
 soup.prettify
 
-url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
+def getLinks(soup):
+    url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
+    return url_list
+
+url_list = getLinks(soup)
 for link in url_list:
     print(link.get('href'))
     #print link
