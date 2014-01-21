@@ -122,6 +122,7 @@ if __name__ == "__main__":
 
     try:
          url = 'http://tech.sina.com.cn/'
+         url = 'http://www.qq.com'
          print "1.parser page:%s" % url
          pr = Parser( url )
          print pr.get_text().encode('utf-8')

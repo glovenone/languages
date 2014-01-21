@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/demo.py" afterPath="$PROJECT_DIR$/website/demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/test2.py" afterPath="$PROJECT_DIR$/website/test2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -36,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test2.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="test2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5787037" vertical-offset="0" max-vertical-offset="690">
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -47,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="demo.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="267" selection-end="267" vertical-scroll-proportion="0.11811024" vertical-offset="60" max-vertical-offset="2085">
+            <state line="20" column="6" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="2100">
               <folding>
                 <element signature="e#79#112#0" expanded="true" />
               </folding>
@@ -79,8 +81,8 @@
         <option value="$PROJECT_DIR$/website/crawler.py" />
         <option value="$PROJECT_DIR$/website/test.py" />
         <option value="$PROJECT_DIR$/website/data/demo.py" />
-        <option value="$PROJECT_DIR$/website/test2.py" />
         <option value="$PROJECT_DIR$/website/demo.py" />
+        <option value="$PROJECT_DIR$/website/test2.py" />
       </list>
     </option>
   </component>
@@ -217,7 +219,7 @@
       <recent name="$PROJECT_DIR$/website" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.demo">
+  <component name="RunManager" selected="Python.test2">
     <configuration default="false" name="crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,8 +404,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.demo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.demo" />
         <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
       </list>
     </recent_temporary>
@@ -452,7 +454,11 @@
       <created>1390217943236</created>
       <updated>1390217943236</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add function">
+      <created>1390218165113</created>
+      <updated>1390218165113</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -506,7 +512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="240">
           <folding>
-            <element signature="e#40#53#0" expanded="true" />
+            <element signature="e#40#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -533,7 +539,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="225">
           <folding>
-            <element signature="e#40#53#0" expanded="true" />
+            <element signature="e#40#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -560,7 +566,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="225">
           <folding>
-            <element signature="e#40#53#0" expanded="true" />
+            <element signature="e#40#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,7 +600,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="40" selection-end="251" vertical-scroll-proportion="0.06944445" vertical-offset="0" max-vertical-offset="648">
           <folding>
-            <element signature="e#40#53#0" expanded="true" />
+            <element signature="e#40#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,20 +619,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/test2.py">
+    <entry file="file://$PROJECT_DIR$/website/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+        <state line="20" column="6" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="2100">
           <folding>
-            <element signature="e#22#36#0" expanded="true" />
+            <element signature="e#79#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/demo.py">
+    <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="267" selection-end="267" vertical-scroll-proportion="0.11811024" vertical-offset="60" max-vertical-offset="2085">
+        <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5787037" vertical-offset="0" max-vertical-offset="690">
           <folding>
-            <element signature="e#79#112#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

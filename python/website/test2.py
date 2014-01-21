@@ -8,18 +8,28 @@ import sys
 ##from html5lib import treebuilders
 reload(sys)
 sys.setdefaultencoding("utf-8")
-page = urllib2.urlopen("http://www.qq.com")
+url = 'http://segmentfault.com/q/1010000000185278'
+page = urllib2.urlopen(url)
 soup = BeautifulSoup(page)
 soup.originalEncoding
 soup.prettify
 
+class myError(Exception):
+     def __init__(self, value):
+          self.value = value
+          pass
+     def __str__(self):
+          return repr( "%s" % self.value )
+
 def getLinks(soup):
-    url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
+    #url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
+    url_list = soup.findAll(name='a', text=re.compile('python'))
     return url_list
 
 url_list = getLinks(soup)
 for link in url_list:
-    print(link.get('href'))
+    #print(link.get('href'))
+    print(link)
     #print link
 
 #url_list = soup.findAll(name='a',href=re.compile('^(http|https|ftp)://'))
