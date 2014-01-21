@@ -3,6 +3,8 @@ import urllib2
 from bs4 import BeautifulSoup, SoupStrainer
 import re
 import sys
+import chardet
+
 #import html5lib
 #from html5lib import sanitizer
 ##from html5lib import treebuilders
@@ -14,23 +16,18 @@ soup = BeautifulSoup(page)
 soup.originalEncoding
 soup.prettify
 
-class myError(Exception):
-     def __init__(self, value):
-          self.value = value
-          pass
-     def __str__(self):
-          return repr( "%s" % self.value )
 
 def getLinks(soup):
     #url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
     url_list = soup.findAll(name='a', text=re.compile('python'))
     return url_list
 
-url_list = getLinks(soup)
-for link in url_list:
-    #print(link.get('href'))
-    print(link)
-    #print link
+try:
+    url_list = getLinks(soup)
+    for link in url_list:
+        #print(link.get('href'))
+        print(link)
+        #print link
 
 #url_list = soup.findAll(name='a',href=re.compile('^(http|https|ftp)://'))
 #url_list = soup.a['href']

@@ -15,8 +15,8 @@ $res2 = preg_replace($reg, '', $res1);
 //print_r($res2);
 echo "\n";
 
-$str = 'aL15bL12cL3';
-$reg = '/L\d+/';
+$str = 'aaL15EDbbL12ccL3';
+$reg = '/L\d+(ED)*/';
 $res2 = preg_replace($reg, '', $str);
 print_r($res2);
 echo "\n";

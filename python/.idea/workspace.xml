@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/demo.py" afterPath="$PROJECT_DIR$/website/demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../php/regexp.php" afterPath="$PROJECT_DIR$/../php/regexp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/test2.py" afterPath="$PROJECT_DIR$/website/test2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,7 +41,7 @@
       <file leaf-file-name="test2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5787037" vertical-offset="0" max-vertical-offset="690">
+            <state line="26" column="25" selection-start="637" selection-end="637" vertical-scroll-proportion="0.6018519" vertical-offset="0" max-vertical-offset="648">
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -52,7 +52,7 @@
       <file leaf-file-name="demo.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="6" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="2100">
+            <state line="65" column="17" selection-start="2257" selection-end="2265" vertical-scroll-proportion="15.269231" vertical-offset="1372" max-vertical-offset="2100">
               <folding>
                 <element signature="e#79#112#0" expanded="true" />
               </folding>
@@ -458,7 +458,11 @@
       <created>1390218165113</created>
       <updated>1390218165113</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="re.compile('python')">
+      <created>1390288949148</created>
+      <updated>1390288949148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -474,7 +478,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39920557" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24609375" sideWeight="0.2861073" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286991" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286991" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -495,7 +499,8 @@
     <MESSAGE value="test&#10;&#10;" />
     <MESSAGE value="soup.findAll" />
     <MESSAGE value="add function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add function" />
+    <MESSAGE value="re.compile('python')" />
+    <option name="LAST_COMMIT_MESSAGE" value="re.compile('python')" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -621,7 +626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="2100">
+        <state line="65" column="17" selection-start="2257" selection-end="2265" vertical-scroll-proportion="15.269231" vertical-offset="1372" max-vertical-offset="2100">
           <folding>
             <element signature="e#79#112#0" expanded="true" />
           </folding>
@@ -630,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.5787037" vertical-offset="0" max-vertical-offset="690">
+        <state line="26" column="25" selection-start="637" selection-end="637" vertical-scroll-proportion="0.6018519" vertical-offset="0" max-vertical-offset="648">
           <folding>
             <element signature="e#22#36#0" expanded="true" />
           </folding>
