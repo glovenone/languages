@@ -41,7 +41,7 @@
       <file leaf-file-name="test2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="637" selection-end="637" vertical-scroll-proportion="0.6018519" vertical-offset="0" max-vertical-offset="648">
+            <state line="24" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="648">
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -52,7 +52,7 @@
       <file leaf-file-name="demo.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="17" selection-start="2257" selection-end="2265" vertical-scroll-proportion="15.269231" vertical-offset="1372" max-vertical-offset="2100">
+            <state line="132" column="0" selection-start="4637" selection-end="4709" vertical-scroll-proportion="-18.807692" vertical-offset="1491" max-vertical-offset="2100">
               <folding>
                 <element signature="e#79#112#0" expanded="true" />
               </folding>
@@ -462,7 +462,11 @@
       <created>1390288949148</created>
       <updated>1390288949148</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="re.compile('python')">
+      <created>1390300983287</created>
+      <updated>1390300983287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -626,7 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="17" selection-start="2257" selection-end="2265" vertical-scroll-proportion="15.269231" vertical-offset="1372" max-vertical-offset="2100">
+        <state line="132" column="0" selection-start="4637" selection-end="4709" vertical-scroll-proportion="-18.807692" vertical-offset="1491" max-vertical-offset="2100">
           <folding>
             <element signature="e#79#112#0" expanded="true" />
           </folding>
@@ -635,7 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="637" selection-end="637" vertical-scroll-proportion="0.6018519" vertical-offset="0" max-vertical-offset="648">
+        <state line="24" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="648">
           <folding>
             <element signature="e#22#36#0" expanded="true" />
           </folding>

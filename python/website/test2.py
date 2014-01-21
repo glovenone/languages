@@ -22,7 +22,6 @@ def getLinks(soup):
     url_list = soup.findAll(name='a', text=re.compile('python'))
     return url_list
 
-try:
     url_list = getLinks(soup)
     for link in url_list:
         #print(link.get('href'))
