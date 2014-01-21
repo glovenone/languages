@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="">
+    <list default="true" id="ddd68c5e-f089-4b99-b8c1-820110e28a71" name="Default" comment="re.compile('python')">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/crawler.py" afterPath="$PROJECT_DIR$/website/crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/test2.py" afterPath="$PROJECT_DIR$/website/test2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -30,9 +29,9 @@
       <file leaf-file-name="crawler.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="39" selection-start="882" selection-end="882" vertical-scroll-proportion="0.7407407" vertical-offset="0" max-vertical-offset="648">
+            <state line="10" column="0" selection-start="212" selection-end="243" vertical-scroll-proportion="0.23148148" vertical-offset="0" max-vertical-offset="648">
               <folding>
-                <element signature="e#35#67#0" expanded="true" />
+                <element signature="e#36#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -469,7 +468,11 @@
       <created>1390301026898</created>
       <updated>1390301026898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="re.compile('python')">
+      <created>1390305166915</created>
+      <updated>1390305166915</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,7 +536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="21" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding>
-            <element signature="e#35#67#0" expanded="true" />
+            <element signature="e#36#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -560,7 +563,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="21" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding>
-            <element signature="e#35#67#0" expanded="true" />
+            <element signature="e#36#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,7 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding>
-            <element signature="e#35#67#0" expanded="true" />
+            <element signature="e#36#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,9 +645,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="39" selection-start="882" selection-end="882" vertical-scroll-proportion="0.7407407" vertical-offset="0" max-vertical-offset="648">
+        <state line="10" column="0" selection-start="212" selection-end="243" vertical-scroll-proportion="0.23148148" vertical-offset="0" max-vertical-offset="648">
           <folding>
-            <element signature="e#35#67#0" expanded="true" />
+            <element signature="e#36#68#0" expanded="true" />
           </folding>
         </state>
       </provider>

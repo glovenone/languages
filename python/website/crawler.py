@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#coding=utf8
+#coding=utf-8
 import urllib2, re, sys, chardet
 from bs4 import BeautifulSoup, SoupStrainer
 
@@ -8,6 +8,8 @@ from bs4 import BeautifulSoup, SoupStrainer
 #from html5lib import sanitizer
 ##from html5lib import treebuilders
 reload(sys)
+sys.setdefaultencoding('utf-8')
+
 url = 'http://segmentfault.com/q/1010000000185278'
 html = urllib2.urlopen(url).read()
 #!/usr/bin/env python
@@ -18,9 +20,8 @@ soup = BeautifulSoup(html)
 
 #url_list = soup.findAll(name='a', href=re.compile('^(http|https|ftp)://'))
 
-a = '编码'
-b = 'python'
-url_list = soup.findAll(name='a', text=re.compile(u""+a))
+key_word = '编码'
+url_list = soup.findAll(name='a', text=re.compile(u""+key_word))
 for link in url_list:
     #print(link.get('href'))
     print(link)
