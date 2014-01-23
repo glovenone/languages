@@ -28,6 +28,7 @@ $yes = 'yes2';
 $result = $$$str;
 
 $t = strtotime("-1 month");
+$t = mktime(null, null, null, 12, 1, 2013);
 echo $t;
 echo "\n";
 echo date("Y-m-d H:i:s", $t);
