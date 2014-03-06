@@ -28,12 +28,14 @@ $test = 'yes';
 $yes = 'yes2';
 $result = $$$str;
 
-$t = strtotime("-1 month");
-$t = strtotime("20140106");
-echo $t;
+$t0 = strtotime("-1 month");
+$t0 = strtotime("20140305");
+$t = strtotime("20140306");
+$t_d = $t - $t0;
+echo $t_d;
 echo "\n";
 echo "\n";
-echo date("Y-m-d H:i:s", $t);
+//echo date("Y-m-d H:i:s", $t);
 echo "\n";
 
 ?>
