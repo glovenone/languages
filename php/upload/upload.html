@@ -1,13 +1,38 @@
 <html>
     <body>
-
-        <form action="upload_file.php" method="post"
+        <script src="http://www.immomo.com/static/m4/js/webapp/common.js"></script>
+        <script>
+            momo_btn_controller.controller_init_callback=function(){
+                momo_btn_controller.init(JSON.stringify({
+                    enable : {
+                        back : 0,
+                        forward :0,
+                        refresh : 0,
+                        share : 0
+                    },
+                    share : {
+                        url : '',// 链接默认为当前页
+                        text : '',// 文案
+                        pic : ''//配图
+                    }
+                }));
+            };
+            momo_btn_controller.momo_btn_controller_init();
+        </script>
+        <form action="upload_img_momo.php" method="post"
             enctype="multipart/form-data">
-            <label for="file">Filename:</label>
-            <input type="file" name="file" id="file" /> 
+            <img id="img_base64" src=""/>
+            <input type="hidden" id="img_base642" name='img_base64' src="" value=''/>
             <br />
-            <input type="submit" name="submit" value="Submit" />
+            <input style="width:500px;height:60px" type="submit" name="submit" value="Submit" onclick="setValue(this)"/>
         </form>
-
+        <script>
+            function setValue(obj){
+                $('#img_base642')[0].value=$('#img_base64')[0].src;
+            }
+            window.onload=function(){
+                momo_btn_controller.readImage(JSON.stringify({ id:'img_base64', method:1 ,  type:'base64'}));
+            }
+        </script>
     </body>
 </html>
