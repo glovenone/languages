@@ -1,5 +1,5 @@
 {
-    "document_class" : "GameApp",
+    "document_class" : "HelloWorld",
     "native": {
         "path_ignore": [
             "libs"
