@@ -2,20 +2,22 @@
 #Filename:crawler.py
 
 import urllib
-#import BeautifulSoup
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
+#from bs4 import BeautifulSoup
 from datetime import * 
 
 url = 'http://bbs.tianya.cn/list.jsp?item=funinfo&grade=3&order=1' #yulebagua
 url2 = 'http://bbs.tianya.cn/list.jsp?item=free&grade=3&order=1' #tianyazatan
 htmlSource = urllib.urlopen(url);
-soup = BeautifulSoup(htmlSource)
+soup_ori = BeautifulSoup(htmlSource)
+soup = str(soup_ori).replace('<a href="/','<a href="http://bbs.tianya.cn/')
 
 htmlSource2 = urllib.urlopen(url2);
-soup2 = BeautifulSoup(htmlSource2)
+soup2_ori = BeautifulSoup(htmlSource2)
+soup2 = str(soup2_ori).replace('<a href="/','<a href="http://bbs.tianya.cn/')
 
-f1 = '/Users/glove/data/tianya/tianyabagua'+str(date.today())+'.html'
-f2 = '/Users/glove/data/tianya/tianyazatan'+str(date.today())+'.html'
+f1 = '/Users/glove/weiyun/tianyahot/tianyabagua'+str(date.today())+'.html'
+f2 = '/Users/glove/weiyun/tianyahot/tianyazatan'+str(date.today())+'.html'
 
 f1=open(f1,'w')
 print >>f1,soup
