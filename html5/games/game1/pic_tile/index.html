@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<style type="text/css">
+body{padding:0; margin:0;}
+</style>
+<title>拼图</title>
+	<script type="text/javascript" src="./js/lufylegend-1.8.1.p1.js"></script>
+	<script type="text/javascript">
+        LGlobal.stageScale = LStageScaleMode.SHOW_ALL;
+        LGlobal.stageInCenter = true;
+        LSystem.screen(LStage.FULL_SCREEN);
+        function doScroll() {
+            if(window.pageYOffset === 0) {
+                window.scrollTo(0, 1);
+            }
+        }
+        window.onload = function() {
+            setTimeout(doScroll, 100);
+        };
+        // iPhoneを回転させた場合にもアドレスバーを消す。
+        window.onorientationchange = function() {
+            setTimeout(doScroll, 100);
+        };
+        // Androidを回転させた場合にもアドレスバーを消す。
+        window.onresize = function() {
+            setTimeout(doScroll, 100);
+        };
+    </script>
+<script type="text/javascript" src="./js/PicMain.js"></script>
+</head>
+<body>
+<div id="mytest">loading……</div>
+
+</body>
+</html>
