@@ -17,6 +17,7 @@ echo "\n";
 
 $str = 'aaL15EDbbL12ccL3';
 $reg = '/L\d+(ED)*/';
+$reg = '/^aaL$/';
 $res2 = preg_replace($reg, '', $str);
 print_r($res2);
 echo "\n";
