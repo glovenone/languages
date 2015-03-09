@@ -20,7 +20,7 @@ soup2 = str(soup2_ori).replace('<a href="/','<a href="http://bbs.tianya.cn/')
 
 timeNow = time.strftime("%Y-%m-%d--%H-%M-%S",time.localtime())
 
-weiyun_path = '/Volumes/storage/weiyun_sync/tianyahot'
+weiyun_path = '/Volumes/storage/weiyun_sync/work/hcr/tianyahot'
 year_month = time.strftime("%Y%m",time.localtime())
 directory = weiyun_path+'/'+year_month
 if not os.path.exists(directory):
