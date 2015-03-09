@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+        <script type="text/javascript" src="../js/jquery-2.1.0.min.js"></script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="578" height="200"></canvas>
+        <div id="number">0</div>
+        <div id="second_show"></div>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+            var centerX = canvas.width / 2;
+            var centerY = canvas.height / 2;
+            var radius = 70;
+
+            context.beginPath();
+            context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+            context.fillStyle = 'green';
+            context.fill();
+            context.lineWidth = 5;
+            context.strokeStyle = '#003300';
+            context.stroke();
+
+            var count = 0;
+            $("#myCanvas").click(function(){
+                $("#number").html(count += 1);
+            });
+
+
+            var intDiff = parseInt(60);//倒计时总秒数量
+            function timer(intDiff){
+                window.setInterval(function(){
+                    var day=0,
+                    hour=0,
+                    minute=0,
+                    second=60;//时间默认值        
+                    if(intDiff > 0){
+                        day = Math.floor(intDiff / (60 * 60 * 24));
+                        hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                        minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                        second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+                    }
+                    if (minute <= 9) minute = '0' + minute;
+                    if (second <= 9) second = '0' + second;
+                    $('#day_show').html(day+"天");
+                    $('#hour_show').html('<s id="h"></s>'+hour+'时');
+                    $('#minute_show').html('<s></s>'+minute+'分');
+                    $('#second_show').html('<s></s>'+second+'秒');
+                    intDiff--;
+                }, 1000);
+            }
+            timer(intDiff);
+        </script>
+    </body>
+</html>      

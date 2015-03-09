@@ -2,8 +2,8 @@
 #Filename:crawler.py
 
 import urllib
-from BeautifulSoup import BeautifulSoup
-#from bs4 import BeautifulSoup
+#from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 from datetime import * 
 import time
 
@@ -19,8 +19,9 @@ soup2 = str(soup2_ori).replace('<a href="/','<a href="http://bbs.tianya.cn/')
 
 timeNow = time.strftime("%Y-%m-%d--%H-%M-%S",time.localtime())
 
-f1 = '/Users/glove/weiyun/tianyahot/tianyabagua'+str(timeNow)+'.html'
-f2 = '/Users/glove/weiyun/tianyahot/tianyazatan'+str(timeNow)+'.html'
+path = '/Volumes/storage/weiyun_sync/tianyahot'
+f1 = path+'/tianyabagua'+str(timeNow)+'.html'
+f2 = path+'/tianyazatan'+str(timeNow)+'.html'
 
 f1=open(f1,'w')
 print >>f1,soup
