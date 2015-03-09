@@ -31,9 +31,3 @@ f2=open(f2,'w')
 print >>f2,soup2
 f2.close()
 
-'''
-#id_div_2_1 = soup.find(id='div_2_1')
-table = soup.find('table').find_all('a')
-print table
-'''
-
