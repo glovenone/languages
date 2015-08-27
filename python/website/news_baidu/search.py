@@ -17,7 +17,7 @@ base_url = 'http://news.baidu.com'
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
     print 'sleep 5 start'
-    sleep(5)
+    time.sleep(15)
     print 'sleep 5 end'
     if( url=='' ):
         pn_num = int(rn) * int(pagenum)
