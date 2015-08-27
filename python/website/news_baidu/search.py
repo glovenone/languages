@@ -6,15 +6,21 @@ from bs4 import BeautifulSoup  # from BeautifulSoup  import BeautifulSoup 旧的
 import os
 import datetime  # 导入日期时间模块
 import time
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
 rn = '20'
 max_page = 10
 key_word_list = ['大众点评', '百度糯米', '美团']
+#key_word_list = ['微云'] #测试用
+base_url = 'http://news.baidu.com'
 # 函数1，根据关键字获取查询网页
-def baidu_search(key_words, pagenum):
-    pn_num = int(rn) * int(pagenum)
-    pn = str(pn_num)
-    url = 'http://news.baidu.com/ns?word=' + key_words + '&pn=' + pn + '&cl=2&ct=1&tn=news&rn=' + rn + '&ie=utf-8&bt=0&et=0'
+def baidu_search(key_words, pagenum, url=''):
+    print url
+    if( url=='' ):
+        pn_num = int(rn) * int(pagenum)
+        pn = str(pn_num)
+        url = 'http://news.baidu.com/ns?word=' + key_words + '&pn=' + pn + '&cl=2&ct=1&tn=news&rn=' + rn + '&ie=utf-8&bt=0&et=0'
     # 'http://news.baidu.com/ns?word=%E5%B0%8F%E7%BE%8E%E5%88%B0%E5%AE%B6&pn=20&cl=2&ct=1&tn=news&rn=20&ie=utf-8&bt=0&et=0'
     html = urllib2.urlopen(url).read()
     return html
@@ -40,30 +46,46 @@ def deal_key(key_words):
     x = 0
     while x <= max_page:
         htmlpage = baidu_search(key_words, x)
-        soup = BeautifulSoup(htmlpage)
-        for item in soup.findAll("div", {"class": "result"}):  # 这个格式应该参考百度网页布局
-            a_click = item.find('a')
-            if a_click:
-                title = a_click.get_text().encode('utf-8')
-                fp.write(title.replace(' ', ''))  # 标题
-            fp.write("--")
-            # fp.write(b'#')
-            # if a_click:
-            # fp.write(a_click.get("href").encode('utf-8'))  #链接
-            # fp.write(b'#')
-            c_author = item.find('p', {'class': 'c-author'}).get_text()  # 作者
-            fp.write(c_author.encode('utf-8'))
-            # fp.write(b'#')
-            fp.write("\n")
-
-            # c_abstract = item.find("div", {"class": "c-abstract"})
-            # if c_abstract:
-            # strtmp = c_abstract.get_text()
-            # fp.write(strtmp.encode('utf-8'))  #描述
-            # fp.write(b'#')
         x = x + 1
+        analysisPage(htmlpage, fp)
         fp.write(b'\n')
     fp.close()
+
+def analysisPage(htmlpage, fp):
+    soup = BeautifulSoup(htmlpage)
+    for item in soup.findAll("div", {"class": "result"}):  # 这个格式应该参考百度网页布局
+        a_click = item.find('a')
+
+        if a_click:
+            title_get = a_click.get_text()
+            title = title_get.encode('utf-8')
+            fp.write(title.replace(' ', ''))  # 标题
+            fp.write("--")
+
+        # fp.write(b'#')
+        # if a_click:
+        # fp.write(a_click.get("href").encode('utf-8'))  #链接
+        # fp.write(b'#')
+        c_author = item.find('p', {'class': 'c-author'}).get_text()  # 作者
+        fp.write(c_author.encode('utf-8'))
+        fp.write(b'#')
+        fp.write("\n")
+
+        c_more_link = item.find('a', {'class': 'c-more_link'});
+        if(c_more_link):
+            fp.write("<<<<")
+            fp.write("\n")
+            c_url  = c_more_link.get('href') # url
+            htmlpage = baidu_search('', '', base_url+c_url)
+            analysisPage(htmlpage, fp)
+            fp.write(">>>")
+            fp.write("\n")
+
+        # c_abstract = item.find("div", {"class": "c-abstract"})
+        # if c_abstract:
+        # strtmp = c_abstract.get_text()
+        # fp.write(strtmp.encode('utf-8'))  #描述
+        # fp.write(b'#')
 
 
 # 函数3，读取搜索文件内容，依次取出要搜索的关键字
