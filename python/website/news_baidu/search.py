@@ -36,9 +36,9 @@ def deal_key(key_words):
     #     os.mkdir('data')
     today = datetime.date.today()
     today_str = str(today)
-    time_num = time.strftime("%H%M%S")
-    time_str = str(time_num)
-    filename = '/Volumes/storage/weiyun_sync/baidu_news/data/' + key_words + today_str + '-' + time_str + '.txt'
+#    time_num = time.strftime("%H%M%S")
+#    time_str = str(time_num)
+    filename = '/Volumes/storage/weiyun_sync/baidu_news/data/' + key_words + today_str + '.txt'
     fp = open(filename, 'wb')  # 打开方式用‘w'时，下边的写要str转换，而对于网页要编码转换，遇到有些不规范的空格还出错
     if fp:
         pass
@@ -62,6 +62,7 @@ def analysisPage(htmlpage, fp):
             title_get = a_click.get_text()
             title = title_get.encode('utf-8')
             fp.write(title.replace(' ', ''))  # 标题
+            print title
             fp.write("--")
 
         # fp.write(b'#')
