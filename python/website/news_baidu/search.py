@@ -10,13 +10,15 @@ import time
 #sys.setdefaultencoding('utf-8')
 
 rn = '20'
-max_page = 10
+max_page = 15
 key_word_list = ['大众点评', '百度糯米', '美团']
 #key_word_list = ['微云'] #测试用
 base_url = 'http://news.baidu.com'
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
-    print url
+    print('sleep 5 start');
+    sleep(5)
+    print('sleep 5 end');
     if( url=='' ):
         pn_num = int(rn) * int(pagenum)
         pn = str(pn_num)
