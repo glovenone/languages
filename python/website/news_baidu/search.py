@@ -12,13 +12,12 @@ import time
 rn = '20'
 max_page = 15
 key_word_list = ['大众点评', '百度糯米', '美团']
-#key_word_list = ['微云'] #测试用
+#key_word_list = ['百度糯米', '美团']
+#key_word_list = ['美团']
 base_url = 'http://news.baidu.com'
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
-    print 'sleep 5 start'
-    time.sleep(15)
-    print 'sleep 5 end'
+    print 'come on'+str(pagenum)
     if( url=='' ):
         pn_num = int(rn) * int(pagenum)
         pn = str(pn_num)
@@ -51,6 +50,7 @@ def deal_key(key_words):
         x = x + 1
         analysisPage(htmlpage, fp)
         fp.write(b'\n')
+#        time.sleep(1)
     fp.close()
 
 def analysisPage(htmlpage, fp):
@@ -70,6 +70,7 @@ def analysisPage(htmlpage, fp):
         # fp.write(a_click.get("href").encode('utf-8'))  #链接
         # fp.write(b'#')
         c_author = item.find('p', {'class': 'c-author'}).get_text()  # 作者
+        print c_author
         fp.write(c_author.encode('utf-8'))
         fp.write(b'#')
         fp.write("\n")
@@ -120,6 +121,7 @@ def search_file():
             print('end...')
             i = 0
         deal_key(keyword)
+#        time.sleep(20)
 
 # 脚本入口
 print('Start:')
