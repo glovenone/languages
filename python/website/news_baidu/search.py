@@ -11,17 +11,17 @@ import time
 
 rn = '20'
 max_page = 15
-key_word_list = ['大众点评', '百度糯米', '美团']
+#key_word_list = ['大众点评', '百度糯米', '美团']
 #key_word_list = ['百度糯米', '美团']
-#key_word_list = ['美团']
+key_word_list = ['阅兵']
 base_url = 'http://news.baidu.com'
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
-    print 'come on'+str(pagenum)
+    print 'come on --------------------------------------------------------'+str(pagenum)
     if( url=='' ):
         pn_num = int(rn) * int(pagenum)
         pn = str(pn_num)
-        url = 'http://news.baidu.com/ns?word=' + key_words + '&pn=' + pn + '&cl=2&ct=1&tn=news&rn=' + rn + '&ie=utf-8&bt=0&et=0'
+        url = 'http://news.baidu.com/ns?word=' + key_words + '&pn=' + pn + '&cl=2&ct=1&tn=news&rn=' + rn + '&ie=utf-8&bt=0&et=0&clk=sortbytime'
     # 'http://news.baidu.com/ns?word=%E5%B0%8F%E7%BE%8E%E5%88%B0%E5%AE%B6&pn=20&cl=2&ct=1&tn=news&rn=20&ie=utf-8&bt=0&et=0'
     html = urllib2.urlopen(url).read()
     return html
