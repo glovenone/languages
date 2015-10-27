@@ -1,0 +1,148 @@
+/* css/app.css */
+@import "../node_modules/normalize.css/normalize.css";
+html {
+    width:100%;
+    height:100%;
+}
+body {
+    width:100%;
+    height:100%;
+    background-color: #1F1E34;
+    color: #FFF;
+    font-family: "Avenir Next",
+    "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+    Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+}
+
+div {
+    display:flex;
+    position:relative;
+}
+h1 {
+    z-index:100;
+    font-size: 64px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    font-weight: 400;
+    color: #FFF;
+}
+
+a:hover {
+    font-weight: 400;
+    color: #DADADA;
+    text-decoration: none;
+}
+div {
+    height:100%;
+    width:100%;
+    flex-direction:column;
+    align-items: center;
+}
+
+.part {
+    justify-content: center;
+}
+#part1 {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    height:100%;
+    width:100%;
+    position:absolute;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
+}
+
+#nav, #part2{
+    width:100%;
+    flex-direction: row;
+    justify-content: center;
+}
+#nav a {
+    position:relative;
+    padding:20px;
+    bottom:30px;
+}
+
+#part2 div, #part3 div{
+    height:100%;
+    flex-basis: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-description{
+    position:absolute;
+    right:0;
+    width:50%;
+}
+
+#part3 {
+    flex-direction:row;
+}
+.iphone-demo {
+    overflow:hidden;
+    position:relative;
+}
+.tumblr, .swype{
+    left:50%;
+    top:50%;
+    margin-left:-128px;
+    margin-top:-226px;
+    position:absolute;
+}
+
+#android-robot {
+    transform: rotate(-45deg);
+    position:relative;
+    bottom: -35%;
+    right: -50%;
+}
+
+#slider-control a {
+      padding: 3px;
+}
+
+#slider-control .dot {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+#slider-control {
+    padding: 3px;
+    z-index:9999;
+    align-items: flex-end;
+    flex-direction:column;
+    position:fixed;
+    top:50%;
+}
+#slider-control .active .dot {
+    background-color: #fff;
+}
+#react-logo {
+    position:relative;
+}
+#iphone-overlay {
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:rgba(255,0,0,0.3);
+    transform: translate(0, -40%)
+}

@@ -22,6 +22,7 @@ def baidu_search(key_words, pagenum, url=''):
         pn_num = int(rn) * int(pagenum)
         pn = str(pn_num)
         url = 'http://news.baidu.com/ns?word=' + key_words + '&pn=' + pn + '&cl=2&ct=1&tn=news&rn=' + rn + '&ie=utf-8&bt=0&et=0&clk=sortbytime'
+#        print url
     # 'http://news.baidu.com/ns?word=%E5%B0%8F%E7%BE%8E%E5%88%B0%E5%AE%B6&pn=20&cl=2&ct=1&tn=news&rn=20&ie=utf-8&bt=0&et=0'
     html = urllib2.urlopen(url).read()
     return html

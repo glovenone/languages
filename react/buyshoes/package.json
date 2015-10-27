@@ -1,0 +1,21 @@
+{
+  "name": "buyshoes",
+  "version": "1.0.0",
+  "description": "Startkit For Buyshoes Shopping Cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Howard Yeh",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "autoprefixer": "^6.0.2",
+    "clean-css": "^3.4.3",
+    "postcss-cli": "^2.1.0",
+    "postcss-import": "^7.0.0"
+  }
+}

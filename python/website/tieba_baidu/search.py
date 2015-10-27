@@ -6,21 +6,28 @@ from bs4 import BeautifulSoup  # from BeautifulSoup  import BeautifulSoup 旧的
 import os
 import datetime  # 导入日期时间模块
 import time
+from urllib import quote
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-rn = '20'
-max_page = 15
-key_word_list = ['大众点评', '百度糯米', '美团']
-#key_word_list = ['百度糯米', '美团']
+rn = '10'
+max_page = 100
+#key_word_list = ['大众点评', '百度糯米', '美团']
+#key_word_list = ['大众点评', '%B0%D9%B6%C8%C5%B4%C3%D7', '美团']
+key_word_list = ['%B0%D9%B6%C8%C5%B4%C3%D7', '美团']
 base_url = 'http://tieba.baidu.com'
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
-    print 'come on --------------------------------------------------------'+str(pagenum)
+    print 'come on --------------------------------------------------------'+str(pagenum)+key_words
     if( url=='' ):
-        pn_num = int(rn) * int(pagenum)
+#        pn_num = int(rn) * int(pagenum)
+        pn_num = pagenum
         pn = str(pn_num)
-        url = 'http://tieba.baidu.com/f/search/res?isnew=1&kw=&qw=' + key_words + '&pn=' + pn + '&un=&only_thread=0&sm=1&sd=&ed=&rn=' + rn
+        encoded_key_word = quote(key_words)
+        encoded_key_word = key_words
+        url = 'http://tieba.baidu.com/f/search/res?isnew=1&kw=&qw=' + encoded_key_word + '&rn=' + rn + '&pn=' + pn + '&un=&only_thread=0&sm=1&sd=&ed=&'
+#http://tieba.baidu.com/f/search/res?isnew=1&kw=&qw=%B4%F3%D6%DA%B5%E3%C6%C0&rn=10&un=&only_thread=0&sm=1&sd=&ed=&pn=6
+        print url
     html = urllib2.urlopen(url).read()
     return html
 

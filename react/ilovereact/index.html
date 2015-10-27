@@ -1,0 +1,106 @@
+<!-- 使用 html5 语法 -->
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- 强制 IE 遵循现代标准 -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title></title>
+        <meta name="description" content="">
+
+        <!-- 在移动端禁用缩放。对响应式设计有用。 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+
+        <link rel="stylesheet" href="bundle/app.css">
+
+    </head>
+    <body>
+        <div id="slider-control">
+            <a href="#part1" class="active">
+                <div class="dot"></div>
+            </a>
+
+            <a href="#part2">
+                <div class="dot"></div>
+            </a>
+
+            <a href="#part3">
+                <div class="dot"></div>
+            </a>
+
+            <a href="#part4">
+                <div class="dot"></div>
+            </a>
+        </div>
+        <div id="content">
+            <div class='part' id='part1'>
+                <div class="overlay">
+                </div>
+                <img id="react-logo" class="react-logo" src="img/react-logo.svg"/>
+                <h1>Build Native Apps With React</h1>
+                <div id="nav">
+                    <a href="#native">
+                        Native iOS
+                    </a>
+                    <a href="#touch">
+                        Touch Handling
+                    </a>
+                    <a href="#async">
+                        Asynchronous
+                    </a>
+                    <a href="#flex">
+                        Flex &amp; Styling
+                    </a>
+                </div>
+            </div>
+            <div id="iphone-overlay">
+                 <div class="iphone-demo">
+
+                    <img class="iphone-frame" src="img/iphone-frame.svg"/>
+                    <img class="tumblr" src="img/tumblr-demo.jpg"/>
+                </div>
+            </div>
+            <div class='part' id='part2'>
+<!--                 <div class="iphone-demo">
+                    <img class="iphone-frame" src="img/iphone-frame.svg"/>
+                    <img class="tumblr" src="img/tumblr-demo.jpg"/>
+                </div> -->
+
+                <div class="feature-description">
+                    <h2>Native Experience</h2>
+                    <p>
+                    Takes advantage of native iOS components to give your app
+                    a consistent look and feel with the rest of the platform ecosystem,
+                    and keeps the quality bar high.
+                    </p>
+                </div>
+            </div>
+            <div class='part' id='part3'>
+                <div class="iphone-demo">
+                    <img class="iphone-frame" src="img/iphone-frame.svg"/>
+                    <img class="swype" src="img/swype-demo.jpg"/>
+                </div>
+
+                <div class="feature-description2">
+                    <h2>Touches &amp; Gestures</h2>
+                    <p>
+                    React Native implements a powerful responder system to
+                    negotiate touches in complex view hierarchies. It allows you
+                    to build complex UI, and handle user interactions precisely.
+                    </p>
+                </div>
+            </div>
+            <div class='part' id='part4'>
+                <h1>Android Is Here</h1>
+                <img id="android-robot" src="img/android-robot.svg"/>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+</html>
