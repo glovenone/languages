@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<base target="_blank">
+<style type="text/css">
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:12px;font-family:'微软雅黑';}
+img{vertical-align:top;border:0;}
+.Ebox{ width:800px; overflow:hidden;}
+#.Eheader{ width:755px; height:60px; background:url(http://edm.oekocn.com/wsj0114/newheader_01.jpg); padding:20px 0px 20px 45px;}
+.Ebanner{ margin-bottom:2px;}
+.Econtent{ width:647px; height:444px; background:#f6dce9; padding:58px 76.5px; margin-bottom:2px;}
+.Escancode{}
+.Efooter{ width:800px; height:70px; background:url(http://edm.oekocn.com/wsj0114/piccc_05.png); position:relative; padding-top:75px;}
+.Ewebsite{ position:absolute; left:162px; top:0px;}
+.Ebutton{ width:200px; height:50px; margin:0 auto;}
+.Ebutton a{ width:48px; height:48px; display:block; float:left; margin-right:25px; border-radius:50%; background:#faf1f2; border:1px solid #f7d0bc; font-size:16px; color:#f5ac8f; text-align:center; line-height:48px; text-decoration:none;}
+.Ebutton a.a1{ margin-right:0px;}
+.Ebutton a:hover{ background:#fcf9f9;}
+</style>
+</head>
+
+<body>
+<div class="Ebox">
+  <div class="Eheader">
+    
+  </div>
+  <div class="Ebanner"><img src="http://edm.oekocn.com/wsj0114/newheader_01.jpg" ></div>
+  <div class="Ebanner"><img src="http://edm.oekocn.com/wsj0114/lala_02.png" ></div>
+  <div><img src="http://edm.oekocn.com/wsj0114/test1234test.jpg"></div>
+  <div class="Escancode"><img src="http://edm.oekocn.com/wsj0114/lala_04.png"></div>
+  <div class="Efooter">
+    <div class="Ewebsite">
+        <a href="http://www.okoer.com"><img src="http://edm.oekocn.com/wsj0114/ppp_06.png" width="67" height="93"></a>
+    </div>
+    <div class="Ebutton">
+        <a href="http://www.okoer.com/okoer/company/app/appdownload.php?wsd=NDNlCA==">APP</a>
+        <a href="http://weibo.com/okoer">微博</a>
+        <a href="https://izhongchou.taobao.com/dreamdetail.htm?spm=a215p.1472805.0.0.ewUyQz&id=10048832" class="a1">众筹</a>        
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
