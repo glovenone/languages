@@ -15,6 +15,12 @@ max_page = 15
 #key_word_list = ['百度糯米', '美团']
 key_word_list = ['优恪']
 base_url = 'http://news.baidu.com'
+
+uu = 'http://www.dianping.com/search/category/2/50/g158p2?aid=4114214%2C32329359%2C4513365%2C56824919%2C18543167%2C15124082%2C4174072%2C3307693%2C1930195%2C2462485%2C4184587%2C4507534%2C32872017%2C27215372%2C32558081&cpt=4114214%2C32329359%2C4513365%2C56824919%2C18543167%2C15124082%2C4174072%2C3307693%2C1930195%2C2462485%2C4184587%2C4507534%2C32872017%2C27215372%2C32558081&tc=3';
+
+html = urllib2.urlopen(uu).read()
+print html
+exit()
 # 函数1，根据关键字获取查询网页
 def baidu_search(key_words, pagenum, url=''):
     print 'come on --------------------------------------------------------'+str(pagenum)

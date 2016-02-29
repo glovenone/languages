@@ -1,5 +1,6 @@
 #!/usr/local/bin/python
 # coding: utf-8
+# 发送内容，不用替换
 import smtplib
 import time
 from email.MIMEMultipart import MIMEMultipart
@@ -23,11 +24,11 @@ import re
 #加邮件头
 #strTo = ['glovenone@163.com', 'ly1125bing@163.com']
 
-fname = "ly/mail_0114_2.xlsx"
+fname = "ly/mail_0115.xlsx"
 bk = xlrd.open_workbook(fname)
 shxrange = range(bk.nsheets)
 try:
-    sh = bk.sheet_by_name("Sheet1")
+    sh = bk.sheet_by_name("报告")
 except:
     print "no sheet in %s named Sheet1" % fname
 #获取行数
@@ -36,7 +37,6 @@ nrows = sh.nrows
 ncols = sh.ncols
 print "nrows %d, ncols %d" % (nrows,ncols)
 #获取第一行第一列数据 
-cell_value = sh.cell_value(1,1)
 
 row_list = []
 strToList = []
@@ -45,26 +45,20 @@ errorEmail = []
 #获取各行数据
 for i in range(0,nrows):
     row_data = sh.row_values(i)
-    strToList.append(row_data[1])
-    UserList.append(row_data[0])
+    strToList.append(row_data[0])
 
-emailFrom = 'fengxiangbiao@okoer.com'
-emailPwd = 'okoer098'
+emailFrom = 'liuhuan@okoer.com'
+emailPwd = 'carolhuan324'
 #strToList = ['glovenone@163.com', 'ly1125bing@163.com']
 timeNow = time.strftime("%Y%m%d--%H%M%S",time.localtime())
 error_file_name = 'error_email'+str(timeNow)+'.txt'
 error_file = open(error_file_name, 'w')
 for i in range(len(strToList)):
 #    content = '这是一封测试邮件的内容，请忽略'
-    content_0 = open('ly/content.txt')
-    content_1 = content_0.read()
-#    content_1.replace('test1234test',UserList[i])
-    strinfo = re.compile('test1234test')
-    content = strinfo.sub(UserList[i],content_1)
-    
-    msg = MIMEText(content, 'html', 'utf-8')
+    content_0 = open('ly/content_0115.txt').read()
+    msg = MIMEText(content_0, 'html', 'utf-8')
     msg['from'] = emailFrom
-    msg['subject'] = '优恪网卫生巾众筹检测“安全姨妈卫士荣誉证书”'
+    msg['subject'] = '优恪网卫生巾众筹测评报告'
     strTo = strToList[i]
     msg['to'] = strTo
     #发送邮件

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:1４px;font-family:'微软雅黑';}
+img{}
+.bigbox{ width:800px; overflow:hidden; margin:0px;}
+.Gbox{ width:800px; overflow:hidden; background:#f3f3f3;}
+.Gtop{ width:800px; height:14px; background:#e55c66;}
+#.Gcontent{ width:603px; height:365px; background:url(http://edm.oekocn.com/wsj0114/picccc_03.png) no-repeat 49px 23px; padding:305px 105px 14px 88px;}
+
+
+.Ggrade div{ width:397px; height:190px; background:#fff; list-style-type:none; margin:0; padding:0; float:left;}
+.bigX{ width:397px; height:147px;}
+.Gtext span.Sleft{ color:#41b46e;}
+.Gtext span.Sright{ color:#888888;}
+.Ggrade img{ float:left;}
+.Gtext p{ margin:0; padding:4px 0px;}
+.ABCD{ width:50px; height:102px; float:left; padding-top:44px; text-align:center; color:#59cf36; font-size:36px; position:relative;}
+.ABCD span{font-size: 14px;width: 20px;height: 20px;display: block;position: absolute;top: 90px;left: 15px;
+}
+.Gremarks{ padding:12px 70px 46px 76px; height:292px; width:654px; line-height:31px; color:#33333;}
+.Gremarks p{ margin:0px; padding:0px;}
+.Gbutton{ width:178px; height:35px; border-radius:20px; border:1px solid #1fa756; margin:0 auto; margin-top:40px; color:#1fa756; line-height:35px; text-align:center; display:block;}
+.Gremarks a{ text-decoration:none;}
+a:hover{ text-decoration:none;}
+
+.Glist{ width:800px; height:auto; overflow:hidden;}
+
+</style>
+</head>
+
+<body>
+<div class="bigbox">
+<div class="Gbox">
+    <div class="Gtop"></div>
+    <div class="Gcontent">
+	 <img src="http://edm.oekocn.com/wsj0114//picccc_03.png">
+        <img src="http://edm.oekocn.com/wsj0114/icon1_03.png">
+    </div>
+</div>
+<div class="Glist">
+  <img src="http://edm.oekocn.com/wsj0114/list_02.jpg" width="800" height="964">
+</div>
+</div>
+<div class="Gremarks">
+	<p>备注：</p>
+    <p>1.成分检测包括：pH值、甲醛/甲醛释放体、乙二醛、卤代有机化合物、季铵盐化合物、聚氯乙烯/聚偏二氯乙烯/氯化物、荧光剂、细菌、霉菌和酵母菌。</p>
+    <p>2.实验室模拟测试包括：吸水性、吸收速度和回渗量。</p>
+    <p>3.消费者体验：德国实验室选择了10位年龄在18至55岁的女性进行消费者固定样本使用测试，每位受试者要在经期内试用所有的卫生巾产品（每天1款），并针对放置情况、舒适度、取下难易度3方面逐一打分。</p>
+    <a href="http://www.okoer.com/report/pads201601" class="Gbutton">点击进入完整报告>></a>
+    
+</div>
+<div class="Gtop"></div>
+</div>
+</body>
+</html>
