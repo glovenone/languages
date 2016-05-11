@@ -10,9 +10,6 @@ import time
 #sys.setdefaultencoding('utf-8')
 
 max_page = 300000
-#key_word_list = ['大众点评', '百度糯米', '美团']
-#key_word_list = ['百度糯米', '美团']
-#key_word_list = ['优恪']
 base_num = 100000
 base_url = 'http://bcy.net/u/'
 default_pic = 'http://img1.doubanio.com/icon/user_normal.jpg'
@@ -27,9 +24,7 @@ def douban_search(user_id_plus):
     return html
 
 
-# 函数2，处理一个要搜索的关键字
-
-
+# 函数2，处理搜索
 def deal_key():
     # if os.path.exists('data') == False:
     #     os.mkdir('data')
@@ -64,63 +59,6 @@ def analysisPage(htmlpage, fp):
         user_info_pic = user_info_ori.find("img")["src"]
         user_info = {'pic':user_info_pic, 'name':user_info_name}
     return user_info
-    '''
-    for item in soup.findAll("div", {"class": "result"}):  # 这个格式应该参考百度网页布局
-        a_click = item.find('a')
-
-        if a_click:
-            title_get = a_click.get_text()
-            title = title_get.encode('utf-8')
-            fp.write(title.replace(' ', ''))  # 标题
-            print title
-            fp.write("--")
-
-        # fp.write(b'#')
-        # if a_click:
-        # fp.write(a_click.get("href").encode('utf-8'))  #链接
-        # fp.write(b'#')
-        c_author = item.find('p', {'class': 'c-author'}).get_text()  # 作者
-        print c_author
-        fp.write(c_author.encode('utf-8'))
-        fp.write(b'#')
-        fp.write("\n")
-
-        c_more_link = item.find('a', {'class': 'c-more_link'});
-        if(c_more_link):
-            fp.write("<<<<")
-            fp.write("\n")
-            c_url  = c_more_link.get('href') # url
-            htmlpage = douban_search('', '', base_url+c_url)
-            analysisPage(htmlpage, fp)
-            fp.write(">>>")
-            fp.write("\n")
-
-        # c_abstract = item.find("div", {"class": "c-abstract"})
-        # if c_abstract:
-        # strtmp = c_abstract.get_text()
-        # fp.write(strtmp.encode('utf-8'))  #描述
-        # fp.write(b'#')
-    '''
-
-
-# 函数3，读取搜索文件内容，依次取出要搜索的关键字
-# def search_file():
-#     fp = open('./searchfile.txt')
-#     i = 0
-#     keyword = fp.readline()
-#     while keyword:
-#         i = i + 1
-#         if i == 5:
-#             print('sleep...')
-#             time.sleep(15)
-#             print('end...')
-#             i = 0
-#         nPos = keyword.find('\n')
-#         if nPos > -1:
-#             keyword = keyword[:-1]  # keyword.replace('\n','')
-#         deal_key(keyword)
-#         keyword = fp.readline()
-
 
 # 脚本入口
 print('Start:')
