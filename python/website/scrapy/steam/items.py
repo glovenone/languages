@@ -15,5 +15,10 @@ class SteamItem(scrapy.Item):
 
 class DmozItem(scrapy.Item):
     title = scrapy.Field()
-    link = scrapy.Field()
     desc = scrapy.Field()
+    link = scrapy.Field()
+
+class AlluserItem(scrapy.Item):
+    title = scrapy.Field()
+    desc = scrapy.Field()
+    link = scrapy.Field()
