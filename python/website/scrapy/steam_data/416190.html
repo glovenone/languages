@@ -1,0 +1,2825 @@
+<!DOCTYPE html>
+<html class=" responsive">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Vehicle Simulator on Steam</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href="http://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=ful_LJT3NQYl" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=dLk1hPsnaTys" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=3YEnHE2flOXO" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/store.css?v=5x9rx7e-ZpBU" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=i8VmpSwJI7WE" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=nBeZ_zHnCoNj" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/game.css?v=EhBgu-6aEzbh" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=yn13AaQYGiow" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=J9fKOAhzi8Si" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=1gbp7tFqaQum" rel="stylesheet" type="text/css" >
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'application' );
+				ga('set', 'dimension4', "application\/app" );
+				ga('send', 'pageview');
+
+			</script>
+			<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=._0UFXFGgvme-"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=SO3_UDRN31sN&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=lTmkgFfmpIAy&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=NG3YDtvSdiC-&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery.appear.js?v=.rB2Jqew4q0oc"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() ); 
+$J.data( document, 'x_oldref', GetNavCookie() ); 
+$('.tooltip').v_tooltip();
+window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
+BindStoreTooltip( $('[data-store-tooltip]') ); 
+});</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/gamehighlightplayer.js?v=wZS9xXwTWr8T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/user_reviews.js?v=k7WSvWNgKD1T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/dselect.js?v=KBcbV038Qayz&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=Ukm-mSCVk13G&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/game.js?v=NFSwsFD1llNd&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/swfobject.js?v=.IJPsm1EB98JP"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=WeLSMzFqMp1e&amp;l=english"></script>
+
+						<meta name="Description" content="Vehicle Simulator is an open world flying/sailing simulator with accurate physics and dynamics, simulating well the various boats, planes and land vehicles included. The game allows the user to modify and experiment with scenery making and vehicle design by way of extreme modability, with a large library of existing mods and add-ons.">
+			
+			<link rel="canonical" href="http://store.steampowered.com/app/416190/">
+	
+			<link rel="image_src" href="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/header.jpg?t=1450284856">
+	
+	
+	
+	</head>
+<body class="v6 app game_bg responsive_page">
+
+<div class="responsive_page_frame with_header">
+
+						<div class="responsive_page_menu_ctn mainmenu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com//login/?redir=app%2F416190%2F">
+									Login								</a>
+							
+								<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		Store	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		Community	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		Support	</a>
+
+							<div class="minor_menu_items">
+																<div class="menuitem change_language_action">
+									Change language								</div>
+																									<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer"></div>
+						<div class="mainmenu_footer">
+							<div class="mainmenu_footer_logo"><img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+							© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.							<span class="mainmenu_valve_links">
+								<a href="http://store.steampowered.com/privacy_agreement/" target="_blank">Privacy Policy</a>
+								&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/subscriber_agreement/" target="_blank">Steam Subscriber Agreement</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/steam_refunds/" target="_blank">Refunds</a>
+							</span>
+						</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab" style="display: none;">
+
+		</div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu">
+				<div class="localmenu_content">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+					</div>
+				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div id="global_header">
+	<div class="content">
+
+		<div class="logo">
+			<span id="logo_holder">
+				<a href="http://store.steampowered.com/">
+					<img src="http://store.akamai.steamstatic.com/public/shared/images/header/globalheader_logo.png" width="176" height="44">
+				</a>
+			</span>
+			<!--[if lt IE 7]>
+			<style type="text/css">
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png'); }
+			</style>
+			<![endif]-->
+		</div>
+
+			<div class="supernav_container">
+	<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		STORE	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		COMMUNITY	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+			<a class="menuitem" href="http://store.steampowered.com/about/">
+			ABOUT		</a>
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		SUPPORT	</a>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div id="global_action_menu">
+				<div class="header_installsteam_btn header_installsteam_btn_green">
+					<div class="header_installsteam_btn_leftcap"></div>
+					<div class="header_installsteam_btn_rightcap"></div>
+					<a class="header_installsteam_btn_content" href="http://store.steampowered.com/about/">
+						Install Steam					</a>
+				</div>
+
+				
+									<a class="global_action_link" href="https://store.steampowered.com//login/?redir=app%2F416190%2F">login</a>
+					&nbsp;|&nbsp;
+					<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+					<div class="popup_block_new" id="language_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+																																	<a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (Bulgarian)</a>
+																										<a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;">čeština (Czech)</a>
+																										<a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (Danish)</a>
+																										<a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (Dutch)</a>
+																																			<a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (Finnish)</a>
+																										<a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;">Français (French)</a>
+																										<a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (Greek)</a>
+																										<a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (German)</a>
+																										<a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (Hungarian)</a>
+																										<a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;">Italiano (Italian)</a>
+																										<a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (Japanese)</a>
+																																			<a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (Korean)</a>
+																										<a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (Norwegian)</a>
+																										<a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;">Polski (Polish)</a>
+																										<a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portuguese)</a>
+																										<a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil (Portuguese-Brazil)</a>
+																										<a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;">Русский (Russian)</a>
+																										<a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;">Română (Romanian)</a>
+																										<a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (Simplified Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;">Español (Spanish)</a>
+																										<a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (Swedish)</a>
+																										<a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (Traditional Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (Thai)</a>
+																										<a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (Turkish)</a>
+																										<a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (Ukrainian)</a>
+																						<a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank">Help us translate Steam</a>
+						</div>
+					</div>
+							</div>
+					</div>
+			</div>
+</div>
+<div id="responsive_store_nav_ctn"></div>
+		<div class="responsive_page_template_content">
+
+			<script type="text/javascript">
+
+	GStoreItemData.AddStoreItemData(
+		{"322330":{"name":"Don't Starve Together","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/322330\/capsule_184x69.jpg?t=1461258523","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"304430":{"name":"INSIDE","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 68<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/304430\/capsule_184x69.jpg?t=1467910225","os_windows":true,"localized":true},"427520":{"name":"Factorio","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 68<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/427520\/capsule_184x69.jpg?t=1467282146","os_windows":true,"os_macos":true,"os_linux":true,"early_access":true,"localized":true},"274190":{"name":"Broforce","discount_block":"<div class=\"discount_block \"> <div class=\"discount_pct\">-60%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">\u00a5 48<\/div><div class=\"discount_final_price\">\u00a5 19<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/274190\/capsule_184x69.jpg?t=1467903467","os_windows":true,"os_macos":true,"os_linux":true,"discount":true,"localized":true},"289070":{"name":"Sid Meier\u2019s Civilization\u00ae VI","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 199<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/289070\/capsule_184x69.jpg?t=1467410108","os_windows":true,"coming_soon":true,"localized":true},"219740":{"name":"Don't Starve","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/219740\/capsule_184x69.jpg?t=1459492015","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"4000":{"name":"Garry's Mod","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/4000\/capsule_184x69.jpg?t=1448999049","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"451520":{"name":"theBlu","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 75<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/451520\/capsule_184x69.jpg?t=1467918765","os_windows":true,"vr_htcvive":true,"virtual_reality":true,"localized":true},"242760":{"name":"The Forest","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/242760\/capsule_184x69.jpg?t=1447358088","os_windows":true,"early_access":true,"localized":true},"413150":{"name":"Stardew Valley","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/413150\/capsule_184x69.jpg?t=1458942334","os_windows":true,"localized":true},"233450":{"name":"Prison Architect","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 88<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/233450\/capsule_184x69.jpg?t=1460365567","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"489460":{"name":"The Last Leviathan","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/489460\/capsule_184x69.jpg?t=1467819367","os_windows":true,"os_macos":true,"early_access":true,"localized":true}},
+		[]	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		bundle_component_preview: "1_5_9__412"	} );
+
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+	} );
+	GDynamicStore.OnReady( function() {
+		RenderMoreLikeThisBlock( ["322330","304430","427520","274190","289070","219740","4000","451520","242760","413150","233450","489460"] );
+			});
+
+	var g_rgVACBannedSubs = [];
+	// Wrap add to cart function in a confirm check
+	if( g_rgVACBannedSubs.length > 0 )
+	{
+		var fnOldAdd = addToCart;
+		addToCart = function( subid, dedupe )
+		{
+			if( g_rgVACBannedSubs.indexOf( subid ) != -1  )
+				ShowConfirmDialog( "This account is VAC banned", "If you purchase this game, you will be unable to play on VAC secured servers with this account. For more information, see the <a %1$s>Help site<\/a>.".replace('%1$s', 'href="https://help.steampowered.com/en/wizard/HelpWithGame/?appid=416190"')).done( function(){ fnOldAdd( subid, dedupe );  } );
+			else
+				fnOldAdd( subid, dedupe );
+		}
+	}
+
+	
+</script>
+
+<div class="game_page_background game" style="background-image: url('http://cdn.steamstatic.com.8686c.com/steam/apps/416190/page_bg_generated_v6b.jpg?t=1450284856');">
+
+	
+
+		<div id="store_header" class="">
+		<div class="content">
+			<div id="store_controls">
+				<div id="cart_status_data">
+																					<div class="store_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;">
+							<div class="store_header_btn_caps store_header_btn_leftcap"></div>
+							<div class="store_header_btn_caps store_header_btn_rightcap"></div>
+							<a id="cart_link" class="store_header_btn_content" href="http://store.steampowered.com/cart/?snr=1_5_9__12">
+								Cart								(<span id="cart_item_count_value">0</span>)
+							</a>
+						</div>
+									</div>
+			</div>
+							<div id="store_nav_area">
+					<div class="store_nav_leftcap"></div>
+					<div class="store_nav_bg">
+						<div class="store_nav">
+							<a class="tab  " href="http://store.steampowered.com/?snr=1_5_9__12">
+									<span>Featured Items</span>
+							</a>
+															<div class="tab  flyout_tab " id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+									<span class="pulldown">
+										<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=998&page=1&tags=-1">Games</a>
+										<a class="pulldown_mobile" href="#">Games</a>
+										<span></span>
+									</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+																																											<a class="popup_menu_item" href="http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12">
+													Free to Play												</a>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<a class="popup_menu_item" href="http://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12">
+													Early Access												</a>
+																															<a class="popup_menu_item" href="http://store.steampowered.com/freestuff/demos/?snr=1_5_9__12">
+											<span>Demos</span>
+										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&snr=1_5_9__12#sort_by=_ASC&vrsupport=101%2C102&page=1">
+											<span>Virtual Reality</span>
+										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by genre:</div>
+
+																																	<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Action/?snr=1_5_9__12">
+													Action												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__12">
+													Adventure												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Casual/?snr=1_5_9__12">
+													Casual												</a>
+																																																																																						<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__12">
+													Indie												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_5_9__12">
+													Massively Multiplayer												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Racing/?snr=1_5_9__12">
+													Racing												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__12">
+													RPG												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__12">
+													Simulation												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Sports/?snr=1_5_9__12">
+													Sports												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__12">
+													Strategy												</a>
+																					
+										<div class="hr"></div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/tag/browse/?snr=1_5_9__12">
+											See popular tags										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by platform:</div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=mac&page=1&snr=1_5_9__12">
+											Mac OS X										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=linux&page=1&snr=1_5_9__12">
+											SteamOS + Linux										</a>
+									</div>
+								</div>
+							
+							<div class="tab  flyout_tab " id="software_tab" data-flyout="software_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=994&page=1">Software</a>
+									<a class="pulldown_mobile" href="#">Software</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="software_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_5_9__12">
+											Animation & Modeling										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_5_9__12">
+											Audio Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_5_9__12">
+											Design & Illustration										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Education/?snr=1_5_9__12">
+											Education										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Game%20Development/?snr=1_5_9__12">
+											Game Development										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_5_9__12">
+											Photo Editing										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Utilities/?snr=1_5_9__12">
+											Utilities										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Video%20Production/?snr=1_5_9__12">
+											Video Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_5_9__12">
+											Web Publishing										</a>
+									
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="hardware_tab" data-flyout="hardware_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/hardware?snr=1_5_9__12">Hardware</a>
+									<a class="pulldown_mobile" href="#">Hardware</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="hardware_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353370?snr=1_5_9__12">
+										Steam Controller									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353380?snr=1_5_9__12">
+										Steam Link									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/hardware/?snr=1_5_9__12#Machines">
+										Steam Machines									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/358040?snr=1_5_9__12">
+										HTC Vive									</a>
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="videos_tab" data-flyout="videos_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=992&page=1&tags=-1">Videos</a>
+									<a class="pulldown_mobile" href="#">Videos</a>
+									<span></span>
+								</span>
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="videos_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<div class="popup_menu_subheader">Browse by type:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=15339">
+											Documentary										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4242">
+											Episodic										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4700">
+											Movie										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4234">
+											Short										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=12057">
+											Tutorial										</a>
+									
+									<div class="hr"></div>
+									<div class="popup_menu_subheader">Browse by genre:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=19">
+											Action										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4085">
+											Anime										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1719">
+											Comedy										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=5984">
+											Drama										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=150626">
+											Gaming										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1667">
+											Horror										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=3942">
+											Sci-fi										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4064">
+											Thriller										</a>
+									
+								</div>
+							</div>
+
+							<a class="tab  " href="http://store.steampowered.com/news/?snr=1_5_9__12">
+								<span>News</span>
+							</a>
+
+
+							
+								<div class="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" onmouseover="EnsureStoreMenuTagsLoaded( '#foryou_yourtags' );">
+								<span class="pulldown">
+									For You									<span></span>
+								</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+										<a class="popup_menu_item" href="http://store.steampowered.com/recommended/?snr=1_5_9__12">
+											Recently viewed										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/curators/?snr=1_5_9__12">
+											Steam Curators										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/updated/all/?snr=1_5_9__12">
+											Recently updated										</a>
+									</div>
+								</div>
+
+							
+							<div class="search_area">
+								<div id="store_search">
+									<form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
+										<input type="hidden" name="snr" value="1_5_9__12" >
+										<div class="searchbox">
+											<input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off">
+											<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="http://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+										</div>
+									</form>
+								</div>
+								<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
+									<div class="popup_body" style="border-top: none;">
+										<div id="search_suggestion_contents">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="store_nav_rightcap"></div>
+				</div>
+					</div>
+	</div>
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode =window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+					if ( !$HeaderWrapper )
+						$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+					if ( bUseSmallScreenMode )
+						$ResponsiveNavCtn.append( $Header );
+					else
+						$HeaderWrapper.append( $Header );
+
+
+					if ( bUseSmallScreenMode )
+					{
+						$Header.css( 'visibility', 'hidden' );
+						$Header.show();
+						var nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;
+						if ( $Window.scrollTop() < nMenuHeight )
+							$Window.scrollTop( nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );
+
+						$Header.css('visibility', 'visible');
+					}
+				} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');
+
+				EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'CN', 'english', '2089990' );
+			} );
+		</script>
+	<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "13770d7da4201f911833533d";
+	var g_ServerTime = 1468065630;
+
+	$J( InitMiniprofileHovers );
+
+			GDynamicStore.Init( 0, false, "win" );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ",");format = format.replace( ".00", '' ); return format; };var strNegativeSymbol = '';return strNegativeSymbol + "\u00a5 " + fmt( nValueInCents, bWholeUnitsOnly );} );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 100 );
+	</script>
+	<div class="page_content_ctn" itemscope itemtype="http://schema.org/Product">
+
+		<meta itemprop="image" content="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/capsule_231x87.jpg?t=1450284856">
+					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="CNY">
+				<meta itemprop="price" content="68">
+							</div>
+				<div class="page_title_area game_title_area page_content">
+			<div class="breadcrumbs">
+								<div class="blockbg">
+											<a href="http://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
+																					&gt; <a href="http://store.steampowered.com/genre/Simulation/?snr=1_5_9__205">Simulation Games</a>
+															&gt; <a href="http://store.steampowered.com/app/416190/?snr=1_5_9__205"><span itemprop="name">Vehicle Simulator</span></a>
+
+				</div>
+				<div style="clear: left;"></div>
+							</div>
+			<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+				<div class="apphub_OtherSiteInfo">
+			<a class="btnv6_blue_hoverfade btn_medium" href="http://steamcommunity.com/app/416190">
+				<span>Community Hub</span>
+			</a>
+		</div>
+		<div class="apphub_AppIcon"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/416190/8e8553d3a8351cae3e1a35388d573ceeee1bd2fa.jpg"><div class="overlay"></div></div>
+		<div class="apphub_AppName">Vehicle Simulator</div>
+		<div style="clear: both"></div>
+	</div>
+
+</div>
+
+		</div>
+		<div style="clear: left;"></div>
+
+		<div class="block">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+				
+				var bShouldUseHTML5 = BCanPlayWebm() || BDoesUserPreferHTML5() || !swfobject.hasFlashPlayerVersion(strRequiredVersion);
+			</script>
+			<div class="game_background_glow">
+			<div class="block_content page_content" id="game_highlights">
+
+				<div class="rightcol">
+					<div class="glance_ctn">
+						<div class="game_header_image_ctn">
+							<img class="game_header_image_full" src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/header.jpg?t=1450284856">
+						</div>
+													<div class="game_description_snippet">
+								Vehicle Simulator is an open world flying/sailing simulator with accurate physics and dynamics, simulating well the various boats, planes and land vehicles included. The game allows the user to modify and experiment with scenery making and vehicle design by way of extreme modability, with a large library of existing mods and add-ons.							</div>
+						
+						<div class="glance_ctn_responsive_left">
+															<div class="user_reviews" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
+									<div class="title">User reviews:</div>
+
+																		
+									<div class="user_reviews_summary_row" data-store-tooltip="76% of the 21 user reviews for this game are positive." itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column">Overall:</div>
+										<div class="summary column">
+																					<span class="game_review_summary positive" itemprop="description">Mostly Positive</span>
+											<span class="responsive_hidden">
+												(21 reviews)
+											</span>
+											<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 76% of the 21 user reviews for this game are positive.											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="21">
+											<meta itemprop="ratingValue" content="0">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</div>
+
+								</div>
+							
+
+
+															<div class="release_date">
+									Release Date: <span class="date">27 Mar, 2009</span>
+								</div>
+													</div>
+
+						<div class="glance_ctn_responsive_right">
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="glance_tags_ctn popular_tags_ctn">
+										<div class="glance_tags_label">Popular user-defined tags for this product:</div>
+										<div class="glance_tags popular_tags" data-appid="416190">
+											<a href="http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Simulation												</a><a href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Indie												</a><div class="app_tag add_button" onclick="ShowAppTagModal( 416190 )">+</div>
+										</div>
+									</div>
+																													</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div class="leftcol">
+					<div class="highlight_ctn">
+						<div class="highlight_overflow">
+							<div id="highlight_player_area" >
+								<div class="highlight_player_area_spacer">
+									<img src="http://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif">
+								</div>
+																																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256658459" style="display: none;">
+										<script type="text/javascript">
+											if( bShouldUseHTML5 )
+											{
+												document.write('<video class="highlight_player_item highlight_movie" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658459/movie480.webm?t=1448952379" data-hd-src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658459/movie_max.webm?t=1448952379" poster="http://cdn.steamstatic.com.8686c.com/steam/apps/256658459/movie.293x165.jpg?t=1448952379" id="movie_256658459" preload="none"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></video>');
+												jQuery("#movie_256658459").videoControls();
+											}
+											else
+											{
+												document.write('<div id="movie_256658459" class="highlight_flash_player_notice" style="display: none;"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></div>');
+											}
+										</script>
+									</div>
+								
+																									<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_84593df0d965053826022d134d2232f8a952ce83.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_84593df0d965053826022d134d2232f8a952ce83.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_84593df0d965053826022d134d2232f8a952ce83.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_c60e83e59051f9be1f472d6600e2a13ea5991892.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_c60e83e59051f9be1f472d6600e2a13ea5991892.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c60e83e59051f9be1f472d6600e2a13ea5991892.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_c7b7236e71499d004ddfa2072c917b50160771a8.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_c7b7236e71499d004ddfa2072c917b50160771a8.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c7b7236e71499d004ddfa2072c917b50160771a8.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_06efba82ab8a23edb1652b09d462549549ee577b.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_06efba82ab8a23edb1652b09d462549549ee577b.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_06efba82ab8a23edb1652b09d462549549ee577b.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_b808c519b9dd93120697bf24cc893780af5e8137.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_b808c519b9dd93120697bf24cc893780af5e8137.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_b808c519b9dd93120697bf24cc893780af5e8137.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.1920x1080.jpg?t=1450284856" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+								
+																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256658361" style="display: none;">
+										<script type="text/javascript">
+											if( bShouldUseHTML5 )
+											{
+												document.write('<video class="highlight_player_item highlight_movie" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658361/movie480.webm?t=1448980020" data-hd-src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658361/movie_max.webm?t=1448980020" poster="http://cdn.steamstatic.com.8686c.com/steam/apps/256658361/movie.293x165.jpg?t=1448980020" id="movie_256658361" preload="none"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></video>');
+												jQuery("#movie_256658361").videoControls();
+											}
+											else
+											{
+												document.write('<div id="movie_256658361" class="highlight_flash_player_notice" style="display: none;"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></div>');
+											}
+										</script>
+									</div>
+																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256658285" style="display: none;">
+										<script type="text/javascript">
+											if( bShouldUseHTML5 )
+											{
+												document.write('<video class="highlight_player_item highlight_movie" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658285/movie480.webm?t=1448980009" data-hd-src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658285/movie_max.webm?t=1448980009" poster="http://cdn.steamstatic.com.8686c.com/steam/apps/256658285/movie.293x165.jpg?t=1448980009" id="movie_256658285" preload="none"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></video>');
+												jQuery("#movie_256658285").videoControls();
+											}
+											else
+											{
+												document.write('<div id="movie_256658285" class="highlight_flash_player_notice" style="display: none;"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></div>');
+											}
+										</script>
+									</div>
+																<script type="text/javascript">
+									var rgMovieFlashvars = {
+																					'movie_256658459': {
+												FILENAME: "http://cdn.steamstatic.com.8686c.com/steam/apps/256658459/movieLrg.flv?t=1448952379",
+												MOVIE_NAME: "Vehicle+Simulator+-+%22Show%2C+don%27t+tell%22+Trailer"
+											 },
+																					'movie_256658361': {
+												FILENAME: "http://cdn.steamstatic.com.8686c.com/steam/apps/256658361/movieLrg.flv?t=1448980020",
+												MOVIE_NAME: "The+Flying+Dutchman"
+											 },
+																					'movie_256658285': {
+												FILENAME: "http://cdn.steamstatic.com.8686c.com/steam/apps/256658285/movieLrg.flv?t=1448980009",
+												MOVIE_NAME: "Hang+Gliding+In+Vehicle+Simulator"
+											 },
+																				'' : ''
+									};
+									var rgCommonFlashVars = {
+											clientLanguage: "english",
+											capsuleSize: "huge",
+											STAGE_WIDTH: 600,
+											STAGE_HEIGHT: 338,
+											AUTO_PLAY: "true",
+											ALLOW_JSPAUSE: "true",
+											TRACK_MUTE: "true",
+											CHECKBOX_AUTOPLAY_SHOW: "true",
+											CHECKBOX_AUTOPLAY_TEXT: "Autoplay+videos"
+									};
+																		var rgScreenshotURLs = {"ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b_SIZE_.jpg?t=1450284856","ss_84593df0d965053826022d134d2232f8a952ce83.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_84593df0d965053826022d134d2232f8a952ce83_SIZE_.jpg?t=1450284856","ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_c2f4751ddf7a51f97f9aee502b04f623941f146f_SIZE_.jpg?t=1450284856","ss_c60e83e59051f9be1f472d6600e2a13ea5991892.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_c60e83e59051f9be1f472d6600e2a13ea5991892_SIZE_.jpg?t=1450284856","ss_c7b7236e71499d004ddfa2072c917b50160771a8.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_c7b7236e71499d004ddfa2072c917b50160771a8_SIZE_.jpg?t=1450284856","ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_8bbe64793ad51559b6a339f15e33080c4a2b9697_SIZE_.jpg?t=1450284856","ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_3492265fba4ca57d6bbe0084b6262a73c1a53829_SIZE_.jpg?t=1450284856","ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_1a94832a161fcb53ad2351ae53afc30e49c4859c_SIZE_.jpg?t=1450284856","ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_5ac8445454dd4e585adda59dfe1a18710ac35b25_SIZE_.jpg?t=1450284856","ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd_SIZE_.jpg?t=1450284856","ss_06efba82ab8a23edb1652b09d462549549ee577b.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_06efba82ab8a23edb1652b09d462549549ee577b_SIZE_.jpg?t=1450284856","ss_b808c519b9dd93120697bf24cc893780af5e8137.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_b808c519b9dd93120697bf24cc893780af5e8137_SIZE_.jpg?t=1450284856","ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3_SIZE_.jpg?t=1450284856","ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/416190\/ss_4bda2a13134dc0ef607266bc0984564b9e46fd19_SIZE_.jpg?t=1450284856"};
+								</script>
+							</div>
+														<div id="highlight_strip">
+								<div id="highlight_strip_scroll" style="width: 2282px;">
+									<div class="highlight_selector"></div>
+
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256658459" >
+											<img class="movie_thumb" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658459/movie.184x123.jpg?t=1448952379">
+											<div class="highlight_movie_marker"></div>
+										</div>
+									
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_9bcbf45a3feb2fe59a8dd11981ae2a6dc0a7ad0b.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_84593df0d965053826022d134d2232f8a952ce83.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_84593df0d965053826022d134d2232f8a952ce83.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c2f4751ddf7a51f97f9aee502b04f623941f146f.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_c60e83e59051f9be1f472d6600e2a13ea5991892.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c60e83e59051f9be1f472d6600e2a13ea5991892.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_c7b7236e71499d004ddfa2072c917b50160771a8.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_c7b7236e71499d004ddfa2072c917b50160771a8.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_8bbe64793ad51559b6a339f15e33080c4a2b9697.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_3492265fba4ca57d6bbe0084b6262a73c1a53829.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_1a94832a161fcb53ad2351ae53afc30e49c4859c.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_5ac8445454dd4e585adda59dfe1a18710ac35b25.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_f96e07a4a944dbe58ac74bc2aa0226aa2bb51dfd.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_06efba82ab8a23edb1652b09d462549549ee577b.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_06efba82ab8a23edb1652b09d462549549ee577b.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_b808c519b9dd93120697bf24cc893780af5e8137.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_b808c519b9dd93120697bf24cc893780af5e8137.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_93fafff3a6260d06bca1c4dc92b9b3e1ee26e4e3.116x65.jpg?t=1450284856">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/416190/ss_4bda2a13134dc0ef607266bc0984564b9e46fd19.116x65.jpg?t=1450284856">
+										</div>
+									
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256658361" >
+											<img class="movie_thumb" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658361/movie.184x123.jpg?t=1448980020">
+											<div class="highlight_movie_marker"></div>
+										</div>
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256658285" >
+											<img class="movie_thumb" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256658285/movie.184x123.jpg?t=1448980009">
+											<div class="highlight_movie_marker"></div>
+										</div>
+																	</div>
+							</div>
+															<div class="slider_ctn">
+									<div id="highlight_slider_left" class="slider_left"><span></span></div>
+									<div class="slider" id="highlight_slider" >
+										<div class="slider_bg">
+										</div>
+										<div class="handle">
+										</div>
+									</div>
+									<div id="highlight_slider_right" class="slider_right"><span></span></div>
+								</div>
+								<script type="text/javascript">
+									$J( function() {
+										var player = new HighlightPlayer( {
+											elemPlayerArea: 'highlight_player_area',
+											elemStrip: 'highlight_strip',
+											elemStripScroll: 'highlight_strip_scroll',
+											elemSlider: 'highlight_slider',
+											rgMovieFlashvars: rgMovieFlashvars,
+											rgScreenshotURLs: rgScreenshotURLs,
+											rgDefaultMovieFlashvars: rgCommonFlashVars,
+											bUseHTMLPlayer: bShouldUseHTML5
+										} );
+										$J('#highlight_slider_right').click( function() {
+											player.Transition( true );
+										});
+										$J('#highlight_slider_left').click( function() {
+											player.TransitionBack( true );
+										});
+
+										if( window.location.hash )
+										{
+											var ssid = window.location.hash.substr(1);
+											player.HighlightScreenshot(ssid);
+										}
+									} );
+								</script>
+													</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+			
+			<div class="queue_overflow_ctn">
+									<div class="queue_ctn">
+											<div class="queue_actions_ctn">
+							<p><a href="http://store.steampowered.com/login/?redir=app%2F416190">Sign in</a> to add this item to your wishlist, follow it, or mark it as not interested</p>
+						</div>
+					</div>
+							</div>
+
+			
+			
+		</div>
+
+		
+			<div class="page_content">
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data">
+					<div id="responsive_apppage_details_left_ctn"></div>
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+					
+					
+
+					
+
+					
+
+											<div class="block responsive_apppage_details_left" id="category_block">
+
+							<div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423">Single-player</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=1&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_multiPlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=1&snr=1_5_9__423">Multi-player</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=18&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_partial_controller.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=18&snr=1_5_9__423">Partial Controller Support</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=17&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_editor.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=17&snr=1_5_9__423">Includes level editor</a></div>
+							
+							
+													</div>
+																					<div class="block responsive_apppage_details_right">
+							<div class="block_title">
+								Languages:
+							</div>
+
+							
+<table  class="game_language_options" cellpadding="0" cellspacing="0">
+	<tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">Interface</th>
+		<th class="checkcol">Full Audio</th>
+		<th class="checkcol">Subtitles</th>
+	</tr>
+
+			<tr style="" class="">
+			<td style="width: 94px; text-align: left" class="ellipsis">
+				English			</td>
+							<td class="checkcol">
+					 <img src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png"/> 				</td>
+				<td class="checkcol">
+					 <img src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png"/> 				</td>
+				<td class="checkcol">
+					 <img src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png"/> 				</td>
+					</tr>
+	</table>
+
+						</div>
+					
+					
+					
+
+					<div class="block responsive_apppage_details_left game_details underlined_links">
+						<div class="block_content">
+							<div class="block_content_inner">
+								<div class="details_block">
+	<b>Title:</b> Vehicle Simulator<br>
+
+			<b>Genre:</b> <a href="http://store.steampowered.com/genre/Indie/?snr=1_5_9__408">Indie</a>, <a href="http://store.steampowered.com/genre/Simulation/?snr=1_5_9__408">Simulation</a><br>
+	
+			<b>Developer:</b>
+								<a href="http://store.steampowered.com/search/?developer=Quality%20Simulations&snr=1_5_9__408">Quality Simulations</a>
+				<br>
+	
+			<b>Publisher:</b>
+		<a href="http://store.steampowered.com/search/?publisher=Quality Simulations">Quality Simulations</a>		<br>
+	
+	
+			<b>Release Date:</b> 27 Mar, 2009<br>
+	
+	</div>
+
+
+<div class="details_block">
+	<br>
+
+			<a class="linkbar" href="http://www.hangsim.com/vsf/" target="_blank" rel="noreferrer">
+			Visit the website <img src="http://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+		</a>
+	
+	
+	
+			<a class="linkbar" href="http://www.hangsim.com/vsf/help/index.htm" target="_blank" rel="noreferrer">
+			View the manual <img src="http://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+		</a>
+	
+	
+			<a class="linkbar" href="http://store.steampowered.com/news/?appids=416190">
+			View update history		</a>
+		<a class="linkbar" href="http://store.steampowered.com/news/?appids=416190">
+			Read related news		</a>
+	
+			<a class="linkbar" href="http://steamcommunity.com/app/416190/discussions/">
+			View discussions		</a>
+	
+		<a class="linkbar" href="http://steamcommunity.com/actions/Search?T=ClanAccount&K=Vehicle%20Simulator">
+		Find Community Groups	</a>
+</div>							</div>
+						</div>
+											</div>
+
+					<div class="block responsive_apppage_details_left">
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowShareDialog(); return false;"><span>Share</span></a>
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(416190); return false;"><span>Embed</span></a>
+						<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(416190)"><span data-store-tooltip="Report this Product"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+					</div>
+
+					
+					
+											<div class="block responsive_apppage_reviewblock">
+							<div class="block_title">Awards</div>
+							<div class="block_content block_content_inner">
+								<div id="AwardsDefault">
+									<div class="game_page_autocollapse" style="max-height: 400px;">
+										<a href="https://steamcommunity.com/linkfilter/?url=http://vehicle-simulator.software.informer.com/awards/" target="_blank" rel="noreferrer"  >http://vehicle-simulator.software.informer.com/awards/</a>																			</div>
+								</div>
+							</div>
+
+						</div>
+					
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column">
+
+					
+										<div id="game_area_purchase">
+
+																			
+												
+
+						
+
+												
+												
+
+
+						<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+<div class="game_area_purchase_game_wrapper">
+		<div class="game_area_purchase_game">
+		<form name="add_to_cart_85486" action="http://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="13770d7da4201f911833533d">
+			<input type="hidden" name="subid" value="85486">
+		</form>
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span></div>
+		<h1>Buy Vehicle Simulator</h1>
+								
+		<div class="game_purchase_action">
+						<div class="game_purchase_action_bg">
+															<div class="game_purchase_price price">
+							¥ 68						</div>
+													<div class="btn_addtocart">
+
+					 
+												<a class="btnv6_green_white_innerfade btn_medium" href="javascript:addToCart(85486);">
+							<span>Add to Cart</span>
+						</a>
+											
+				</div>
+							</div>
+		</div>
+	</div>
+
+		
+	</div>
+	<div class="game_area_dlc_section">
+				<h2 class="gradientbg">Downloadable Content For This Game</h2>
+					<div class="game_area_dlc_list">
+				<form name="add_all_dlc_to_cart" action="http://store.steampowered.com/cart/?snr=1_5_9_" method="POST">
+					<input type="hidden" name="action" value="add_to_cart">
+					<input type="hidden" name="sessionid" value="13770d7da4201f911833533d">
+
+					<div class="tableView">
+
+											<div class="gameDlcBlocks">
+					
+																		<a class="game_area_dlc_row odd ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_425750" href="http://store.steampowered.com/app/425750/?snr=1_5_9__405"  data-ds-appid="425750" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:425750,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							Essential Planes						</div>
+											</a>																			<a class="game_area_dlc_row even ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_425910" href="http://store.steampowered.com/app/425910/?snr=1_5_9__405"  data-ds-appid="425910" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:425910,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							Essential Gliders						</div>
+											</a>																			<a class="game_area_dlc_row odd ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_425920" href="http://store.steampowered.com/app/425920/?snr=1_5_9__405"  data-ds-appid="425920" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:425920,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							Essential Helicopters						</div>
+											</a>															</div>
+								<div id="game_area_dlc_expanded" style="display: none;">
+																			<a class="game_area_dlc_row even ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_425930" href="http://store.steampowered.com/app/425930/?snr=1_5_9__405"  data-ds-appid="425930" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:425930,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							Essential Boats						</div>
+											</a>																			<a class="game_area_dlc_row odd ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_425940" href="http://store.steampowered.com/app/425940/?snr=1_5_9__405"  data-ds-appid="425940" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:425940,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							Essential Scenery						</div>
+											</a>																			<a class="game_area_dlc_row even ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_420340" href="http://store.steampowered.com/app/420340/?snr=1_5_9__405"  data-ds-appid="420340" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:420340,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )">
+
+						<div class="game_area_dlc_price">
+															Free													</div>
+						<div class="game_area_dlc_name">
+							South West Europe Scenery Collection						</div>
+											</a>																		</div>
+													<div id="dlc_footer">
+								<div class="dlc_footer_element" id="dlc_show_all_link" onclick="$J('#dlc_footer').hide(); $J('#dlc_purchase_action').fadeIn( 250 ); $J('#game_area_dlc_expanded').slideDown( 250 );">
+									<div class="pulldown">See All</div>
+								</div>
+								<div class="dlc_footer_element">showing 1 - 3 of 6</div>
+							</div>
+											
+					
+				</div> <!-- tableView -->
+
+				<div style="clear: right;"></div>
+
+				</form>
+			</div>
+		
+		
+	</div> <!-- game_area_dlc_section -->
+	
+					</div>
+					<!-- game_area_purchase -->
+
+					
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+					
+											<!-- Announcements block -->
+						<div class="early_access_announcements">
+							<h2>
+								Recent updates							<span class="note">
+								<a href="http://steamcommunity.com/gid/[g:1:11008480]/announcements/">View all <em>(6)</em></a>
+							</span>
+						</h2>
+
+													<div class="post wide">
+								<div class="container">
+									<h2>14 March</h2>
+									<h1><a href="http://steamcommunity.com/gid/[g:1:11008480]/announcements/detail/638755483467837551">2.6.3 update released, offline mode now working</a></h1>
+									<p>Hello folks!<br>As background development continues into Vehicle Simulator and related things, here's patch 2.6.3, previously released on the game's website for testing, now stable enough for a wide steam release.<br><br>Also, you can now play the game while Steam's in offline mode, for all your offline gaming needs.<br><br><br>Changes for version 2.6.3<ul class="bb_ul">	<li>Hiding instruments of type HUD when screen HUD is on, allows clearer	view.</li>	<li>Hidden instruments and dialogs are not updated, allowing better frame	rates.</li>	<li>Enabled eject pilot to be in vehicle\pilots directory.</li>	<li>Exponential control for fast planes improved.</li>	<li>Improved effects for bump maps and use of standard normal maps.</li>	<li>All five flame tags falmel,r,u,d,m can be used for multi engine accrding	to positions.</li>	<li>Fixed a bug which cased objects to disappear when close to enge of	screen.</li>	<li>Working yoke and using new tags yaokel, yoker, yokepl, yokepr.</li>	<li>Updated light panel for planes and boats.</li>	<li>Added three instrument switches cab_lights, nav_lights, anc_lights.</li>	<li>Rolling wheels in gear animation, using wheel1..8 tags, wheels must be	centered around their axis.</li>	<li>Auto pilot behavior fixed for any frame rate, fixed instability caused	shaking at low frame rates.</li>	<li>Fixed bug in vehicle collisions, allowing better pushing and collision	between boats.</li>	<li>Updated mesh optimization making better frame rates.</li></ul></p>
+								</div>
+								<div class="hr"></div>
+								<span class="comments">5 comments</span>
+								<span class="more"><a href="http://steamcommunity.com/gid/[g:1:11008480]/announcements/detail/638755483467837551">Read more</a></span>
+							</div>
+
+																		</div>
+				
+									<div id="game_area_reviews" class="game_area_description">
+						<h2>Reviews</h2>
+						<p>“Vehicle Simulator is exactly what I expected: a mostly successful combination of Virtual Sailor and Micro Flight. These two aspects of the game (boating and flying) perform almost identically to their predecessors, which is not a bad thing. The arcade tilt means that Vehicle Simulator is great for beginners, and jumping online in the sandbox mode of the game is inviting. The game's lineage means lots of custom content is already created, waiting to be downloaded, which expands the basic game's scope. There is much room to grow, however. The textures could use more variety and detail and even more scenery locations (with more missions) would be appreciated. The automobile aspect of the game is quite limited: I'd like to see some military vehicles and racing modes (the waypoints are in place already: how about some checkpoint races?). The planned additions of a mission editor and sailboats should complete the package more thoroughly. Vehicle Simulator is not quite on the same level as big-budget flight sims, but considering the custom content angle of the game, I suspect Vehicle Simulator will grow into a more complete product as time goes on.”<br>75% – <a href="https://steamcommunity.com/linkfilter/?url=http://www.outofeight.info/2009/07/vehicle-simulator-review.html" target="_blank" rel="noreferrer"  >Out of 8 PC Game Reviews</a><br><br>“All in all, I like it a lot. This is a remarkable piece of work, and includes so many different elements of simulation; it’s amazing this is only done by an independent developer. With the pure potential this has, I can imagine some very highly detailed vehicles in this simulator's future.”<br>75% – <a href="https://steamcommunity.com/linkfilter/?url=http://www.avsim.com/pages/0709/QualitySim/VehicleSim.htm" target="_blank" rel="noreferrer"  >AVSIM</a><br></p>
+					</div>
+				
+									<div class="game_page_autocollapse" style="max-height: 450px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>About This Game</h2>
+							Vehicle Simulator in an open world flying/sailing simulator, having accurate flight physics and marine dynamics.<br />
+This simulator allows you to fly, drive and sail where ever you wish, to explore and customize your planes and boats and to train yourself on all forms of flight and sailing.<br />
+<br />
+Vehicle Simulator was created by Ilan Papini, its first version released in March 2009.<br />
+It is based upon Micro Flight and Virtual Sailor, previous simulators made by Ilan, and combines them into one newer, more advanced and flexible program.<br />
+The game has a much denser scenery than the previous games, more advanced physical simulation, and a totally flexible vehicle design.<br />
+<br />
+Vehicle Simulator includes a built in scenery and vehicle designer, making it much simpler for users to create and share content than ever before.<br />
+The simple yet powerful vehicle design makes Vehicle Simulator an excellent learning tool and also a powerful preliminary design tool.						</div>
+					</div>
+				
+				
+					<div class="game_page_autocollapse sys_req" style="max-height: 220px;">
+		<h2>System Requirements</h2>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_full">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 7<br></li><li><strong>Processor:</strong> Intel Pentium 4 2.0 GHz, Intel Core 2.0 GHz, AMD Athlon 2000 or better<br></li><li><strong>Memory:</strong> 1 GB RAM<br></li><li><strong>Graphics:</strong> 512 MB<br></li><li><strong>DirectX:</strong> Version 9.0c<br></li><li><strong>Network:</strong> Broadband Internet connection<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Sound Card:</strong> DirectX 9.0c Compatible</li></ul>							</ul>
+						</div>
+															<div style="clear: both;"></div>
+				</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+				
+				
+														<div class="block" id="recommended_block">
+						<div class="block_header">
+							<div class="right">
+								<a href="http://store.steampowered.com/recommended/morelike/app/416190/?snr=1_5_9__300">See all</a>
+							</div>
+							<h4>More like this</h4>
+						</div>
+						<div class="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad" id="recommended_block_content">
+						</div>
+					</div>
+									
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data"></div>
+			</div>
+
+			<div style="clear: both;"></div>
+				
+			<div id="app_reviews_hash" class="app_reviews_area">
+				<script>
+	jQuery( document ).ready(function( $ ) {
+		CollapseLongReviews();
+	});
+</script>
+	<div class="user_reviews_header no_bottom_margin">
+		Customer reviews
+		<div class="user_reviews_updated">
+			Customer Review system updated! <a href="http://store.steampowered.com/news/21695/">Learn more</a>		</div>
+		
+	</div>
+	<div class="user_reviews_filter_bar">
+		<span class="user_reviews_filter_text">Filter:</span>
+		<div class="user_reviews_tab active" id="ReviewsTab_summary">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'summary', 9223372036854775807, 'english' );">
+				<span>Summary</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_all">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'all', 9223372036854775807, 'english' );">
+				<span>Most Helpful</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_recent">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'recent', 9223372036854775807, 'english' );">
+				<span>Recent</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_positive">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'positive', 9223372036854775807, 'english' );">
+									<span>Positive </span> <span class="user_reviews_count">(16)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_negative">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'negative', 9223372036854775807, 'english' );">
+									<span>Negative </span> <span class="user_reviews_count">(5)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_funny">
+			<a href="javascript:void(0)" onclick="SelectReviews( 416190, 'funny', 9223372036854775807, 'english' );">
+				<span>Funny</span>
+			</a>
+		</div>
+		<div style="clear: left;"></div>
+	</div>
+
+	<div id="LoadingMoreReviewsall" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsrecent" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewspositive" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsnegative" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsfunny" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+
+	<div id="Reviews_positive" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_negative" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_recent" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_funny" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_all" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_summary" class="user_reviews_container">
+		<div id="Reviewssummary0">
+			<div class="user_reviews_summary_bar">
+													<div class="summary_section" data-store-tooltip="76% of the 21 user reviews for this game are positive.">
+						<div class="title">Overall:</div>
+						<span class="game_review_summary positive">Mostly Positive</span>
+						<span>(21 reviews)</span>
+					</div>
+							</div>
+
+			<div class="rightcol recent_reviews">
+									<div class="user_reviews_sub_header">Recently Posted</div>
+					
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short24099885">
+
+			
+				<a href="http://steamcommunity.com/id/RFTM-Chris/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="273110768">RunFromTheMemes</span></div>
+											<div class="hours ellipsis">( 5.8 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 4 July										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Really cool game to play when you'e bored and/or like simulation games.<br><br>I remember playing the demo of this nonstop back in 2011 refreshing it every 5 minutes because it was a demo version.<br><br>Heh, good times...					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('24099885', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '24099885' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short24099885"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '24099885' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short24099885"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '24099885', 1, 'RecommendationVoteTagBtnrecent_short24099885_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short24099885_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23765919">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198008178287/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsDown_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="47912559">Jenn &amp; Jame'</span></div>
+											<div class="hours ellipsis">( 0.6 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 24 June										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Im sorry but this is the worst physics Ive ever seen in a sim. I cant make the controls operate properly and honestly as of this moment I would just as well get a refund and put my $9.99 toward something I like better.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23765919', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23765919' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23765919"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23765919' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23765919"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23765919', 1, 'RecommendationVoteTagBtnrecent_short23765919_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23765919_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22886100">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198115460298/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="155194570">BelkWranglersInc</span></div>
+											<div class="hours ellipsis">( 57.9 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 9 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I've been playing this game for over three years now. And Virtual Sailor for longer than that. The commands are simple, it's relaxing. Great graphics, and an amazing community. I hope you will make many nostalgic memories with this game as I have,					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22886100', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22886100' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22886100"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22886100' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22886100"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22886100', 1, 'RecommendationVoteTagBtnrecent_short22886100_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22886100_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short21976476">
+
+			
+				<a href="http://steamcommunity.com/id/NodokaHanamura/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="71028569">Nodoka &quot;Nikki&quot; Hanamura</span></div>
+											<div class="hours ellipsis">( 12.7 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 21 March										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This Simulator offers a lot of potential, but unfortunately, not enough people are taking advantage of the potential of this game.<br><br>Sure, the Graphics are dated and the UI a little ancient, but Beyond all that, there is potential for vast amounts of Modding.<br><br>I would recommend it to anyone seeking a well-rounded simulator with plenty of features.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21976476', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21976476' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short21976476"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21976476' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short21976476"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21976476', 1, 'RecommendationVoteTagBtnrecent_short21976476_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short21976476_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short21428736">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198263161828/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="302896100">wazshirl60</span></div>
+											<div class="hours ellipsis">( 16.2 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 24 February										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					a really well thought out product and offering plenty of varity for simulation					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21428736', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21428736' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short21428736"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21428736' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short21428736"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21428736', 1, 'RecommendationVoteTagBtnrecent_short21428736_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short21428736_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short21199497">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198164458952/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="204193224">JaydenKing125</span></div>
+											<div class="hours ellipsis">( 70.7 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 13 February										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This is a very amazing game! There are plenty of wonderful freeware downloads for ships, planes, cars etc to full fill your needs! I recomend this game to anyone with a passion of driving cars, sailing ships, flying planes, and wrecking/crashing cars,ships, or planes!					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21199497', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21199497' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short21199497"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21199497' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short21199497"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21199497', 1, 'RecommendationVoteTagBtnrecent_short21199497_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short21199497_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short20583844">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198048048796/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="87783068">kierankent</span></div>
+											<div class="hours ellipsis">( 13.1 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 17 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					good game					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20583844', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20583844' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short20583844"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20583844' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short20583844"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20583844', 1, 'RecommendationVoteTagBtnrecent_short20583844_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short20583844_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short20547711">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198025394635/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="65128907">Cpt.Selva</span></div>
+											<div class="hours ellipsis">( 1.4 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 15 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's a good &quot;70%&quot; simulator. Do not expect to have ALL the real equipment with the fidelity as in a proper simulator such as the FSX or XP10. However, the design feature is very good, despite it's complexity and non-intuitive procedures.<br><br>The game is very smooth, howeve, it has plenty of freezes and crashes also.<br><br>I'm giving it a positive review because it is in a good state already, despite the needs of bugs fixing.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20547711', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20547711' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short20547711"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20547711' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short20547711"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20547711', 1, 'RecommendationVoteTagBtnrecent_short20547711_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short20547711_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short20275634">
+
+			
+				<a href="http://steamcommunity.com/id/DaChickenMaster/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsDown_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="207528004">Da Chicken Master</span></div>
+											<div class="hours ellipsis">( 4.1 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 3 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					why is there no cruise ships ;-;					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20275634', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20275634' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short20275634"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20275634' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short20275634"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20275634', 1, 'RecommendationVoteTagBtnrecent_short20275634_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short20275634_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short20195064">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198024298624/recommended/416190/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="64032896">nwitcher</span></div>
+											<div class="hours ellipsis">( 2.6 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 1 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Lots of fun here, cost is fair,  Could use some polish.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20195064', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20195064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short20195064"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20195064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short20195064"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20195064', 1, 'RecommendationVoteTagBtnrecent_short20195064_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short20195064_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+				</div>
+
+			<div class="leftcol">
+										<div class="user_reviews_sub_header">Most Helpful Reviews&nbsp;
+							<span class="user_reviews_most_helpful_days">Overall</span>
+						</div>
+					
+			<div class="review_box">
+							<div class="header">
+					55 of 61 people (90%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/el_kemosabe/recommended/416190/" class="tooltip" data-tooltip-content="See Full Review">5 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>2 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19676023">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/el_kemosabe/">
+							<div class="playerAvatar offline" data-miniprofile="82984304">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f76228c15433ce4721254311e7edf1d043df5c5d.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f76228c15433ce4721254311e7edf1d043df5c5d.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f76228c15433ce4721254311e7edf1d043df5c5d_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/el_kemosabe/" data-miniprofile="82984304">El Kemosabe[Moving-&gt;SeeProfile]</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/el_kemosabe/games/?tab=all">1,143 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/el_kemosabe/recommended/">181 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/el_kemosabe/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">4.8 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 13 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					<div class="bb_h1">Introduction </div><br>Vehicle Simulator is, well, a vehicle simulator that was originally released in 2009 by Quality Simulations. Six years later, Vehicle Simulator has made its way on to Steam bringing all the original content as well as some free DLC packs which include some of the best mods which have been released for the game. Vehicle Simulator allows you to take control of aircraft, naval vehicles and cars in single player and multiplayer. I haven’t tried out the multiplayer and I’m not too sure how it actually works so this review is based entirely on the singleplayer portion of the game. It’s also worth mentioning that for aircraft I’ve played the game with a T-Flight HOTAS and for naval vehicles I used mouse &amp; keyboard.<br><br>Full disclosure: A review copy was provided by the developer.<br><br><div class="bb_h1">Presentation </div><br>Being a six year old game, Vehicle Simulator obviously isn’t the best looking game. If you’re used to playing older games such as FSX (though FSX does look better than VS in my opinion) then it shouldn’t be too much of an issue for you but if you’re a bit of a graphics nut you might not enjoy it so much. The base game vehicles are all great, looking about as good as they can, given the game’s age, however the vehicles included in the add-on packs are very hit and miss, some of them look just as good as the base game vehicles with other ones looking pretty rough. Obviously, how good the add-on vehicles look hasn’t really got anything to do with the devs but since you will want mods to expand the library of vehicles in the game I feel it’s worth mentioning. <br><br><div class="bb_h1">Gameplay </div><br>As with most simulators of this sort the main appeal of the game, in my eyes at least, is the free flight (or the equivalent for boats/cars) but VS does feature scenarios for you to try out, you can even make your own! The scenarios are usually pretty simple, such as fly from point A to point B but some of them are far more interesting such as cargo runs or mid-air engagements. Free flight is self-explanatory, you just fly (or boat, is that a verb?) around any area you wish at your own pace for the simple purpose of exploration!<br><br>VS has several different locations for you to explore, mainly in Southern Europe but there are a couple in the US and the Caribbean. Each location has its own scenarios, the number of scenarios depends on which location you’re looking at, with some having more than others. While the number of locations available in the base game with the free add-on packs isn’t particularly impressive (locations in particular, there are a reasonable amount of scenarios) there are plenty more to be downloaded from the VS add-on library website.<br><br>One of the really cool things about VS’ gameplay is that you can create and run scripts in the game, VS also includes three pre-made script scenarios and more are available as mods. If you know how to create them you really can do some cool things but the scenarios available are also pretty cool to watch, such as an F-86 taking down a little Cessna. <br><br><div class="bb_h1">Realism </div><br>As with all simulators, the realism is incredibly important and while I’m no expert, VS feels reasonably realistic. The aerodynamics seem to be pretty good and for the most part aircraft handling felt about right for the size and mass of the aircraft in question. Naval vehicles also seemed pretty realistic to me but I know a lot less about boats and submarines than I know about planes and helicopters. Sound effects also contribute to a game’s realism, sadly VS’ sound effects are pretty hit and miss, with more misses than hits. While some of the sound effects, mainly the engine sounds for base game vehicles, sounded reasonably realistic other sound effects weren’t so great and I often found myself wondering what the sound effect I was hearing was actually supposed to be. For a couple of aircraft I also felt that the variation of sound effects depending on where the chase camera was positioned was off though that may be dependent on the mod-makers rather than the game itself. In some cases the engine sounds would completely cut out unless the camera was positioned directly behind the aircraft which of course, is not very realistic.<br><br><div class="bb_h1">Miscellaneous </div><ul class="bb_ul"><li>In case I haven’t made it clear, there’s not a huge amount of base game content if you ignore the free DLC packs. While it has been out for six years so there are a fair few mods/free add-ons out there for you to use I would have expected there to be more base game content for the price tag. If you don’t mind using the slightly (and sometimes more than slightly) inferior community made mods this isn’t too much of an issue but if you do mind then VS might not be for you.<br></li><li>The game’s performance isn’t great even when running it on a PC well above the requirements. For most vehicles I was getting between 50 and 60FPS with reasonably regular, albeit short, drops to around 20FPS. For larger or more complex vehicles I was getting between 20 and 30FPS with some drops down to around 10FPS. Rendering the game in a window greatly increased my performance to sitting between 80 and 100FPS but again this was pretty unstable and I still experienced drops. As well as this I found that the game often had to pause for around a second on some of the maps to load scenery, now that’s not much time but when it’s happening every ten or fifteen seconds it becomes very noticeable and rather frustrating. <br></li><li>Weapons in the game are fully-functional, they can be pretty fun to mess around with but they’re also used in some of the scenarios.<br></li><li>You can edit vehicles as well as create your own in-game, I haven’t messed around with this side of things too much since I’m not particularly good at that kind of thing but it’s rather interesting and in the right hands could be used to make some cool things.</li></ul><br><div class="bb_h1">Verdict </div><br><b>Worth Purchasing on Sale. </b><br><br>If you can look past its dated graphics, VS is a solid simulator with enough free add-ons to keep you entertained for quite a while. While the non-sale price is a little steep for what the game offers I’d say it’s well worth purchasing at 25% off or more.<br><br><i>No drama, <a class="bb_link" href="http://steamcommunity.com/groups/justreviews" target="_blank" rel="noreferrer" >Just Reviews.</a></i><br><br>El K.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19676023', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19676023' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19676023"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19676023' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19676023"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19676023', 1, 'RecommendationVoteTagBtnsummary19676023_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19676023_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					71 of 109 people (65%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/seph_au/recommended/416190/" class="tooltip" data-tooltip-content="See Full Review">17 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>10 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19590366">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/seph_au/">
+							<div class="playerAvatar offline" data-miniprofile="24770364">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/23/23407ebf3b29c1d3cc14f73bf38abf50d19799fd.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/23/23407ebf3b29c1d3cc14f73bf38abf50d19799fd.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/23/23407ebf3b29c1d3cc14f73bf38abf50d19799fd_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/seph_au/" data-miniprofile="24770364">seph.au</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/seph_au/games/?tab=all">7,022 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/seph_au/recommended/">623 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/seph_au/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">3.6 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 9 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Great sim game! Not sure how it slipped by me. Included are 113 'toys' to play with and being an older game there is also many freely available mods to enjoy. Most seem high quality and would put 'certain other' sim franchises to shame.<br><a class="bb_link" href="https://www.youtube.com/watch?v=0CC5Z5Wl7TM" target="_blank" rel="noreferrer"  id="dynamiclink_0">https://www.youtube.com/watch?v=0CC5Z5Wl7TM</a><br>While the game provided missions that ranged from sailing between targets to blasting missiles in the dead of night, effectively it's just a giant simulation sandbox. Each vehicle having 'newbie' or manual handling modes, examples being boats that automated heights of sails upon changing weather conditions and jetliners that would usually take a fortnight of studying manuals just take off the ground were able to be flown within minutes. Might sound like it's completely dumbed down and certain aspects are, still <b>plenty</b> to play with for avid sim enthusiasts. <br><br>Both performance and graphics were surprisingly good, no issues with load times or stutter. Scenery was sometimes spotty but far from terrible and I'm sure that it could be improved further with modding. Supports screen resolutions of 4k+ along with detailed controller remapping, personally I don't have some of the fancy gear available but most would probably function correctly. Vehicle Simulator is not just another fly by night, sim game using stock unity assets. Need to play more but it's impressed me thus far, easily recommended to the crowd it targets. Cheers.<br><br><b>Copy was provided by developer, doesn't change my thoughts</b><br><b>Feel free to ask questions, always reply as time permits.</b>					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19590366', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19590366' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19590366"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19590366' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19590366"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19590366', 1, 'RecommendationVoteTagBtnsummary19590366_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19590366_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					11 of 12 people (92%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/profiles/76561198022043667/recommended/416190/" class="tooltip" data-tooltip-content="See Full Review">2 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>1 person found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19810721">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198022043667/">
+							<div class="playerAvatar offline" data-miniprofile="61777939">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/db/dbec09d8b84a428304750b2f8bc86e83ddf0b933.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/db/dbec09d8b84a428304750b2f8bc86e83ddf0b933.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/db/dbec09d8b84a428304750b2f8bc86e83ddf0b933_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198022043667/" data-miniprofile="61777939">quintjawsman</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198022043667/games/?tab=all">124 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198022043667/recommended/">7 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198022043667/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">7.5 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 20 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I LOVE this Sim!<br>This sim delivers just what it claims to, and so much more. Which is a great deal more than I can say for ANY other simulator currently out or released in the last decade. Experienced Flight Simmers know what I mean here. <br><br>This is the most fun with a Flight Sim I've enjoyed since BEFORE microsoft ruined the flight sim genre by dumping barely functional FS titles on the market. Look no further than microsoft's bottomless pit of greed forcing Combat Flight Simulator 3 and FSX onto the world knowing that barely anything less than a Cray supercomputer could run them above 16 fps when they were new and semi-new! <br>I and hundreds of  thousands of other PC pilots wish that we had the months of our lives handed back to us that we ALL wasted in vain attempts surfing the web to discover some fix to tweak better framerates out of those rehash-cashgrabs.  <br>Can I get a witness?!<br><br>Well not this Sim brother, this one looks good and runs  S M O O T H !<br>This Sim does what it says AND MORE AAaaaannnd it's really FUN!<br><br>Is it a fully dedicated  100% flight sim that is better than anything else ever created? No. <br>Is it pretty close to that even though it doesn't brag that it is? YES!<br>Is it better at flight simming than FS2004, FSX and Xplane? <br>I honestly think so now and will answer that more confidently after the coming updates. <br><br>&gt; Vehicle Simulator is currently a better Flight Sim than 9 out of 10 titles in my opinion, and I played them all since the days of the Amiga 4K. <br>Could it be better? Yes, and it is improving all the time now.<br>It may not have the entire globe like FSX but what it does have looks and runs wonderfully. <br><br>Pro's<br>&gt;Better at simulation than most other sims.<br>&gt;Small download, massive number of free DLC addons of very high quality.<br>&gt;Powerful physics that can be felt + High framerates maxed all settings with 50-75fps on midrange PC<br><br>&gt; Best described as crossing a physics based Flight &amp; Sail Simulator with Gary's Mod &lt;<br><br>&gt;Although a few crashes here and there due to my extreme and far fetched ideas in the sim I will call this a VERY stable simulator.<br>&gt; Love the music choices in game, especially sailing<br><br>Notable features:<br>Lots of options. If you can fly, drive or sail it then it can be done in here, and done well.<br>* The community can make and import even more content  &gt; EASILY &lt;<br>* What a treat to have some little known music {french and Mexican] playing in the background as you watch the sun set and stars pop out while sailing, yachting or in your one man sub! = Mucho relaxing...<br><br>&gt;&gt;&gt;&gt; DROP DEAD GORGEOUS WAVES AND OCEAN [viewed from below or above] BETTER THAN ANY OTHER SIM &lt;&lt;&lt;&lt;<br><br>* The air combat is on par with titles I spent far more for, and those titles never delivered.<br>* Impressive and fun cockpit POV, although hoping for more polished graphics and sound variety soon.<br>* The creator is excited and active to pick up were he left off pre-Steam, so lots of upgrades and content coming.<br><br>One Example that impresses me:<br>The in-game stock F86 jet looks like it is made from highly polished metal, almost chrome. Strikingly beutiful to look at. By contrast this is how DCS World advertises their $Extra$ charge F86 but theirs looks only grey in reality because their DCS engine is 20+ years old and cannot render shiny bare metals! <br>* So this Vehicle Simulator DOES IT BETTER THAN DCS currently does! * [Yes I own all DCS]<br><br>Sure the DCS cockpits are superior in graphical quality and function, but I see the Dev seriously upgrading cockpit detail, functionality and quality soon. Where DCS is maxed out being CPU greedy it looks to me that Vehicle Simulator is just getting started with lots of room to upgrade.☺ You cannot claim that from DCS or microsoft whose re-re-re-overhauled game engines stopped bearing fruit over a decade ago.<br><br>Cons:<br>&gt;Wished I would have discovered this sooner.<br>&gt;Powerful simulator but I need tutorials to help me wring the most out of things. I am still confused on many aspects and stumbling around trying to figure things out. <br>** Interface is VERY user friendly however.<br>&gt;The graphics are very beautiful at times, but dated at others. I look forward to smoother hard-dark shadows in the cockpits, sharper reflections, and other more modern graphical eye-candy that has spoiled us in other titles.<br>&gt;Sounds are limited with one plane or car sounding like the next.<br>&gt; Unknown at this time how to set up dogfights, create new vehicles, change textures due to lack of hand holding tutorials<br>&gt;Have to start Steam to play. Like most I want to be able to play offline since we live in such a bandwidth depleted area<br><br>My hopes for the future are:<br><br>* Be able to fly, sail or sub anywhere in the world<br>* Updated and more modern graphics, textures, more realism rendering light and shadows and better explosions<br>* Ability to set up player vs Ai opponents easier<br>* More vehicles flooding the workshop &lt;hint-hint&gt;<br>* More ocean life to sub around and sail by<br>* More stock adventures, although there are more than most sims offer already<br>* The ability to be an animal or fish or bird like in Gary's mod. [ this opens up the wonderful can of worms allowing the player to control [[create]] player animals like we create animatronic sharks for movies. ] Imagine getting to be a dinosaur, shark or whatever in this Sim, it'd be AWESOME!<br><br>My respect and honest thanks to the developer and his family. So glad you came to Steam so I could find you!<br>					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19810721', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19810721' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19810721"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19810721' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19810721"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19810721', 1, 'RecommendationVoteTagBtnsummary19810721_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19810721_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					6 of 6 people (100%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary21199497">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198164458952/">
+							<div class="playerAvatar offline" data-miniprofile="204193224">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c7/c79cfc0ad1ed0d667e9a1305aa2502377b0b2c44.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c7/c79cfc0ad1ed0d667e9a1305aa2502377b0b2c44.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c7/c79cfc0ad1ed0d667e9a1305aa2502377b0b2c44_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198164458952/" data-miniprofile="204193224">JaydenKing125</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198164458952/games/?tab=all">21 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198164458952/recommended/">7 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198164458952/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">70.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 13 February										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This is a very amazing game! There are plenty of wonderful freeware downloads for ships, planes, cars etc to full fill your needs! I recomend this game to anyone with a passion of driving cars, sailing ships, flying planes, and wrecking/crashing cars,ships, or planes!					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21199497', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21199497' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary21199497"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21199497' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary21199497"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21199497', 1, 'RecommendationVoteTagBtnsummary21199497_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary21199497_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					3 of 3 people (100%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/NodokaHanamura/recommended/416190/" class="tooltip" data-tooltip-content="See Full Review">1 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary21976476">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/NodokaHanamura/">
+							<div class="playerAvatar online" data-miniprofile="71028569">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/31/31e4bb8279416a2200d648a93a5d749c970cf907.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/31/31e4bb8279416a2200d648a93a5d749c970cf907.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/31/31e4bb8279416a2200d648a93a5d749c970cf907_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/NodokaHanamura/" data-miniprofile="71028569">Nodoka &quot;Nikki&quot; Hanamura</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/NodokaHanamura/games/?tab=all">86 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/NodokaHanamura/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/NodokaHanamura/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">12.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 21 March										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This Simulator offers a lot of potential, but unfortunately, not enough people are taking advantage of the potential of this game.<br><br>Sure, the Graphics are dated and the UI a little ancient, but Beyond all that, there is potential for vast amounts of Modding.<br><br>I would recommend it to anyone seeking a well-rounded simulator with plenty of features.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21976476', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21976476' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary21976476"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21976476' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary21976476"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21976476', 1, 'RecommendationVoteTagBtnsummary21976476_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary21976476_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					8 of 13 people (62%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19607152">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/slyp4rk0ur/">
+							<div class="playerAvatar offline" data-miniprofile="282213680">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/2c/2c500ba651f2d53d1f622c351621b5b1d89f11e5.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/2c/2c500ba651f2d53d1f622c351621b5b1d89f11e5.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/2c/2c500ba651f2d53d1f622c351621b5b1d89f11e5_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/slyp4rk0ur/" data-miniprofile="282213680">Parkour</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/slyp4rk0ur/games/?tab=all">28 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/slyp4rk0ur/recommended/">1 review</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/slyp4rk0ur/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">2.8 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 10 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Great game so far, haven't played all that much yet and i have a TON more to explore and find out, but so far playing about for half an hour has been extreemly fun.<br><br>I'll look forward to playing more in the weekend and when i gather up some experience and around 15/20 hours i'll edit this review properly.<br><br>For now: I recommend because the possibilities of things to do is endless and it runs buttery smooth even on my ribbish 2008 pc with a bad graphics card, wow this game is optimised so great!<br><br>Looking forward to explore this game more ;)					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19607152', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19607152' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19607152"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19607152' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19607152"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19607152', 1, 'RecommendationVoteTagBtnsummary19607152_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19607152_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					2 of 2 people (100%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20547711">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198025394635/">
+							<div class="playerAvatar offline" data-miniprofile="65128907">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/1d/1d30851b52210a0f181af8220a620c604da3d6e1.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/1d/1d30851b52210a0f181af8220a620c604da3d6e1.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/1d/1d30851b52210a0f181af8220a620c604da3d6e1_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198025394635/" data-miniprofile="65128907">Cpt.Selva</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198025394635/games/?tab=all">250 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198025394635/recommended/">104 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198025394635/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">1.4 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 15 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's a good &quot;70%&quot; simulator. Do not expect to have ALL the real equipment with the fidelity as in a proper simulator such as the FSX or XP10. However, the design feature is very good, despite it's complexity and non-intuitive procedures.<br><br>The game is very smooth, howeve, it has plenty of freezes and crashes also.<br><br>I'm giving it a positive review because it is in a good state already, despite the needs of bugs fixing.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20547711', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20547711' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20547711"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20547711' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20547711"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20547711', 1, 'RecommendationVoteTagBtnsummary20547711_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20547711_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					2 of 2 people (100%) found this review helpful										<br>1 person found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary22886100">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198115460298/">
+							<div class="playerAvatar offline" data-miniprofile="155194570">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8b/8bcd24445f88d714578273d0567c7b281070df1a.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8b/8bcd24445f88d714578273d0567c7b281070df1a.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8b/8bcd24445f88d714578273d0567c7b281070df1a_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198115460298/" data-miniprofile="155194570">BelkWranglersInc</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198115460298/games/?tab=all">5 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198115460298/recommended/">1 review</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198115460298/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">57.9 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 9 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I've been playing this game for over three years now. And Virtual Sailor for longer than that. The commands are simple, it's relaxing. Great graphics, and an amazing community. I hope you will make many nostalgic memories with this game as I have,					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22886100', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22886100' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary22886100"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22886100' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary22886100"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22886100', 1, 'RecommendationVoteTagBtnsummary22886100_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary22886100_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					4 of 6 people (67%) found this review helpful										<br>1 person found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19720426">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/riley2142/">
+							<div class="playerAvatar offline" data-miniprofile="122380668">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/08/0816c177dd127b67e500a81cca3d9255d7d102a2.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/08/0816c177dd127b67e500a81cca3d9255d7d102a2.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/08/0816c177dd127b67e500a81cca3d9255d7d102a2_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/riley2142/" data-miniprofile="122380668">HZnE | Riley2142</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/riley2142/games/?tab=all">140 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/riley2142/recommended/">41 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/riley2142/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">1.6 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 15 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I got a key after i got the game refunded because i couldn't get it working.<br><br><br><br>I found this game and really wanted to try it at first sight, and with only ten dollars i went digging through my room and found ten more and bought the game. I downloaded all the DLC and started it, but Steam froze and i thought 'this is what is supposed to happen.'. I got tired of waiting for it to start right up and closed Steam because it was still frozen. After opening Steam again i tried to start the game again only to get a message saying the game was already running. Confused, i went into my task manager and found the processes running. I tried to close them but i couldn't without restarting my pc. I kept trying after receiving Developer support and i decided to get a refund.<br><br><br>A few days after this, i reveived a message from a developer asking for help with getting the game working, and i accepted their generous key and downloaded the game. I started it up and to my suprise it worked right away, and after it worked i installed all the DLC, and they worked too.<br><br><br>Im not sure how it happened, or if they released an update, but i love the game!<br><br><br>Thanks to the devs for being so nice and helping me even when they couldn't!<br><br>I would totally recommend this to anybody who loves simulators!					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19720426', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19720426' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19720426"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19720426' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19720426"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19720426', 1, 'RecommendationVoteTagBtnsummary19720426_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19720426_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+			<div class="review_developer_response_container multiple_listing store" id="ReviewDevResponsesummary19720426">
+			<div class="leftcol">&nbsp;</div>
+			<div class="rightcol">
+				<div class="review_developer_response_exists_date">A developer has responded on 18 Dec, 2015 @ 3:14am<br><a href="http://steamcommunity.com/id/riley2142/recommended/416190/#developer_response">(view response)</a></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+			<div class="review_box">
+							<div class="header">
+					1 of 1 people (100%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20195064">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198024298624/">
+							<div class="playerAvatar offline" data-miniprofile="64032896">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e4/e43fcb142f21623b0adac5ee6febc023cf98aa1e.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e4/e43fcb142f21623b0adac5ee6febc023cf98aa1e.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e4/e43fcb142f21623b0adac5ee6febc023cf98aa1e_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198024298624/" data-miniprofile="64032896">nwitcher</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198024298624/games/?tab=all">351 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198024298624/recommended/">11 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198024298624/recommended/416190/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">2.6 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 1 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Lots of fun here, cost is fair,  Could use some polish.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20195064', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20195064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20195064"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20195064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20195064"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20195064', 1, 'RecommendationVoteTagBtnsummary20195064_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20195064_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+						<div id="ViewAllReviewsall" class="view_all_reviews_btn">
+						<a href="http://steamcommunity.com/app/416190/reviews/?browsefilter=toprated&snr=1_5_9_">Browse all 21 reviews</a>
+					</div>
+							</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	<div style="clear: left"></div>
+				</div>
+		</div>
+
+	</div>
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal"  style="display: none">
+	<div id="widget_create">
+		<p>You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam.</p>
+
+				<p class="small">Enter up to 375 characters to add a description to your widget:</p>
+		<textarea name="w_text" placeholder="Vehicle Simulator is an open world flying/sailing simulator with accurate physics and dynamics, simulating well the various boats, planes and land vehicles included. The game allows the user to modify and experiment with scenery making and vehicle design by way of extreme modability, with a large library of existing mods and add-ons." maxlength="375"></textarea>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="#" onclick="CreateWidget(416190); return false;"><span>Create widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">Copy and paste the HTML below into your website to make the above widget appear</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+<div id="ShareModal" style="display: none">
+	<div class="share">Share:&nbsp; <a href="http://store.steampowered.com/share/facebook/app/416190" target="_blank" rel="noreferrer" title="Share on Facebook"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/facebook.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/twitter/app/416190" target="_blank" rel="noreferrer" title="Share on Twitter"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/twitter.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/reddit/app/416190" target="_blank" rel="noreferrer" title="Share on Reddit"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/reddit.gif"></a></div></div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>Popular user-defined tags for this product:<span class="app_tag_modal_tooltip" data-store-tooltip="These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag's popularity on this product.">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>Sign in</h2>
+					<p>Sign in to add your own tags to this product.</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/416190">
+							<span>Sign in</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 416190,
+				[{"tagid":599,"name":"Simulation","count":29,"browseable":true},{"tagid":492,"name":"Indie","count":23,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null			);
+		});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div id="footer_spacer" class=""></div>
+<div id="footer"  class="">
+<div class="footer_content">
+	<div class="rule"></div>
+
+	<div id="footer_nav">
+
+		
+		
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_steam_pulldown">
+				<span>ABOUT STEAM</span>
+			</span>
+		<div class="popup_block_new" id="footer_steam_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/about/?snr=1_44_44__22">
+					What is Steam?				</a>
+				<!--
+					<a class="popup_menu_item" href="">
+						Download Steam now					</a>
+					-->
+				<a class="popup_menu_item" href="https://support.steampowered.com/kb_article.php?p_faqid=549#gifts" target="_blank" rel="noreferrer">
+					Gifting on Steam				</a>
+				<a class="popup_menu_item" href="https://steamcommunity.com/?snr=1_44_44__22">
+					The Steam Community				</a>
+			</div>
+					</div>
+	
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_valve_pulldown">
+				<span>ABOUT VALVE</span>
+			</span>
+		<div class="popup_block_new" id="footer_valve_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">
+					About Valve				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">
+					Business Solutions				</a>
+				<a class="popup_menu_item" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">
+					Steamworks				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">
+					Jobs				</a>
+			</div>
+		</div>
+			
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_help_pulldown">
+				<span>HELP</span>
+			</span>
+		<div class="popup_block_new" id="footer_help_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="https://help.steampowered.com/en/?snr=1_44_44__23">
+					Support				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/forums/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Forums				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/stats/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Stats				</a>
+			</div>
+					</div>
+
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_feeds_pulldown">
+				<span>NEWS FEEDS</span>
+			</span>
+		<div class="popup_block_new" id="footer_feeds_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/news.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Steam News				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/newreleases.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Game Releases				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/daily_deals.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Daily Deals				</a>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+
+		<script type="text/javascript">
+			RegisterFlyout( 'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );
+			RegisterFlyout( 'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );
+			RegisterFlyout( 'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );
+			RegisterFlyout( 'footer_help_pulldown', 'footer_help_dropdown', null, null, true );
+			RegisterFlyout( 'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );
+		</script>
+	</div>
+
+	<br>
+
+    <div class="rule"></div>
+    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png" alt="Valve Software" border="0" /></a></div>
+    <div id="footer_text">
+        <div>&copy; 2016 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+        <div>VAT included in all prices where applicable.&nbsp;&nbsp;
+
+            <a href="http://store.steampowered.com/privacy_agreement/" target="_blank" rel="noreferrer">Privacy Policy</a>
+            &nbsp; | &nbsp;
+            <a href="http://www.valvesoftware.com/legal.htm" target="_blank" rel="noreferrer">Legal</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/steam_refunds/" target="_blank" rel="noreferrer">Refunds</a>
+
+        </div>
+					<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>View mobile website</span>
+				</div>
+			</div>
+		    </div>
+
+
+
+    <div style="clear: left;"></div>
+
+    <div class="rule"></div>
+
+    <div class="valve_links">
+        <a href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">About Valve</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">Business Solutions</a>
+        &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">Jobs</a>
+        &nbsp; | &nbsp;<a href="http://steamcommunity.com/greenlight" target="_blank" rel="noreferrer">Steam Distribution</a>
+		&nbsp; | &nbsp;<a href="http://www.facebook.com/Steam" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+		&nbsp; | &nbsp;<a href="http://twitter.com/steam_games" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam_games</a>
+    </div>
+
+</div>
+</div><script type="text/javascript">$J( function() {ReplaceDynamicLink( 'dynamiclink_0', "<div class=\"dynamiclink_box \" onclick=\"DynamicLink_PlayYouTubeVideoInline( this, &quot;0CC5Z5Wl7TM&quot; );\">\r\n\t<img class=\"dynamiclink_preview\" src=\"http:\/\/img.youtube.com\/vi\/0CC5Z5Wl7TM\/1.jpg\">\r\n\t<div class=\"dynamiclink_content\">\r\n\t\t<div class=\"dynamiclink_name\"><span class=\"dynamiclink_type\">YouTube\u2122 Video: <\/span>Vehicle Simulator Gameplay PC HD [60FPS\/1080p]&nbsp;<\/div>\r\n\t\t<div class=\"dynamiclink_youtubeviews\">\r\n\t\t\tViews: 3,865\t\t<\/div>\r\n\t\t<div class=\"dynamiclink_description\">\r\n\t\t\tVehicle Simulator PC Gameplay | Steam | No Commentary | Let's Play Genre: Simulation Developer: Quality Simulations Release Date: 27 Mar, 2009 Steam: http:\/\/store.steampowered.com\/app\/416190\/...\t\t<\/div>\r\n\t<\/div>\r\n<\/div>" );} );</script>
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>

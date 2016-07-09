@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html class=" responsive">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Atriage on Steam</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href="http://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=ful_LJT3NQYl" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=dLk1hPsnaTys" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=3YEnHE2flOXO" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/store.css?v=5x9rx7e-ZpBU" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=i8VmpSwJI7WE" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=nBeZ_zHnCoNj" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/game.css?v=EhBgu-6aEzbh" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=yn13AaQYGiow" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=J9fKOAhzi8Si" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=1gbp7tFqaQum" rel="stylesheet" type="text/css" >
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'application' );
+				ga('set', 'dimension4', "application\/app" );
+				ga('send', 'pageview');
+
+			</script>
+			<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=._0UFXFGgvme-"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=SO3_UDRN31sN&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=lTmkgFfmpIAy&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=NG3YDtvSdiC-&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery.appear.js?v=.rB2Jqew4q0oc"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() ); 
+$J.data( document, 'x_oldref', GetNavCookie() ); 
+$('.tooltip').v_tooltip();
+window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
+BindStoreTooltip( $('[data-store-tooltip]') ); 
+});</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/gamehighlightplayer.js?v=wZS9xXwTWr8T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/user_reviews.js?v=k7WSvWNgKD1T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/dselect.js?v=KBcbV038Qayz&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=Ukm-mSCVk13G&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/game.js?v=NFSwsFD1llNd&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/swfobject.js?v=.IJPsm1EB98JP"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=WeLSMzFqMp1e&amp;l=english"></script>
+
+						<meta name="Description" content="Atriage, a turn-based strategy game inspired by Sci-fi space naval battles in 80s Anime where you command a fleet of ten warships against a rival commander. Master four different ship classes, each with their own strengths, weaknesses, and roles in combat in an all-out battle for supremacy.">
+			
+			<link rel="canonical" href="http://store.steampowered.com/app/454780/">
+	
+			<link rel="image_src" href="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/header.jpg?t=1461352079">
+	
+	
+	
+	</head>
+<body class="v6 app game_bg responsive_page">
+
+<div class="responsive_page_frame with_header">
+
+						<div class="responsive_page_menu_ctn mainmenu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com//login/?redir=app%2F454780%2F">
+									Login								</a>
+							
+								<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		Store	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		Community	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		Support	</a>
+
+							<div class="minor_menu_items">
+																<div class="menuitem change_language_action">
+									Change language								</div>
+																									<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer"></div>
+						<div class="mainmenu_footer">
+							<div class="mainmenu_footer_logo"><img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+							© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.							<span class="mainmenu_valve_links">
+								<a href="http://store.steampowered.com/privacy_agreement/" target="_blank">Privacy Policy</a>
+								&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/subscriber_agreement/" target="_blank">Steam Subscriber Agreement</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/steam_refunds/" target="_blank">Refunds</a>
+							</span>
+						</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab" style="display: none;">
+
+		</div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu">
+				<div class="localmenu_content">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+					</div>
+				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div id="global_header">
+	<div class="content">
+
+		<div class="logo">
+			<span id="logo_holder">
+				<a href="http://store.steampowered.com/">
+					<img src="http://store.akamai.steamstatic.com/public/shared/images/header/globalheader_logo.png" width="176" height="44">
+				</a>
+			</span>
+			<!--[if lt IE 7]>
+			<style type="text/css">
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png'); }
+			</style>
+			<![endif]-->
+		</div>
+
+			<div class="supernav_container">
+	<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		STORE	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		COMMUNITY	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+			<a class="menuitem" href="http://store.steampowered.com/about/">
+			ABOUT		</a>
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		SUPPORT	</a>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div id="global_action_menu">
+				<div class="header_installsteam_btn header_installsteam_btn_green">
+					<div class="header_installsteam_btn_leftcap"></div>
+					<div class="header_installsteam_btn_rightcap"></div>
+					<a class="header_installsteam_btn_content" href="http://store.steampowered.com/about/">
+						Install Steam					</a>
+				</div>
+
+				
+									<a class="global_action_link" href="https://store.steampowered.com//login/?redir=app%2F454780%2F">login</a>
+					&nbsp;|&nbsp;
+					<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+					<div class="popup_block_new" id="language_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+																																	<a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (Bulgarian)</a>
+																										<a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;">čeština (Czech)</a>
+																										<a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (Danish)</a>
+																										<a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (Dutch)</a>
+																																			<a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (Finnish)</a>
+																										<a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;">Français (French)</a>
+																										<a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (Greek)</a>
+																										<a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (German)</a>
+																										<a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (Hungarian)</a>
+																										<a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;">Italiano (Italian)</a>
+																										<a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (Japanese)</a>
+																																			<a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (Korean)</a>
+																										<a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (Norwegian)</a>
+																										<a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;">Polski (Polish)</a>
+																										<a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portuguese)</a>
+																										<a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil (Portuguese-Brazil)</a>
+																										<a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;">Русский (Russian)</a>
+																										<a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;">Română (Romanian)</a>
+																										<a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (Simplified Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;">Español (Spanish)</a>
+																										<a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (Swedish)</a>
+																										<a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (Traditional Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (Thai)</a>
+																										<a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (Turkish)</a>
+																										<a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (Ukrainian)</a>
+																						<a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank">Help us translate Steam</a>
+						</div>
+					</div>
+							</div>
+					</div>
+			</div>
+</div>
+<div id="responsive_store_nav_ctn"></div>
+		<div class="responsive_page_template_content">
+
+					<script type="text/javascript">
+			try {
+				if ( typeof ga != 'undefined' && ga )
+				{
+					ga( 'create', "UA-70658701-5", 'auto', "app", {
+						anonymizeIp: true
+					} );
+					ga( 'require', 'linker' );
+					ga( 'app.linker:autolink', ["store.steampowered.com","steamcommunity.com","help.steampowered.com"] );
+					ga( 'app.send', 'pageview' );
+				}
+			} catch ( e ) { }
+		</script>
+		<script type="text/javascript">
+
+	GStoreItemData.AddStoreItemData(
+		{"322330":{"name":"Don't Starve Together","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/322330\/capsule_184x69.jpg?t=1461258523","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"730":{"name":"Counter-Strike: Global Offensive","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/730\/capsule_184x69.jpg?t=1467065027","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"304430":{"name":"INSIDE","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 68<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/304430\/capsule_184x69.jpg?t=1467910225","os_windows":true,"localized":true},"427520":{"name":"Factorio","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 68<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/427520\/capsule_184x69.jpg?t=1467282146","os_windows":true,"os_macos":true,"os_linux":true,"early_access":true,"localized":true},"274190":{"name":"Broforce","discount_block":"<div class=\"discount_block \"> <div class=\"discount_pct\">-60%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">\u00a5 48<\/div><div class=\"discount_final_price\">\u00a5 19<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/274190\/capsule_184x69.jpg?t=1467903467","os_windows":true,"os_macos":true,"os_linux":true,"discount":true,"localized":true},"253250":{"name":"Stonehearth","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 78<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/253250\/capsule_184x69.jpg?t=1467833291","os_windows":true,"early_access":true,"localized":true},"428690":{"name":"Youtubers Life","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/428690\/capsule_184x69.jpg?t=1467967112","os_windows":true,"os_macos":true,"early_access":true,"localized":true},"364360":{"name":"Total War: WARHAMMER","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 220<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/364360\/capsule_184x69.jpg?t=1466775430","os_windows":true,"localized":true},"489460":{"name":"The Last Leviathan","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/489460\/capsule_184x69.jpg?t=1467819367","os_windows":true,"os_macos":true,"early_access":true,"localized":true},"313160":{"name":"Farming Simulator 15","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 78<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/313160\/capsule_184x69.jpg?t=1466606411","os_windows":true,"os_macos":true,"localized":true},"460120":{"name":"Megadimension Neptunia VII","discount_block":"<div class=\"discount_block \"> <div class=\"discount_pct\">-41%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">\u00a5 133<\/div><div class=\"discount_final_price\">\u00a5 79<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/460120\/capsule_184x69.jpg?t=1467748566","os_windows":true,"discount":true,"localized":true},"289070":{"name":"Sid Meier\u2019s Civilization\u00ae VI","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 199<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/289070\/capsule_184x69.jpg?t=1467410108","os_windows":true,"coming_soon":true,"localized":true}},
+		[]	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		bundle_component_preview: "1_5_9__412"	} );
+
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+	} );
+	GDynamicStore.OnReady( function() {
+		RenderMoreLikeThisBlock( ["322330","730","304430","427520","274190","253250","428690","364360","489460","313160","460120","289070"] );
+			});
+
+	var g_rgVACBannedSubs = [];
+	// Wrap add to cart function in a confirm check
+	if( g_rgVACBannedSubs.length > 0 )
+	{
+		var fnOldAdd = addToCart;
+		addToCart = function( subid, dedupe )
+		{
+			if( g_rgVACBannedSubs.indexOf( subid ) != -1  )
+				ShowConfirmDialog( "This account is VAC banned", "If you purchase this game, you will be unable to play on VAC secured servers with this account. For more information, see the <a %1$s>Help site<\/a>.".replace('%1$s', 'href="https://help.steampowered.com/en/wizard/HelpWithGame/?appid=454780"')).done( function(){ fnOldAdd( subid, dedupe );  } );
+			else
+				fnOldAdd( subid, dedupe );
+		}
+	}
+
+	
+</script>
+
+<div class="game_page_background game" style="background-image: url('http://cdn.steamstatic.com.8686c.com/steam/apps/454780/page_bg_generated_v6b.jpg?t=1461352079');">
+
+	
+
+		<div id="store_header" class="">
+		<div class="content">
+			<div id="store_controls">
+				<div id="cart_status_data">
+																					<div class="store_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;">
+							<div class="store_header_btn_caps store_header_btn_leftcap"></div>
+							<div class="store_header_btn_caps store_header_btn_rightcap"></div>
+							<a id="cart_link" class="store_header_btn_content" href="http://store.steampowered.com/cart/?snr=1_5_9__12">
+								Cart								(<span id="cart_item_count_value">0</span>)
+							</a>
+						</div>
+									</div>
+			</div>
+							<div id="store_nav_area">
+					<div class="store_nav_leftcap"></div>
+					<div class="store_nav_bg">
+						<div class="store_nav">
+							<a class="tab  " href="http://store.steampowered.com/?snr=1_5_9__12">
+									<span>Featured Items</span>
+							</a>
+															<div class="tab  flyout_tab " id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+									<span class="pulldown">
+										<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=998&page=1&tags=-1">Games</a>
+										<a class="pulldown_mobile" href="#">Games</a>
+										<span></span>
+									</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+																																											<a class="popup_menu_item" href="http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12">
+													Free to Play												</a>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<a class="popup_menu_item" href="http://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12">
+													Early Access												</a>
+																															<a class="popup_menu_item" href="http://store.steampowered.com/freestuff/demos/?snr=1_5_9__12">
+											<span>Demos</span>
+										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&snr=1_5_9__12#sort_by=_ASC&vrsupport=101%2C102&page=1">
+											<span>Virtual Reality</span>
+										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by genre:</div>
+
+																																	<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Action/?snr=1_5_9__12">
+													Action												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__12">
+													Adventure												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Casual/?snr=1_5_9__12">
+													Casual												</a>
+																																																																																						<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__12">
+													Indie												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_5_9__12">
+													Massively Multiplayer												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Racing/?snr=1_5_9__12">
+													Racing												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__12">
+													RPG												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__12">
+													Simulation												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Sports/?snr=1_5_9__12">
+													Sports												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__12">
+													Strategy												</a>
+																					
+										<div class="hr"></div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/tag/browse/?snr=1_5_9__12">
+											See popular tags										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by platform:</div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=mac&page=1&snr=1_5_9__12">
+											Mac OS X										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=linux&page=1&snr=1_5_9__12">
+											SteamOS + Linux										</a>
+									</div>
+								</div>
+							
+							<div class="tab  flyout_tab " id="software_tab" data-flyout="software_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=994&page=1">Software</a>
+									<a class="pulldown_mobile" href="#">Software</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="software_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_5_9__12">
+											Animation & Modeling										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_5_9__12">
+											Audio Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_5_9__12">
+											Design & Illustration										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Education/?snr=1_5_9__12">
+											Education										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Game%20Development/?snr=1_5_9__12">
+											Game Development										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_5_9__12">
+											Photo Editing										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Utilities/?snr=1_5_9__12">
+											Utilities										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Video%20Production/?snr=1_5_9__12">
+											Video Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_5_9__12">
+											Web Publishing										</a>
+									
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="hardware_tab" data-flyout="hardware_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/hardware?snr=1_5_9__12">Hardware</a>
+									<a class="pulldown_mobile" href="#">Hardware</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="hardware_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353370?snr=1_5_9__12">
+										Steam Controller									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353380?snr=1_5_9__12">
+										Steam Link									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/hardware/?snr=1_5_9__12#Machines">
+										Steam Machines									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/358040?snr=1_5_9__12">
+										HTC Vive									</a>
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="videos_tab" data-flyout="videos_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=992&page=1&tags=-1">Videos</a>
+									<a class="pulldown_mobile" href="#">Videos</a>
+									<span></span>
+								</span>
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="videos_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<div class="popup_menu_subheader">Browse by type:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=15339">
+											Documentary										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4242">
+											Episodic										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4700">
+											Movie										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4234">
+											Short										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=12057">
+											Tutorial										</a>
+									
+									<div class="hr"></div>
+									<div class="popup_menu_subheader">Browse by genre:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=19">
+											Action										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4085">
+											Anime										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1719">
+											Comedy										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=5984">
+											Drama										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=150626">
+											Gaming										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1667">
+											Horror										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=3942">
+											Sci-fi										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4064">
+											Thriller										</a>
+									
+								</div>
+							</div>
+
+							<a class="tab  " href="http://store.steampowered.com/news/?snr=1_5_9__12">
+								<span>News</span>
+							</a>
+
+
+							
+								<div class="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" onmouseover="EnsureStoreMenuTagsLoaded( '#foryou_yourtags' );">
+								<span class="pulldown">
+									For You									<span></span>
+								</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+										<a class="popup_menu_item" href="http://store.steampowered.com/recommended/?snr=1_5_9__12">
+											Recently viewed										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/curators/?snr=1_5_9__12">
+											Steam Curators										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/updated/all/?snr=1_5_9__12">
+											Recently updated										</a>
+									</div>
+								</div>
+
+							
+							<div class="search_area">
+								<div id="store_search">
+									<form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
+										<input type="hidden" name="snr" value="1_5_9__12" >
+										<div class="searchbox">
+											<input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off">
+											<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="http://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+										</div>
+									</form>
+								</div>
+								<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
+									<div class="popup_body" style="border-top: none;">
+										<div id="search_suggestion_contents">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="store_nav_rightcap"></div>
+				</div>
+					</div>
+	</div>
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode =window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+					if ( !$HeaderWrapper )
+						$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+					if ( bUseSmallScreenMode )
+						$ResponsiveNavCtn.append( $Header );
+					else
+						$HeaderWrapper.append( $Header );
+
+
+					if ( bUseSmallScreenMode )
+					{
+						$Header.css( 'visibility', 'hidden' );
+						$Header.show();
+						var nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;
+						if ( $Window.scrollTop() < nMenuHeight )
+							$Window.scrollTop( nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );
+
+						$Header.css('visibility', 'visible');
+					}
+				} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');
+
+				EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'CN', 'english', '2089805' );
+			} );
+		</script>
+	<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "6bfdd5e879beed78920e52b1";
+	var g_ServerTime = 1468051587;
+
+	$J( InitMiniprofileHovers );
+
+			GDynamicStore.Init( 0, false, "win" );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ",");format = format.replace( ".00", '' ); return format; };var strNegativeSymbol = '';return strNegativeSymbol + "\u00a5 " + fmt( nValueInCents, bWholeUnitsOnly );} );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 100 );
+	</script>
+	<div class="page_content_ctn" itemscope itemtype="http://schema.org/Product">
+
+		<meta itemprop="image" content="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/capsule_231x87.jpg?t=1461352079">
+					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="CNY">
+				<meta itemprop="price" content="36">
+							</div>
+				<div class="page_title_area game_title_area page_content">
+			<div class="breadcrumbs">
+								<div class="blockbg">
+											<a href="http://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
+																					&gt; <a href="http://store.steampowered.com/genre/Strategy/?snr=1_5_9__205">Strategy Games</a>
+															&gt; <a href="http://store.steampowered.com/app/454780/?snr=1_5_9__205"><span itemprop="name">Atriage</span></a>
+
+				</div>
+				<div style="clear: left;"></div>
+							</div>
+			<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+				<div class="apphub_OtherSiteInfo">
+			<a class="btnv6_blue_hoverfade btn_medium" href="http://steamcommunity.com/app/454780">
+				<span>Community Hub</span>
+			</a>
+		</div>
+		<div class="apphub_AppIcon"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/454780/11bf58954617a3b4a561535268ee7d85f017b9c4.jpg"><div class="overlay"></div></div>
+		<div class="apphub_AppName">Atriage</div>
+		<div style="clear: both"></div>
+	</div>
+
+</div>
+
+		</div>
+		<div style="clear: left;"></div>
+
+		<div class="block">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+				
+				var bShouldUseHTML5 = BCanPlayWebm() || BDoesUserPreferHTML5() || !swfobject.hasFlashPlayerVersion(strRequiredVersion);
+			</script>
+			<div class="game_background_glow">
+			<div class="block_content page_content" id="game_highlights">
+
+				<div class="rightcol">
+					<div class="glance_ctn">
+						<div class="game_header_image_ctn">
+							<img class="game_header_image_full" src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/header.jpg?t=1461352079">
+						</div>
+													<div class="game_description_snippet">
+								Atriage, a turn-based strategy game inspired by Sci-fi space naval battles in 80s Anime where you command a fleet of ten warships against a rival commander. Master four different ship classes, each with their own strengths, weaknesses, and roles in combat in an all-out battle for supremacy.							</div>
+						
+						<div class="glance_ctn_responsive_left">
+															<div class="user_reviews" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
+									<div class="title">User reviews:</div>
+
+																		
+									<div class="user_reviews_summary_row" data-store-tooltip="100% of the 3 user reviews for this game are positive." itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column">Overall:</div>
+										<div class="summary column">
+																					<span class="game_review_summary positive" itemprop="description">Positive</span>
+											<span class="responsive_hidden">
+												(3 reviews)
+											</span>
+											<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 100% of the 3 user reviews for this game are positive.											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="3">
+											<meta itemprop="ratingValue" content="0">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</div>
+
+								</div>
+							
+
+
+															<div class="release_date">
+									Release Date: <span class="date">7 Apr, 2016</span>
+								</div>
+													</div>
+
+						<div class="glance_ctn_responsive_right">
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="glance_tags_ctn popular_tags_ctn">
+										<div class="glance_tags_label">Popular user-defined tags for this product:</div>
+										<div class="glance_tags popular_tags" data-appid="454780">
+											<a href="http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Strategy												</a><a href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Indie												</a><div class="app_tag add_button" onclick="ShowAppTagModal( 454780 )">+</div>
+										</div>
+									</div>
+																													</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div class="leftcol">
+					<div class="highlight_ctn">
+						<div class="highlight_overflow">
+							<div id="highlight_player_area" >
+								<div class="highlight_player_area_spacer">
+									<img src="http://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif">
+								</div>
+																																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256662015" style="display: none;">
+										<script type="text/javascript">
+											if( bShouldUseHTML5 )
+											{
+												document.write('<video class="highlight_player_item highlight_movie" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256662015/movie480.webm?t=1458844541" data-hd-src="http://cdn.steamstatic.com.8686c.com/steam/apps/256662015/movie_max.webm?t=1458844541" poster="http://cdn.steamstatic.com.8686c.com/steam/apps/256662015/movie.293x165.jpg?t=1458844541" id="movie_256662015" preload="none"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></video>');
+												jQuery("#movie_256662015").videoControls();
+											}
+											else
+											{
+												document.write('<div id="movie_256662015" class="highlight_flash_player_notice" style="display: none;"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></div>');
+											}
+										</script>
+									</div>
+								
+																									<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_9c6530a03202bd3a0389c335fa435dddab479c6d.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_9c6530a03202bd3a0389c335fa435dddab479c6d.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_9c6530a03202bd3a0389c335fa435dddab479c6d.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_6c17879127f7a78c54941d12d7dc281f31796b47.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_6c17879127f7a78c54941d12d7dc281f31796b47.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_6c17879127f7a78c54941d12d7dc281f31796b47.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_91a4ef996c02db79b579db697aa5245ea58926d4.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_91a4ef996c02db79b579db697aa5245ea58926d4.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_91a4ef996c02db79b579db697aa5245ea58926d4.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.1920x1080.jpg?t=1461352079" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+								
+																<script type="text/javascript">
+									var rgMovieFlashvars = {
+																					'movie_256662015': {
+												FILENAME: "http://cdn.steamstatic.com.8686c.com/steam/apps/256662015/movieLrg.flv?t=1458844541",
+												MOVIE_NAME: "Atriage+Trailer"
+											 },
+																				'' : ''
+									};
+									var rgCommonFlashVars = {
+											clientLanguage: "english",
+											capsuleSize: "huge",
+											STAGE_WIDTH: 600,
+											STAGE_HEIGHT: 338,
+											AUTO_PLAY: "true",
+											ALLOW_JSPAUSE: "true",
+											TRACK_MUTE: "true",
+											CHECKBOX_AUTOPLAY_SHOW: "true",
+											CHECKBOX_AUTOPLAY_TEXT: "Autoplay+videos"
+									};
+																		var rgScreenshotURLs = {"ss_9c6530a03202bd3a0389c335fa435dddab479c6d.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_9c6530a03202bd3a0389c335fa435dddab479c6d_SIZE_.jpg?t=1461352079","ss_6c17879127f7a78c54941d12d7dc281f31796b47.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_6c17879127f7a78c54941d12d7dc281f31796b47_SIZE_.jpg?t=1461352079","ss_91a4ef996c02db79b579db697aa5245ea58926d4.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_91a4ef996c02db79b579db697aa5245ea58926d4_SIZE_.jpg?t=1461352079","ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0_SIZE_.jpg?t=1461352079","ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f_SIZE_.jpg?t=1461352079","ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/454780\/ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0_SIZE_.jpg?t=1461352079"};
+								</script>
+							</div>
+														<div id="highlight_strip">
+								<div id="highlight_strip_scroll" style="width: 842px;">
+									<div class="highlight_selector"></div>
+
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256662015" >
+											<img class="movie_thumb" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256662015/movie.184x123.jpg?t=1458844541">
+											<div class="highlight_movie_marker"></div>
+										</div>
+									
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_9c6530a03202bd3a0389c335fa435dddab479c6d.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_9c6530a03202bd3a0389c335fa435dddab479c6d.116x65.jpg?t=1461352079">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_6c17879127f7a78c54941d12d7dc281f31796b47.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_6c17879127f7a78c54941d12d7dc281f31796b47.116x65.jpg?t=1461352079">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_91a4ef996c02db79b579db697aa5245ea58926d4.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_91a4ef996c02db79b579db697aa5245ea58926d4.116x65.jpg?t=1461352079">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_b30a4bde88ee46e5269cf07f144d2da83c5a20d0.116x65.jpg?t=1461352079">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_4de863e09774332f2f1661d47f4fc81f2b48ff2f.116x65.jpg?t=1461352079">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/454780/ss_5b6b467b82b596bfc4e65edf9310a8151bff12e0.116x65.jpg?t=1461352079">
+										</div>
+									
+																	</div>
+							</div>
+															<div class="slider_ctn">
+									<div id="highlight_slider_left" class="slider_left"><span></span></div>
+									<div class="slider" id="highlight_slider" >
+										<div class="slider_bg">
+										</div>
+										<div class="handle">
+										</div>
+									</div>
+									<div id="highlight_slider_right" class="slider_right"><span></span></div>
+								</div>
+								<script type="text/javascript">
+									$J( function() {
+										var player = new HighlightPlayer( {
+											elemPlayerArea: 'highlight_player_area',
+											elemStrip: 'highlight_strip',
+											elemStripScroll: 'highlight_strip_scroll',
+											elemSlider: 'highlight_slider',
+											rgMovieFlashvars: rgMovieFlashvars,
+											rgScreenshotURLs: rgScreenshotURLs,
+											rgDefaultMovieFlashvars: rgCommonFlashVars,
+											bUseHTMLPlayer: bShouldUseHTML5
+										} );
+										$J('#highlight_slider_right').click( function() {
+											player.Transition( true );
+										});
+										$J('#highlight_slider_left').click( function() {
+											player.TransitionBack( true );
+										});
+
+										if( window.location.hash )
+										{
+											var ssid = window.location.hash.substr(1);
+											player.HighlightScreenshot(ssid);
+										}
+									} );
+								</script>
+													</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+			
+			<div class="queue_overflow_ctn">
+									<div class="queue_ctn">
+											<div class="queue_actions_ctn">
+							<p><a href="http://store.steampowered.com/login/?redir=app%2F454780">Sign in</a> to add this item to your wishlist, follow it, or mark it as not interested</p>
+						</div>
+					</div>
+							</div>
+
+			
+			
+		</div>
+
+		
+			<div class="page_content">
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data">
+					<div id="responsive_apppage_details_left_ctn"></div>
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+					
+					
+
+					
+
+					
+
+											<div class="block responsive_apppage_details_left" id="category_block">
+
+							<div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423">Single-player</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=1&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_multiPlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=1&snr=1_5_9__423">Multi-player</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=27&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_multiPlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=27&snr=1_5_9__423">Cross-Platform Multiplayer</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=22&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_achievements.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=22&snr=1_5_9__423">Steam Achievements</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=29&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_cards.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=29&snr=1_5_9__423">Steam Trading Cards</a></div>
+							
+							
+													</div>
+																					<div class="block responsive_apppage_details_right">
+							<div class="block_title">
+								Languages:
+							</div>
+
+							
+<table  class="game_language_options" cellpadding="0" cellspacing="0">
+	<tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">Interface</th>
+		<th class="checkcol">Full Audio</th>
+		<th class="checkcol">Subtitles</th>
+	</tr>
+
+			<tr style="" class="">
+			<td style="width: 94px; text-align: left" class="ellipsis">
+				English			</td>
+							<td class="checkcol">
+					 <img src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png"/> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+	</table>
+
+						</div>
+					
+					
+											<div class="block responsive_apppage_details_right" id="achievement_block">
+							<div class="block_title">
+								Includes 24 Steam Achievements							</div>
+							<div class="communitylink_achievement_images">
+																	<div class="communitylink_achievement">
+										<img class="communitylink_achievement" title="Master of Fleets" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/454780/829be5ffc27bd83e4c5dbeba1848d23dbfefa623.jpg">
+									</div>
+																		<div class="communitylink_achievement">
+										<img class="communitylink_achievement" title="Cadet Up" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/454780/f19ce4706b8ad1a50b89f3aea9767cbcdf01d009.jpg">
+									</div>
+																		<div class="communitylink_achievement">
+										<img class="communitylink_achievement" title="First Promotion!" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/454780/ea29a555f1ec3f55fbd8b3731c28e0c2650ab7dd.jpg">
+									</div>
+																										<a class="communitylink_achievement communitylink_achivement_plusmore" href="http://steamcommunity.com/stats/454780/achievements">
+										View<br>all 24									</a>
+																<div style="clear: left;"></div>
+							</div>
+						</div>
+					
+
+					<div class="block responsive_apppage_details_left game_details underlined_links">
+						<div class="block_content">
+							<div class="block_content_inner">
+								<div class="details_block">
+	<b>Title:</b> Atriage<br>
+
+			<b>Genre:</b> <a href="http://store.steampowered.com/genre/Indie/?snr=1_5_9__408">Indie</a>, <a href="http://store.steampowered.com/genre/Strategy/?snr=1_5_9__408">Strategy</a><br>
+	
+			<b>Developer:</b>
+								<a href="http://store.steampowered.com/search/?developer=Batu%20Games%20LLC&snr=1_5_9__408">Batu Games LLC</a>
+				<br>
+	
+			<b>Publisher:</b>
+		<a href="http://store.steampowered.com/search/?publisher=Batu Games LLC">Batu Games LLC</a>		<br>
+	
+	
+			<b>Release Date:</b> 7 Apr, 2016<br>
+	
+	</div>
+
+
+<div class="details_block">
+	<br>
+
+			<a class="linkbar" href="http://www.batu-games.com/land/atriage" target="_blank" rel="noreferrer">
+			Visit the website <img src="http://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+		</a>
+	
+	
+	
+	
+	
+			<a class="linkbar" href="http://store.steampowered.com/news/?appids=454780">
+			View update history		</a>
+		<a class="linkbar" href="http://store.steampowered.com/news/?appids=454780">
+			Read related news		</a>
+	
+			<a class="linkbar" href="http://steamcommunity.com/app/454780/discussions/">
+			View discussions		</a>
+	
+		<a class="linkbar" href="http://steamcommunity.com/actions/Search?T=ClanAccount&K=Atriage">
+		Find Community Groups	</a>
+</div>							</div>
+						</div>
+											</div>
+
+					<div class="block responsive_apppage_details_left">
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowShareDialog(); return false;"><span>Share</span></a>
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(454780); return false;"><span>Embed</span></a>
+						<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(454780)"><span data-store-tooltip="Report this Product"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+					</div>
+
+					
+					
+					
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column">
+
+					
+										<div id="game_area_purchase">
+
+																			
+												
+
+						
+
+												
+												
+
+
+						<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+<div class="game_area_purchase_game_wrapper">
+		<div class="game_area_purchase_game">
+		<form name="add_to_cart_98295" action="http://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="6bfdd5e879beed78920e52b1">
+			<input type="hidden" name="subid" value="98295">
+		</form>
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img mac"></span><span class="platform_img linux"></span><span class="platform_img steamplay"></span></div>
+		<h1>Buy Atriage</h1>
+								
+		<div class="game_purchase_action">
+						<div class="game_purchase_action_bg">
+															<div class="game_purchase_price price">
+							¥ 36						</div>
+													<div class="btn_addtocart">
+
+					 
+												<a class="btnv6_green_white_innerfade btn_medium" href="javascript:addToCart(98295);">
+							<span>Add to Cart</span>
+						</a>
+											
+				</div>
+							</div>
+		</div>
+	</div>
+
+		
+	</div>
+
+					</div>
+					<!-- game_area_purchase -->
+
+					
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+					
+											<!-- Announcements block -->
+						<div class="early_access_announcements">
+							<h2>
+								Recent updates							<span class="note">
+								<a href="http://steamcommunity.com/gid/[g:1:21223502]/announcements/">View all <em>(2)</em></a>
+							</span>
+						</h2>
+
+													<div class="post ">
+								<div class="container">
+									<h2>22 April</h2>
+									<h1><a href="http://steamcommunity.com/gid/[g:1:21223502]/announcements/detail/603856211380332426">Atriage is Available Now on Mac and Linux!</a></h1>
+									<p>Thanks all for the support over the couple of weeks after launch, and as promised, Atriage is now for Mac and Linux! You can battle against other Commanders across multiple platforms in the Online Mode, or if you choose to, command your fleet against an enemy that will provide quite a challenge.<br><br>The update also comes with a patch that will fix a couple of bugs, mainly directed at attacks from the Kaizer class ship and UI improvements. <br><br>Thanks to all of you for the amazing support and have fun in battle!</p>
+								</div>
+								<div class="hr"></div>
+								<span class="comments">0 comments</span>
+								<span class="more"><a href="http://steamcommunity.com/gid/[g:1:21223502]/announcements/detail/603856211380332426">Read more</a></span>
+							</div>
+
+															<div class="divider"></div>
+																				<div class="post ">
+								<div class="container">
+									<h2>30 March</h2>
+									<h1><a href="http://steamcommunity.com/gid/[g:1:21223502]/announcements/detail/611735617413239307">Moving the launch date to April 7th</a></h1>
+									<p>Hey guys. Thank you for showing interest in our game and for supporting us. We can assure you that we've been working around the clock to get the game released.<br><br>Even so, we regret to inform you that <b>we'll be moving the Release Date for the game to next week (Thursday, April 7)</b>. The decision was made due to a misunderstanding with the Steam certification process. Because of this, we would need to wait for Steam to review the game again, which will not happen by tomorrow. The extra week would give us, and Steam, enough time to complete the process without any further issues.<br><br>This turn of events took us by surprise, but we'll continue working hard to make sure the game is released next week. We hope you guys understand.<br><br>Thank you once again for your support and we'll keep you posted.</p>
+								</div>
+								<div class="hr"></div>
+								<span class="comments">0 comments</span>
+								<span class="more"><a href="http://steamcommunity.com/gid/[g:1:21223502]/announcements/detail/611735617413239307">Read more</a></span>
+							</div>
+
+																		</div>
+				
+				
+									<div class="game_page_autocollapse" style="max-height: 450px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>About This Game</h2>
+							Engage in a battle of wits with <strong>Atriage</strong>, a turn-based strategy game crafted in the spirit of classic board games. Inspired by Sci-fi space naval battles in 80s Anime, command a fleet of ten warships against a rival commander in an all-out battle for supremacy. Outwit your opponent by mastering four different ship classes, each with their own strengths, weaknesses, and roles in combat. Execute your strategy on a randomly generated playfield, opening new possible tactics every time you play. Take advantage of variations in your ship’s endurance parameters to withstand your rival’s onslaught, but watch out, if your battle strength reaches zero, it’s Game Over.<br><br>Features<br><ul class="bb_ul"><li>Intense tactical fleet combat where you must <strong>strategize</strong> within an octagonal-shaped playfield rendered across six different beautiful space backgrounds sporting randomly generated obstacles for endless variations of play.<br></li><li>Dominate the playfield with four versatile, fully animated space <strong>warship classes</strong>, each with their own sets of unique attacks, movement patterns, detailed textures, and customizable colors.<br></li><li>Master your fleet by taking on rival commanders in <strong>Offline Mode</strong>, featuring three distinct AI settings for players of different skill levels.<br></li><li>Challenge your friends across the web with <strong>Online Mode</strong> and find out who’s the more skilled commander. Featuring a fully implemented lobby and chat services for an engaging online experience.<br></li><li>Test your prowess with <strong>Challenge Mode</strong>, featuring nine compelling puzzles and game variations only skilled tacticians can master.<br></li><li>Rise above the ranks as you gain experience from every battle on any mode of play. Level up across 51 military ranks and show the world your prestige in the game of <strong>Atriage!</strong></li></ul>						</div>
+					</div>
+				
+				
+					<div class="game_page_autocollapse sys_req" style="max-height: 220px;">
+		<h2>System Requirements</h2>
+					<div class="sysreq_tabs">
+									<div class="sysreq_tab active" data-os="win">
+						Windows					</div>
+									<div class="sysreq_tab " data-os="mac">
+						Mac OS X					</div>
+									<div class="sysreq_tab " data-os="linux">
+						SteamOS + Linux					</div>
+								<div style="clear: left;"></div>
+			</div>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows XP SP2+, 7, 8, 10<br></li><li><strong>Processor:</strong> 32-bit Dual Core 2.0 Ghz<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> Intel HD Graphics 4000<br></li><li><strong>DirectX:</strong> Version 9.0<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 7, 8, 10<br></li><li><strong>Processor:</strong> 64-bit Dual Core 2.5 Ghz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> 1 GB Dedicated Video Card<br></li><li><strong>DirectX:</strong> Version 11<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+				</div>
+							<div class="game_area_sys_req sysreq_content " data-os="mac">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Mac OS X 10.8+<br></li><li><strong>Processor:</strong> 32-bit Dual Core 2.0 Ghz<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> Intel HD Graphics 4000<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Mac OS X 10.8+<br></li><li><strong>Processor:</strong> 64-bit Dual Core 2.5 Ghz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> 1 GB Dedicated Video Card<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+				</div>
+							<div class="game_area_sys_req sysreq_content " data-os="linux">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu 12.04+ and 12.10+ LTS<br></li><li><strong>Processor:</strong> 32-bit Dual Core 2.0 Ghz<br></li><li><strong>Memory:</strong> 2 GB RAM<br></li><li><strong>Graphics:</strong> Intel HD Graphics 4000<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu 12.04+ and 12.10+ LTS<br></li><li><strong>Processor:</strong> 64-bit Dual Core 2.5 Ghz<br></li><li><strong>Memory:</strong> 4 GB RAM<br></li><li><strong>Graphics:</strong> 1 GB Dedicated Video Card<br></li><li><strong>Storage:</strong> 2 GB available space<br></li><li><strong>Sound Card:</strong> Any</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+				</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+				
+				
+														<div class="block" id="recommended_block">
+						<div class="block_header">
+							<div class="right">
+								<a href="http://store.steampowered.com/recommended/morelike/app/454780/?snr=1_5_9__300">See all</a>
+							</div>
+							<h4>More like this</h4>
+						</div>
+						<div class="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad" id="recommended_block_content">
+						</div>
+					</div>
+									
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data"></div>
+			</div>
+
+			<div style="clear: both;"></div>
+				
+			<div id="app_reviews_hash" class="app_reviews_area">
+				<script>
+	jQuery( document ).ready(function( $ ) {
+		CollapseLongReviews();
+	});
+</script>
+	<div class="user_reviews_header no_bottom_margin">
+		Customer reviews
+		<div class="user_reviews_updated">
+			Customer Review system updated! <a href="http://store.steampowered.com/news/21695/">Learn more</a>		</div>
+		
+	</div>
+	<div class="user_reviews_filter_bar">
+		<span class="user_reviews_filter_text">Filter:</span>
+		<div class="user_reviews_tab active" id="ReviewsTab_summary">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'summary', 9223372036854775807, 'english' );">
+				<span>Summary</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_all">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'all', 9223372036854775807, 'english' );">
+				<span>Most Helpful</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_recent">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'recent', 9223372036854775807, 'english' );">
+				<span>Recent</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_positive">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'positive', 9223372036854775807, 'english' );">
+									<span>Positive </span> <span class="user_reviews_count">(3)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_negative">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'negative', 9223372036854775807, 'english' );">
+									<span>Negative </span> <span class="user_reviews_count">(0)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_funny">
+			<a href="javascript:void(0)" onclick="SelectReviews( 454780, 'funny', 9223372036854775807, 'english' );">
+				<span>Funny</span>
+			</a>
+		</div>
+		<div style="clear: left;"></div>
+	</div>
+
+	<div id="LoadingMoreReviewsall" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsrecent" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewspositive" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsnegative" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsfunny" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+
+	<div id="Reviews_positive" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_negative" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_recent" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_funny" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_all" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_summary" class="user_reviews_container">
+		<div id="Reviewssummary0">
+			<div class="user_reviews_summary_bar">
+													<div class="summary_section" data-store-tooltip="100% of the 3 user reviews for this game are positive.">
+						<div class="title">Overall:</div>
+						<span class="game_review_summary positive">Positive</span>
+						<span>(3 reviews)</span>
+					</div>
+							</div>
+
+			<div class="rightcol recent_reviews">
+									<div class="user_reviews_sub_header">Recently Posted</div>
+					
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23751830">
+
+			
+				<a href="http://steamcommunity.com/id/fri_freeman/recommended/454780/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="65234628">fri_freeman</span></div>
+											<div class="hours ellipsis">( 1.5 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 24 June										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's basically CHESS! IN SPACE!<br><br>You can imagine the gameplay. There are set 4 classes of ships and each ships move different and attack differently, and you fight in a 2 dimensional board with random obstacle.<br><br>My feedback for now is that I wish there's more options on the visual (like for example to reduce the thickness of the board lines).<br><br>Also, I guess I must reiterate again. It's Chess In Space with a bit of random elements. Gurgeh would be proud. So there aren't any campaign or storyline or upgrades or fleet building or such. I guess I should recommend it at discount for those who aren't really into chess.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23751830', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23751830' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23751830"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23751830' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23751830"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23751830', 1, 'RecommendationVoteTagBtnrecent_short23751830_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23751830_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22466760">
+
+			
+				<a href="http://steamcommunity.com/id/Steamified/recommended/454780/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="101966371">Warwick J.</span></div>
+											<div class="hours ellipsis">( 6.5 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 16 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I write this feature a week and a half after the Batu Games's Steam debut of Atriage. The score as it currently stands is 1-0. One Steam review. One. Many worse games garner significantly greater attention from the faithful players on Steam. If it were just the lack of trading cards I could understand but I fear that this game has been hidden. I fear it may have been hidden among all of the VR hype upon its release because this game deserves your attention.<br><br>Atriage is a turn-based strategy game that has been based upon classic board games and brought to life as a video game. The player commands a fleet of warships in order to defeat their opponent. It feels a little like an advanced version of Battleship but the gameplay is absolutely fantastic. The player is tasked with defeating an opposing commander by forcing them to lose BSP (Battle Strength Points) with both starting at 12 and the winner determined by who gets their opponent to zero first. It comes down to a battle of employing the best strategy. Each player starts with ten ships from four different classes with each of the four having their ow different movement and attack patterns with each having unique strengths and weaknesses. Each ship also comes equipped with a shield. <br><br>The game board comprises 84 accessible spaces with 5 obstacles appearing at the start of battle to hinder both players. These obstacles can often prove the difference in a battle and it is up to the player to determine how to best utilize these obstacles as a strength in their gameplay. Smarter players will find them to be a real asset rather than an obstacle.<br><br>You don't necessarily have to destroy your opponent's ships in order to win the game. Yes, it does help but if you damage your opponent's ships you'll still get that point. There are relatively easy ways for you to score early points in the game such as using Silverwind and Typhoon class ships to do damage. In fact, in the game's tips there is a suggestion that you don't want to completely destroy enemy ships early but rather put them into a position where they can be destroyed and then retreat. Another important tip to consider is that you should be using multiple ships in combination rather than employing strategies for each ship that isn't working with any other ship. It's a complex learning process but once you get to grips with the game will become second nature. <br><br>Arguably one of the game's weaknesses, although the game has been designed that way, is that early ascendancy often leads to a snowballing effect. Games can and often are determined by the earliest actions in the game.  While a victory is not guaranteed after a good start if you continue to employ intelligent strategy you will find that this happens a little too often with the game becoming easier. Another weakness that I discovered was with the computer's AI. This is particularly pertinent at lower levels where the computer will move its ships into spaces where you can attack it without fear of retaliation because its ship will still not be in a position to attack yours. I have yet to play the online multiplayer mode because sadly there has never been any matches to join in the numerous times that I have attempted to find one. I have also created my own rooms without any luck of finding an opponent.<br><br>Atriage does have Steam achievements and is a very solid game in need of a player base. I recommend it for those of you who are looking for a new turn-based strategy experience. Hopefully the community picks up for it. However, it may take some bundling for it to happen.<br><br>For awesome giveaways and more gaming stuff check out <a class="bb_link" href="https://steamcommunity.com/linkfilter/?url=http://www.steamified.com/" target="_blank" rel="noreferrer" >http://www.steamified.com/</a><br>Join in the fun on our <a class="bb_link" href="http://steamcommunity.com/groups/Steamified" target="_blank" rel="noreferrer" >Steam Group</a>					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22466760', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22466760' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22466760"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22466760' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22466760"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22466760', 1, 'RecommendationVoteTagBtnrecent_short22466760_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22466760_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22295616">
+
+			
+				<a href="http://steamcommunity.com/id/retrorex/recommended/454780/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="52574565">RetroRex</span></div>
+											<div class="hours ellipsis">( 0.8 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 7 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I have seen kickstarters asking for 10 of thousands or more for similar types of turn based ship formation games but they fail in the execution or never come to be. Now, this game pulls it off, straight forward turn based strategy game without any fillers or unnecessaty complexity.<br><br>I recommend this game because it is easy to pick up yet shares a similar mastery approach like chess. You control a fleet on a tiled board against another fleet. Each ship has a move pattern and attack pattern, some stronger others weaker. I played a game session for over 30 minutes because I took my time before each move and in the process learned different tricks watching the enemy AI in action. Learned a lot from it and will try to pull those new moves on my next session. It was fun, tactical, straight forward and has a arcade touch to it. Seems the game has online capabilities, so it will be interesting to play against a human contender.<br><br>The style of the ships remind me of Ikaruga and radiant silvergun. The UX is straight to the point, no complex windows all well desgined and simplistic. All you need is fast to get.<br><br>The mood of the game for some reason reminds me of FTL, probably the soundtrack, or just the feeling of the whole game reminds me of FTL. And that is a good thing.<br><br>I do want to point out, as in today, release day, I noticed some bugs when it comes to selecting the tiles you want to move to. I noticed during your turn transition if you click on a enemy for some reason it shows the enemy move pattern and attack pattern as if you were able to control it, yet can't. I have seen this type of bugs before in this type of games and the team mentioned they are in process of fixing bugs, so that is good they are responsive.<br><br>Eveytime you play is not a wasted game (even offline), you earn experience, until now I haven't leveled up but I will check what improvement I do get for my fleet.<br><br>Besides the  ship selection bug (which I believe is being addressed), I do recommend to make the ship animation cut scenes a bit shorter to keep the momentum. This means each ship teleportation and attack can be a bit faster, and that might help the pace to keep it chess like.<br><br>Overall is a good game with a lot of potential, and quality, it will keep improving.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22295616', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22295616' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22295616"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22295616' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22295616"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22295616', 1, 'RecommendationVoteTagBtnrecent_short22295616_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22295616_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+				</div>
+
+			<div class="leftcol">
+										<div class="user_reviews_sub_header">Most Helpful Reviews&nbsp;
+							<span class="user_reviews_most_helpful_days">Overall</span>
+						</div>
+					
+			<div class="review_box">
+							<div class="header">
+					15 of 16 people (94%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary22295616">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/retrorex/">
+							<div class="playerAvatar in-game" data-miniprofile="52574565">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a9/a9e54df1ba742646dc9d119c4e56d3f5dead23ab.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a9/a9e54df1ba742646dc9d119c4e56d3f5dead23ab.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a9/a9e54df1ba742646dc9d119c4e56d3f5dead23ab_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/retrorex/" data-miniprofile="52574565">RetroRex</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/retrorex/games/?tab=all">162 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/retrorex/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/retrorex/recommended/454780/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">0.8 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 7 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I have seen kickstarters asking for 10 of thousands or more for similar types of turn based ship formation games but they fail in the execution or never come to be. Now, this game pulls it off, straight forward turn based strategy game without any fillers or unnecessaty complexity.<br><br>I recommend this game because it is easy to pick up yet shares a similar mastery approach like chess. You control a fleet on a tiled board against another fleet. Each ship has a move pattern and attack pattern, some stronger others weaker. I played a game session for over 30 minutes because I took my time before each move and in the process learned different tricks watching the enemy AI in action. Learned a lot from it and will try to pull those new moves on my next session. It was fun, tactical, straight forward and has a arcade touch to it. Seems the game has online capabilities, so it will be interesting to play against a human contender.<br><br>The style of the ships remind me of Ikaruga and radiant silvergun. The UX is straight to the point, no complex windows all well desgined and simplistic. All you need is fast to get.<br><br>The mood of the game for some reason reminds me of FTL, probably the soundtrack, or just the feeling of the whole game reminds me of FTL. And that is a good thing.<br><br>I do want to point out, as in today, release day, I noticed some bugs when it comes to selecting the tiles you want to move to. I noticed during your turn transition if you click on a enemy for some reason it shows the enemy move pattern and attack pattern as if you were able to control it, yet can't. I have seen this type of bugs before in this type of games and the team mentioned they are in process of fixing bugs, so that is good they are responsive.<br><br>Eveytime you play is not a wasted game (even offline), you earn experience, until now I haven't leveled up but I will check what improvement I do get for my fleet.<br><br>Besides the  ship selection bug (which I believe is being addressed), I do recommend to make the ship animation cut scenes a bit shorter to keep the momentum. This means each ship teleportation and attack can be a bit faster, and that might help the pace to keep it chess like.<br><br>Overall is a good game with a lot of potential, and quality, it will keep improving.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22295616', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22295616' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary22295616"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22295616' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary22295616"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22295616', 1, 'RecommendationVoteTagBtnsummary22295616_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary22295616_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					8 of 10 people (80%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary22466760">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/Steamified/">
+							<div class="playerAvatar in-game" data-miniprofile="101966371">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5c/5c801d689942885479eaa116eebddef86273df2f.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5c/5c801d689942885479eaa116eebddef86273df2f.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5c/5c801d689942885479eaa116eebddef86273df2f_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/Steamified/" data-miniprofile="101966371">Warwick J.</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/Steamified/games/?tab=all">4,091 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/Steamified/recommended/">207 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/Steamified/recommended/454780/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">6.5 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 16 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I write this feature a week and a half after the Batu Games's Steam debut of Atriage. The score as it currently stands is 1-0. One Steam review. One. Many worse games garner significantly greater attention from the faithful players on Steam. If it were just the lack of trading cards I could understand but I fear that this game has been hidden. I fear it may have been hidden among all of the VR hype upon its release because this game deserves your attention.<br><br>Atriage is a turn-based strategy game that has been based upon classic board games and brought to life as a video game. The player commands a fleet of warships in order to defeat their opponent. It feels a little like an advanced version of Battleship but the gameplay is absolutely fantastic. The player is tasked with defeating an opposing commander by forcing them to lose BSP (Battle Strength Points) with both starting at 12 and the winner determined by who gets their opponent to zero first. It comes down to a battle of employing the best strategy. Each player starts with ten ships from four different classes with each of the four having their ow different movement and attack patterns with each having unique strengths and weaknesses. Each ship also comes equipped with a shield. <br><br>The game board comprises 84 accessible spaces with 5 obstacles appearing at the start of battle to hinder both players. These obstacles can often prove the difference in a battle and it is up to the player to determine how to best utilize these obstacles as a strength in their gameplay. Smarter players will find them to be a real asset rather than an obstacle.<br><br>You don't necessarily have to destroy your opponent's ships in order to win the game. Yes, it does help but if you damage your opponent's ships you'll still get that point. There are relatively easy ways for you to score early points in the game such as using Silverwind and Typhoon class ships to do damage. In fact, in the game's tips there is a suggestion that you don't want to completely destroy enemy ships early but rather put them into a position where they can be destroyed and then retreat. Another important tip to consider is that you should be using multiple ships in combination rather than employing strategies for each ship that isn't working with any other ship. It's a complex learning process but once you get to grips with the game will become second nature. <br><br>Arguably one of the game's weaknesses, although the game has been designed that way, is that early ascendancy often leads to a snowballing effect. Games can and often are determined by the earliest actions in the game.  While a victory is not guaranteed after a good start if you continue to employ intelligent strategy you will find that this happens a little too often with the game becoming easier. Another weakness that I discovered was with the computer's AI. This is particularly pertinent at lower levels where the computer will move its ships into spaces where you can attack it without fear of retaliation because its ship will still not be in a position to attack yours. I have yet to play the online multiplayer mode because sadly there has never been any matches to join in the numerous times that I have attempted to find one. I have also created my own rooms without any luck of finding an opponent.<br><br>Atriage does have Steam achievements and is a very solid game in need of a player base. I recommend it for those of you who are looking for a new turn-based strategy experience. Hopefully the community picks up for it. However, it may take some bundling for it to happen.<br><br>For awesome giveaways and more gaming stuff check out <a class="bb_link" href="https://steamcommunity.com/linkfilter/?url=http://www.steamified.com/" target="_blank" rel="noreferrer" >http://www.steamified.com/</a><br>Join in the fun on our <a class="bb_link" href="http://steamcommunity.com/groups/Steamified" target="_blank" rel="noreferrer" >Steam Group</a>					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22466760', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22466760' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary22466760"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22466760' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary22466760"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22466760', 1, 'RecommendationVoteTagBtnsummary22466760_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary22466760_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+						
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary23751830">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/fri_freeman/">
+							<div class="playerAvatar online" data-miniprofile="65234628">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/cd/cdad82f705b3ba49ac77db1f734b88280a23ad36.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/cd/cdad82f705b3ba49ac77db1f734b88280a23ad36.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/cd/cdad82f705b3ba49ac77db1f734b88280a23ad36_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/fri_freeman/" data-miniprofile="65234628">fri_freeman</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/fri_freeman/games/?tab=all">156 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/fri_freeman/recommended/">36 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/fri_freeman/recommended/454780/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">1.5 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 24 June										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's basically CHESS! IN SPACE!<br><br>You can imagine the gameplay. There are set 4 classes of ships and each ships move different and attack differently, and you fight in a 2 dimensional board with random obstacle.<br><br>My feedback for now is that I wish there's more options on the visual (like for example to reduce the thickness of the board lines).<br><br>Also, I guess I must reiterate again. It's Chess In Space with a bit of random elements. Gurgeh would be proud. So there aren't any campaign or storyline or upgrades or fleet building or such. I guess I should recommend it at discount for those who aren't really into chess.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23751830', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23751830' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary23751830"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23751830' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary23751830"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23751830', 1, 'RecommendationVoteTagBtnsummary23751830_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary23751830_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+						<div id="ViewAllReviewsall" class="view_all_reviews_btn">
+						<a href="http://steamcommunity.com/app/454780/reviews/?browsefilter=toprated&snr=1_5_9_">Browse all 3 reviews</a>
+					</div>
+							</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	<div style="clear: left"></div>
+				</div>
+		</div>
+
+	</div>
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal"  style="display: none">
+	<div id="widget_create">
+		<p>You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam.</p>
+
+				<p class="small">Enter up to 375 characters to add a description to your widget:</p>
+		<textarea name="w_text" placeholder="Atriage, a turn-based strategy game inspired by Sci-fi space naval battles in 80s Anime where you command a fleet of ten warships against a rival commander. Master four different ship classes, each with their own strengths, weaknesses, and roles in combat in an all-out battle for supremacy." maxlength="375"></textarea>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="#" onclick="CreateWidget(454780); return false;"><span>Create widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">Copy and paste the HTML below into your website to make the above widget appear</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+<div id="ShareModal" style="display: none">
+	<div class="share">Share:&nbsp; <a href="http://store.steampowered.com/share/facebook/app/454780" target="_blank" rel="noreferrer" title="Share on Facebook"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/facebook.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/twitter/app/454780" target="_blank" rel="noreferrer" title="Share on Twitter"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/twitter.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/reddit/app/454780" target="_blank" rel="noreferrer" title="Share on Reddit"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/reddit.gif"></a></div></div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>Popular user-defined tags for this product:<span class="app_tag_modal_tooltip" data-store-tooltip="These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag's popularity on this product.">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>Sign in</h2>
+					<p>Sign in to add your own tags to this product.</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/454780">
+							<span>Sign in</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 454780,
+				[{"tagid":9,"name":"Strategy","count":23,"browseable":true},{"tagid":492,"name":"Indie","count":20,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null			);
+		});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div id="footer_spacer" class=""></div>
+<div id="footer"  class="">
+<div class="footer_content">
+	<div class="rule"></div>
+
+	<div id="footer_nav">
+
+		
+		
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_steam_pulldown">
+				<span>ABOUT STEAM</span>
+			</span>
+		<div class="popup_block_new" id="footer_steam_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/about/?snr=1_44_44__22">
+					What is Steam?				</a>
+				<!--
+					<a class="popup_menu_item" href="">
+						Download Steam now					</a>
+					-->
+				<a class="popup_menu_item" href="https://support.steampowered.com/kb_article.php?p_faqid=549#gifts" target="_blank" rel="noreferrer">
+					Gifting on Steam				</a>
+				<a class="popup_menu_item" href="https://steamcommunity.com/?snr=1_44_44__22">
+					The Steam Community				</a>
+			</div>
+					</div>
+	
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_valve_pulldown">
+				<span>ABOUT VALVE</span>
+			</span>
+		<div class="popup_block_new" id="footer_valve_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">
+					About Valve				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">
+					Business Solutions				</a>
+				<a class="popup_menu_item" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">
+					Steamworks				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">
+					Jobs				</a>
+			</div>
+		</div>
+			
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_help_pulldown">
+				<span>HELP</span>
+			</span>
+		<div class="popup_block_new" id="footer_help_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="https://help.steampowered.com/en/?snr=1_44_44__23">
+					Support				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/forums/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Forums				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/stats/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Stats				</a>
+			</div>
+					</div>
+
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_feeds_pulldown">
+				<span>NEWS FEEDS</span>
+			</span>
+		<div class="popup_block_new" id="footer_feeds_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/news.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Steam News				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/newreleases.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Game Releases				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/daily_deals.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Daily Deals				</a>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+
+		<script type="text/javascript">
+			RegisterFlyout( 'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );
+			RegisterFlyout( 'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );
+			RegisterFlyout( 'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );
+			RegisterFlyout( 'footer_help_pulldown', 'footer_help_dropdown', null, null, true );
+			RegisterFlyout( 'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );
+		</script>
+	</div>
+
+	<br>
+
+    <div class="rule"></div>
+    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png" alt="Valve Software" border="0" /></a></div>
+    <div id="footer_text">
+        <div>&copy; 2016 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+        <div>VAT included in all prices where applicable.&nbsp;&nbsp;
+
+            <a href="http://store.steampowered.com/privacy_agreement/" target="_blank" rel="noreferrer">Privacy Policy</a>
+            &nbsp; | &nbsp;
+            <a href="http://www.valvesoftware.com/legal.htm" target="_blank" rel="noreferrer">Legal</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/steam_refunds/" target="_blank" rel="noreferrer">Refunds</a>
+
+        </div>
+					<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>View mobile website</span>
+				</div>
+			</div>
+		    </div>
+
+
+
+    <div style="clear: left;"></div>
+
+    <div class="rule"></div>
+
+    <div class="valve_links">
+        <a href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">About Valve</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">Business Solutions</a>
+        &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">Jobs</a>
+        &nbsp; | &nbsp;<a href="http://steamcommunity.com/greenlight" target="_blank" rel="noreferrer">Steam Distribution</a>
+		&nbsp; | &nbsp;<a href="http://www.facebook.com/Steam" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+		&nbsp; | &nbsp;<a href="http://twitter.com/steam_games" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam_games</a>
+    </div>
+
+</div>
+</div>
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>

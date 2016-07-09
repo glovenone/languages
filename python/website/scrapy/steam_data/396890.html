@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html class=" responsive">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Gridworld on Steam</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link href="http://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=ful_LJT3NQYl" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=dLk1hPsnaTys" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=3YEnHE2flOXO" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/store.css?v=5x9rx7e-ZpBU" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=i8VmpSwJI7WE" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=nBeZ_zHnCoNj" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/game.css?v=EhBgu-6aEzbh" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=yn13AaQYGiow" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=J9fKOAhzi8Si" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=1gbp7tFqaQum" rel="stylesheet" type="text/css" >
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-33786258-1', 'auto', {
+					'sampleRate': 0.4				});
+				ga('set', 'dimension1', false );
+				ga('set', 'dimension2', 'External' );
+				ga('set', 'dimension3', 'application' );
+				ga('set', 'dimension4', "application\/app" );
+				ga('send', 'pageview');
+
+			</script>
+			<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=._0UFXFGgvme-"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=SO3_UDRN31sN&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=lTmkgFfmpIAy&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=NG3YDtvSdiC-&amp;l=english"></script>
+
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery.appear.js?v=.rB2Jqew4q0oc"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() ); 
+$J.data( document, 'x_oldref', GetNavCookie() ); 
+$('.tooltip').v_tooltip();
+window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
+BindStoreTooltip( $('[data-store-tooltip]') ); 
+});</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/gamehighlightplayer.js?v=wZS9xXwTWr8T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/user_reviews.js?v=k7WSvWNgKD1T&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/dselect.js?v=KBcbV038Qayz&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=Ukm-mSCVk13G&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/game.js?v=NFSwsFD1llNd&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/swfobject.js?v=.IJPsm1EB98JP"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=WeLSMzFqMp1e&amp;l=english"></script>
+
+						<meta name="Description" content="Gridworld is an artificial life / evolution simulator in which abstract virtual creatures compete for food and struggle for survival. Conditions in this two-dimensional ecosystem are right for evolution to occur through natural selection.">
+			
+			<link rel="canonical" href="http://store.steampowered.com/app/396890/">
+	
+			<link rel="image_src" href="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/header.jpg?t=1459972374">
+	
+	
+	
+	</head>
+<body class="v6 app game_bg responsive_page">
+
+<div class="responsive_page_frame with_header">
+
+						<div class="responsive_page_menu_ctn mainmenu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com//login/?redir=app%2F396890%2F">
+									Login								</a>
+							
+								<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		Store	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		Community	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		Support	</a>
+
+							<div class="minor_menu_items">
+																<div class="menuitem change_language_action">
+									Change language								</div>
+																									<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer"></div>
+						<div class="mainmenu_footer">
+							<div class="mainmenu_footer_logo"><img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+							© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.							<span class="mainmenu_valve_links">
+								<a href="http://store.steampowered.com/privacy_agreement/" target="_blank">Privacy Policy</a>
+								&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/subscriber_agreement/" target="_blank">Steam Subscriber Agreement</a>
+								&nbsp;| &nbsp;<a href="http://store.steampowered.com/steam_refunds/" target="_blank">Refunds</a>
+							</span>
+						</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab" style="display: none;">
+
+		</div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu">
+				<div class="localmenu_content">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+					</div>
+				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div id="global_header">
+	<div class="content">
+
+		<div class="logo">
+			<span id="logo_holder">
+				<a href="http://store.steampowered.com/">
+					<img src="http://store.akamai.steamstatic.com/public/shared/images/header/globalheader_logo.png" width="176" height="44">
+				</a>
+			</span>
+			<!--[if lt IE 7]>
+			<style type="text/css">
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png'); }
+			</style>
+			<![endif]-->
+		</div>
+
+			<div class="supernav_container">
+	<a class="menuitem supernav" href="http://store.steampowered.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		STORE	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="http://store.steampowered.com/">Featured</a>
+		<a class="submenuitem" href="http://store.steampowered.com/explore/">Explore</a>
+		<a class="submenuitem" href="http://store.steampowered.com/curators/">Curators</a>
+		<a class="submenuitem" href="http://steamcommunity.com/my/wishlist/">Wishlist</a>
+		<a class="submenuitem" href="http://store.steampowered.com/news/">News</a>
+		<a class="submenuitem" href="http://store.steampowered.com/stats/">Stats</a>
+	</div>
+
+
+	<a class="menuitem supernav" style="display: block" href="http://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+		COMMUNITY	</a>
+	<div class="submenu_community" style="display: none;" data-submenuid="community">
+		<a class="submenuitem" href="http://steamcommunity.com/">Home</a>
+		<a class="submenuitem" href="http://steamcommunity.com/discussions/">Discussions</a>
+		<a class="submenuitem" href="http://steamcommunity.com/workshop/">Workshop</a>
+		<a class="submenuitem" href="http://steamcommunity.com/greenlight/">Greenlight</a>
+		<a class="submenuitem" href="http://steamcommunity.com/market/">Market</a>
+		<a class="submenuitem" href="http://steamcommunity.com/?subsection=broadcasts">Broadcasts</a>
+					</div>
+
+	
+
+	
+			<a class="menuitem" href="http://store.steampowered.com/about/">
+			ABOUT		</a>
+	
+	<a class="menuitem" href="https://help.steampowered.com/en/">
+		SUPPORT	</a>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div id="global_action_menu">
+				<div class="header_installsteam_btn header_installsteam_btn_green">
+					<div class="header_installsteam_btn_leftcap"></div>
+					<div class="header_installsteam_btn_rightcap"></div>
+					<a class="header_installsteam_btn_content" href="http://store.steampowered.com/about/">
+						Install Steam					</a>
+				</div>
+
+				
+									<a class="global_action_link" href="https://store.steampowered.com//login/?redir=app%2F396890%2F">login</a>
+					&nbsp;|&nbsp;
+					<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+					<div class="popup_block_new" id="language_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+																																	<a class="popup_menu_item tight" href="?l=bulgarian" onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (Bulgarian)</a>
+																										<a class="popup_menu_item tight" href="?l=czech" onclick="ChangeLanguage( 'czech' ); return false;">čeština (Czech)</a>
+																										<a class="popup_menu_item tight" href="?l=danish" onclick="ChangeLanguage( 'danish' ); return false;">Dansk (Danish)</a>
+																										<a class="popup_menu_item tight" href="?l=dutch" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (Dutch)</a>
+																																			<a class="popup_menu_item tight" href="?l=finnish" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (Finnish)</a>
+																										<a class="popup_menu_item tight" href="?l=french" onclick="ChangeLanguage( 'french' ); return false;">Français (French)</a>
+																										<a class="popup_menu_item tight" href="?l=greek" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (Greek)</a>
+																										<a class="popup_menu_item tight" href="?l=german" onclick="ChangeLanguage( 'german' ); return false;">Deutsch (German)</a>
+																										<a class="popup_menu_item tight" href="?l=hungarian" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (Hungarian)</a>
+																										<a class="popup_menu_item tight" href="?l=italian" onclick="ChangeLanguage( 'italian' ); return false;">Italiano (Italian)</a>
+																										<a class="popup_menu_item tight" href="?l=japanese" onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (Japanese)</a>
+																																			<a class="popup_menu_item tight" href="?l=koreana" onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (Korean)</a>
+																										<a class="popup_menu_item tight" href="?l=norwegian" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (Norwegian)</a>
+																										<a class="popup_menu_item tight" href="?l=polish" onclick="ChangeLanguage( 'polish' ); return false;">Polski (Polish)</a>
+																										<a class="popup_menu_item tight" href="?l=portuguese" onclick="ChangeLanguage( 'portuguese' ); return false;">Português (Portuguese)</a>
+																										<a class="popup_menu_item tight" href="?l=brazilian" onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil (Portuguese-Brazil)</a>
+																										<a class="popup_menu_item tight" href="?l=russian" onclick="ChangeLanguage( 'russian' ); return false;">Русский (Russian)</a>
+																										<a class="popup_menu_item tight" href="?l=romanian" onclick="ChangeLanguage( 'romanian' ); return false;">Română (Romanian)</a>
+																										<a class="popup_menu_item tight" href="?l=schinese" onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (Simplified Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=spanish" onclick="ChangeLanguage( 'spanish' ); return false;">Español (Spanish)</a>
+																										<a class="popup_menu_item tight" href="?l=swedish" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (Swedish)</a>
+																										<a class="popup_menu_item tight" href="?l=tchinese" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (Traditional Chinese)</a>
+																										<a class="popup_menu_item tight" href="?l=thai" onclick="ChangeLanguage( 'thai' ); return false;">ไทย (Thai)</a>
+																										<a class="popup_menu_item tight" href="?l=turkish" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (Turkish)</a>
+																										<a class="popup_menu_item tight" href="?l=ukrainian" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (Ukrainian)</a>
+																						<a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank">Help us translate Steam</a>
+						</div>
+					</div>
+							</div>
+					</div>
+			</div>
+</div>
+<div id="responsive_store_nav_ctn"></div>
+		<div class="responsive_page_template_content">
+
+			<script type="text/javascript">
+
+	GStoreItemData.AddStoreItemData(
+		{"274190":{"name":"Broforce","discount_block":"<div class=\"discount_block \"> <div class=\"discount_pct\">-60%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">\u00a5 48<\/div><div class=\"discount_final_price\">\u00a5 19<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/274190\/capsule_184x69.jpg?t=1467903467","os_windows":true,"os_macos":true,"os_linux":true,"discount":true,"localized":true},"304430":{"name":"INSIDE","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 68<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/304430\/capsule_184x69.jpg?t=1467910225","os_windows":true,"localized":true},"413150":{"name":"Stardew Valley","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/413150\/capsule_184x69.jpg?t=1458942334","os_windows":true,"localized":true},"356040":{"name":"Sheltered","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/356040\/capsule_184x69.jpg?t=1460621130","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"239030":{"name":"Papers, Please","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/239030\/capsule_184x69.jpg?t=1447357886","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"322330":{"name":"Don't Starve Together","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 48<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/322330\/capsule_184x69.jpg?t=1461258523","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"263980":{"name":"Out There Somewhere","discount_block":"<div class=\"discount_block \"> <div class=\"discount_pct\">-92%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">\u00a5 48<\/div><div class=\"discount_final_price\">\u00a5 4<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/263980\/capsule_184x69.jpg?t=1459450438","os_windows":true,"os_macos":true,"discount":true,"localized":true},"377900":{"name":"Empire TV Tycoon","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/377900\/capsule_184x69.jpg?t=1464983596","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"359050":{"name":"Shower With Your Dad Simulator 2015: Do You Still Shower With Your Dad","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 6<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/359050\/capsule_184x69.jpg?t=1447371369","os_windows":true,"localized":true},"298630":{"name":"The Escapists","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 60<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/298630\/capsule_184x69.jpg?t=1467034673","os_windows":true,"os_macos":true,"os_linux":true,"localized":true},"421040":{"name":"Plantera","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 15<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/421040\/capsule_184x69.jpg?t=1458755974","os_windows":true,"localized":true},"342560":{"name":"Airships: Conquer the Skies","discount_block":"<div class=\"discount_block  no_discount\"> <div class=\"discount_prices\"><div class=\"discount_final_price\">\u00a5 36<\/div><\/div><\/div>","small_capsulev5":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/342560\/capsule_184x69.jpg?t=1466097413","os_windows":true,"os_macos":true,"os_linux":true,"early_access":true,"localized":true}},
+		[]	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		bundle_component_preview: "1_5_9__412"	} );
+
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+	} );
+	GDynamicStore.OnReady( function() {
+		RenderMoreLikeThisBlock( ["274190","304430","413150","356040","239030","322330","263980","377900","359050","298630","421040","342560"] );
+			});
+
+	var g_rgVACBannedSubs = [];
+	// Wrap add to cart function in a confirm check
+	if( g_rgVACBannedSubs.length > 0 )
+	{
+		var fnOldAdd = addToCart;
+		addToCart = function( subid, dedupe )
+		{
+			if( g_rgVACBannedSubs.indexOf( subid ) != -1  )
+				ShowConfirmDialog( "This account is VAC banned", "If you purchase this game, you will be unable to play on VAC secured servers with this account. For more information, see the <a %1$s>Help site<\/a>.".replace('%1$s', 'href="https://help.steampowered.com/en/wizard/HelpWithGame/?appid=396890"')).done( function(){ fnOldAdd( subid, dedupe );  } );
+			else
+				fnOldAdd( subid, dedupe );
+		}
+	}
+
+	
+</script>
+
+<div class="game_page_background game" style="background-image: url('http://cdn.steamstatic.com.8686c.com/steam/apps/396890/page_bg_generated_v6b.jpg?t=1459972374');">
+
+	
+
+		<div id="store_header" class="">
+		<div class="content">
+			<div id="store_controls">
+				<div id="cart_status_data">
+																					<div class="store_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;">
+							<div class="store_header_btn_caps store_header_btn_leftcap"></div>
+							<div class="store_header_btn_caps store_header_btn_rightcap"></div>
+							<a id="cart_link" class="store_header_btn_content" href="http://store.steampowered.com/cart/?snr=1_5_9__12">
+								Cart								(<span id="cart_item_count_value">0</span>)
+							</a>
+						</div>
+									</div>
+			</div>
+							<div id="store_nav_area">
+					<div class="store_nav_leftcap"></div>
+					<div class="store_nav_bg">
+						<div class="store_nav">
+							<a class="tab  " href="http://store.steampowered.com/?snr=1_5_9__12">
+									<span>Featured Items</span>
+							</a>
+															<div class="tab  flyout_tab " id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+									<span class="pulldown">
+										<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=998&page=1&tags=-1">Games</a>
+										<a class="pulldown_mobile" href="#">Games</a>
+										<span></span>
+									</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+																																											<a class="popup_menu_item" href="http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12">
+													Free to Play												</a>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																<a class="popup_menu_item" href="http://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12">
+													Early Access												</a>
+																															<a class="popup_menu_item" href="http://store.steampowered.com/freestuff/demos/?snr=1_5_9__12">
+											<span>Demos</span>
+										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&snr=1_5_9__12#sort_by=_ASC&vrsupport=101%2C102&page=1">
+											<span>Virtual Reality</span>
+										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by genre:</div>
+
+																																	<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Action/?snr=1_5_9__12">
+													Action												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__12">
+													Adventure												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Casual/?snr=1_5_9__12">
+													Casual												</a>
+																																																																																						<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__12">
+													Indie												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_5_9__12">
+													Massively Multiplayer												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Racing/?snr=1_5_9__12">
+													Racing												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__12">
+													RPG												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__12">
+													Simulation												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Sports/?snr=1_5_9__12">
+													Sports												</a>
+																																												<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__12">
+													Strategy												</a>
+																					
+										<div class="hr"></div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/tag/browse/?snr=1_5_9__12">
+											See popular tags										</a>
+										<div class="hr"></div>
+										<div class="popup_menu_subheader">Browse by platform:</div>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=mac&page=1&snr=1_5_9__12">
+											Mac OS X										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/search/?term=&sort_by=_ASC&os=linux&page=1&snr=1_5_9__12">
+											SteamOS + Linux										</a>
+									</div>
+								</div>
+							
+							<div class="tab  flyout_tab " id="software_tab" data-flyout="software_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=994&page=1">Software</a>
+									<a class="pulldown_mobile" href="#">Software</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="software_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_5_9__12">
+											Animation & Modeling										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_5_9__12">
+											Audio Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_5_9__12">
+											Design & Illustration										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Education/?snr=1_5_9__12">
+											Education										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Game%20Development/?snr=1_5_9__12">
+											Game Development										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_5_9__12">
+											Photo Editing										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Utilities/?snr=1_5_9__12">
+											Utilities										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Video%20Production/?snr=1_5_9__12">
+											Video Production										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_5_9__12">
+											Web Publishing										</a>
+									
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="hardware_tab" data-flyout="hardware_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/hardware?snr=1_5_9__12">Hardware</a>
+									<a class="pulldown_mobile" href="#">Hardware</a>
+									<span></span>
+								</span>
+
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="hardware_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353370?snr=1_5_9__12">
+										Steam Controller									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/353380?snr=1_5_9__12">
+										Steam Link									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/hardware/?snr=1_5_9__12#Machines">
+										Steam Machines									</a>
+									<a class="popup_menu_item" href="http://store.steampowered.com/app/358040?snr=1_5_9__12">
+										HTC Vive									</a>
+								</div>
+							</div>
+
+							<div class="tab  flyout_tab " id="videos_tab" data-flyout="videos_flyout" data-flyout-align="left" data-flyout-valign="bottom">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="http://store.steampowered.com/search/?snr=1_5_9__12#sort_by=_ASC&category1=992&page=1&tags=-1">Videos</a>
+									<a class="pulldown_mobile" href="#">Videos</a>
+									<span></span>
+								</span>
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="videos_flyout" style="display: none;">
+								<div class="popup_body popup_menu">
+									<div class="popup_menu_subheader">Browse by type:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=15339">
+											Documentary										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4242">
+											Episodic										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4700">
+											Movie										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4234">
+											Short										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=12057">
+											Tutorial										</a>
+									
+									<div class="hr"></div>
+									<div class="popup_menu_subheader">Browse by genre:</div>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=19">
+											Action										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4085">
+											Anime										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1719">
+											Comedy										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=5984">
+											Drama										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=150626">
+											Gaming										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=1667">
+											Horror										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=3942">
+											Sci-fi										</a>
+																			<a class="popup_menu_item" href="http://store.steampowered.com/search/?snr=1_5_9__12#category1=992&sort_by=Released_DESC&page=1&tags=4064">
+											Thriller										</a>
+									
+								</div>
+							</div>
+
+							<a class="tab  " href="http://store.steampowered.com/news/?snr=1_5_9__12">
+								<span>News</span>
+							</a>
+
+
+							
+								<div class="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" onmouseover="EnsureStoreMenuTagsLoaded( '#foryou_yourtags' );">
+								<span class="pulldown">
+									For You									<span></span>
+								</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;">
+									<div class="popup_body popup_menu">
+										<a class="popup_menu_item" href="http://store.steampowered.com/recommended/?snr=1_5_9__12">
+											Recently viewed										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/curators/?snr=1_5_9__12">
+											Steam Curators										</a>
+										<a class="popup_menu_item" href="http://store.steampowered.com/updated/all/?snr=1_5_9__12">
+											Recently updated										</a>
+									</div>
+								</div>
+
+							
+							<div class="search_area">
+								<div id="store_search">
+									<form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
+										<input type="hidden" name="snr" value="1_5_9__12" >
+										<div class="searchbox">
+											<input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off">
+											<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="http://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+										</div>
+									</form>
+								</div>
+								<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
+									<div class="popup_body" style="border-top: none;">
+										<div id="search_suggestion_contents">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="store_nav_rightcap"></div>
+				</div>
+					</div>
+	</div>
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode =window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+					if ( !$HeaderWrapper )
+						$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+					if ( bUseSmallScreenMode )
+						$ResponsiveNavCtn.append( $Header );
+					else
+						$HeaderWrapper.append( $Header );
+
+
+					if ( bUseSmallScreenMode )
+					{
+						$Header.css( 'visibility', 'hidden' );
+						$Header.show();
+						var nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;
+						if ( $Window.scrollTop() < nMenuHeight )
+							$Window.scrollTop( nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );
+
+						$Header.css('visibility', 'visible');
+					}
+				} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');
+
+				EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'CN', 'english', '2089945' );
+			} );
+		</script>
+	<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "b9ca5861e42bfbb7ecd6be22";
+	var g_ServerTime = 1468060759;
+
+	$J( InitMiniprofileHovers );
+
+			GDynamicStore.Init( 0, false, "win" );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ",");format = format.replace( ".00", '' ); return format; };var strNegativeSymbol = '';return strNegativeSymbol + "\u00a5 " + fmt( nValueInCents, bWholeUnitsOnly );} );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 100 );
+	</script>
+	<div class="page_content_ctn" itemscope itemtype="http://schema.org/Product">
+
+		<meta itemprop="image" content="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/capsule_231x87.jpg?t=1459972374">
+					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="CNY">
+				<meta itemprop="price" content="6">
+							</div>
+				<div class="page_title_area game_title_area page_content">
+			<div class="breadcrumbs">
+								<div class="blockbg">
+											<a href="http://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
+																					&gt; <a href="http://store.steampowered.com/genre/Simulation/?snr=1_5_9__205">Simulation Games</a>
+															&gt; <a href="http://store.steampowered.com/app/396890/?snr=1_5_9__205"><span itemprop="name">Gridworld</span></a>
+
+				</div>
+				<div style="clear: left;"></div>
+							</div>
+			<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+				<div class="apphub_OtherSiteInfo">
+			<a class="btnv6_blue_hoverfade btn_medium" href="http://steamcommunity.com/app/396890">
+				<span>Community Hub</span>
+			</a>
+		</div>
+		<div class="apphub_AppIcon"><img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/396890/bb6c6652ce3495822132e1dc68c85dd13444f1aa.jpg"><div class="overlay"></div></div>
+		<div class="apphub_AppName">Gridworld</div>
+		<div style="clear: both"></div>
+	</div>
+
+</div>
+
+		</div>
+		<div style="clear: left;"></div>
+
+		<div class="block">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+				
+				var bShouldUseHTML5 = BCanPlayWebm() || BDoesUserPreferHTML5() || !swfobject.hasFlashPlayerVersion(strRequiredVersion);
+			</script>
+			<div class="game_background_glow">
+			<div class="block_content page_content" id="game_highlights">
+
+				<div class="rightcol">
+					<div class="glance_ctn">
+						<div class="game_header_image_ctn">
+							<img class="game_header_image_full" src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/header.jpg?t=1459972374">
+						</div>
+													<div class="game_description_snippet">
+								Gridworld is an artificial life / evolution simulator in which abstract virtual creatures compete for food and struggle for survival. Conditions in this two-dimensional ecosystem are right for evolution to occur through natural selection.							</div>
+						
+						<div class="glance_ctn_responsive_left">
+															<div class="user_reviews" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
+									<div class="title">User reviews:</div>
+
+																		
+									<div class="user_reviews_summary_row" data-store-tooltip="84% of the 130 user reviews for this game are positive." itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column">Overall:</div>
+										<div class="summary column">
+																					<span class="game_review_summary positive" itemprop="description">Very Positive</span>
+											<span class="responsive_hidden">
+												(130 reviews)
+											</span>
+											<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 84% of the 130 user reviews for this game are positive.											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="130">
+											<meta itemprop="ratingValue" content="0">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</div>
+
+								</div>
+							
+
+
+															<div class="release_date">
+									Release Date: <span class="date">29 Dec, 2015</span>
+								</div>
+													</div>
+
+						<div class="glance_ctn_responsive_right">
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="glance_tags_ctn popular_tags_ctn">
+										<div class="glance_tags_label">Popular user-defined tags for this product:</div>
+										<div class="glance_tags popular_tags" data-appid="396890">
+											<a href="http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Indie												</a><a href="http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Simulation												</a><a href="http://store.steampowered.com/tag/en/Pixel%20Graphics/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Pixel Graphics												</a><div class="app_tag add_button" onclick="ShowAppTagModal( 396890 )">+</div>
+										</div>
+									</div>
+																													</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div class="leftcol">
+					<div class="highlight_ctn">
+						<div class="highlight_overflow">
+							<div id="highlight_player_area" >
+								<div class="highlight_player_area_spacer">
+									<img src="http://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif">
+								</div>
+																																	<div class="highlight_player_item highlight_movie" id="highlight_movie_256659001" style="display: none;">
+										<script type="text/javascript">
+											if( bShouldUseHTML5 )
+											{
+												document.write('<video class="highlight_player_item highlight_movie" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256659001/movie480.webm?t=1450820925" data-hd-src="http://cdn.steamstatic.com.8686c.com/steam/apps/256659001/movie_max.webm?t=1450820925" poster="http://cdn.steamstatic.com.8686c.com/steam/apps/256659001/movie.293x165.jpg?t=1450820925" id="movie_256659001" preload="none"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></video>');
+												jQuery("#movie_256659001").videoControls();
+											}
+											else
+											{
+												document.write('<div id="movie_256659001" class="highlight_flash_player_notice" style="display: none;"><p>You will need to <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Install</a> the latest Flash plugin to view this page properly.</p></div>');
+											}
+										</script>
+									</div>
+								
+																									<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_d5123c1877c80328d532fc44da1fa80cd275c268.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_d5123c1877c80328d532fc44da1fa80cd275c268.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_d5123c1877c80328d532fc44da1fa80cd275c268.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+																	<div class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_667c51cbd504d321cc12ce3296ca3acacd586887.jpg" style="display: none;">
+										<div class="screenshot_holder">
+											<a class="highlight_screenshot_link" data-screenshotid="ss_667c51cbd504d321cc12ce3296ca3acacd586887.jpg" href="https://steamcommunity.com/linkfilter/?url=http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_667c51cbd504d321cc12ce3296ca3acacd586887.1920x1080.jpg?t=1459972374" target="_blank" rel="noreferrer">
+												<img src="http://store.akamai.steamstatic.com/public/images/blank.gif">
+											</a>
+										</div>
+									</div>
+								
+																<script type="text/javascript">
+									var rgMovieFlashvars = {
+																					'movie_256659001': {
+												FILENAME: "http://cdn.steamstatic.com.8686c.com/steam/apps/256659001/movieLrg.flv?t=1450820925",
+												MOVIE_NAME: "Gridworld"
+											 },
+																				'' : ''
+									};
+									var rgCommonFlashVars = {
+											clientLanguage: "english",
+											capsuleSize: "huge",
+											STAGE_WIDTH: 600,
+											STAGE_HEIGHT: 338,
+											AUTO_PLAY: "true",
+											ALLOW_JSPAUSE: "true",
+											TRACK_MUTE: "true",
+											CHECKBOX_AUTOPLAY_SHOW: "true",
+											CHECKBOX_AUTOPLAY_TEXT: "Autoplay+videos"
+									};
+																		var rgScreenshotURLs = {"ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1_SIZE_.jpg?t=1459972374","ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476_SIZE_.jpg?t=1459972374","ss_d5123c1877c80328d532fc44da1fa80cd275c268.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_d5123c1877c80328d532fc44da1fa80cd275c268_SIZE_.jpg?t=1459972374","ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055_SIZE_.jpg?t=1459972374","ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452_SIZE_.jpg?t=1459972374","ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae_SIZE_.jpg?t=1459972374","ss_667c51cbd504d321cc12ce3296ca3acacd586887.jpg":"http:\/\/cdn.steamstatic.com.8686c.com\/steam\/apps\/396890\/ss_667c51cbd504d321cc12ce3296ca3acacd586887_SIZE_.jpg?t=1459972374"};
+								</script>
+							</div>
+														<div id="highlight_strip">
+								<div id="highlight_strip_scroll" style="width: 962px;">
+									<div class="highlight_selector"></div>
+
+																			<div class="highlight_strip_item highlight_strip_movie" id="thumb_movie_256659001" >
+											<img class="movie_thumb" src="http://cdn.steamstatic.com.8686c.com/steam/apps/256659001/movie.184x123.jpg?t=1450820925">
+											<div class="highlight_movie_marker"></div>
+										</div>
+									
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_228b285ef3a63fe44ee7d553e490d7bd1be23cb1.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_8cff5fc608be942c1958696e6ab4dd5f8cc2e476.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_d5123c1877c80328d532fc44da1fa80cd275c268.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_d5123c1877c80328d532fc44da1fa80cd275c268.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_f33cac7e3d90adb5bac34a3adaaa3e0eba6b5055.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_4f0ff96ca4aea3db89f3e2724d34bf0799dae452.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_6a980e98e8fc895e12a7d98f5b0c7310a1f67fae.116x65.jpg?t=1459972374">
+										</div>
+																			<div class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_667c51cbd504d321cc12ce3296ca3acacd586887.jpg" >
+											<img src="http://cdn.steamstatic.com.8686c.com/steam/apps/396890/ss_667c51cbd504d321cc12ce3296ca3acacd586887.116x65.jpg?t=1459972374">
+										</div>
+									
+																	</div>
+							</div>
+															<div class="slider_ctn">
+									<div id="highlight_slider_left" class="slider_left"><span></span></div>
+									<div class="slider" id="highlight_slider" >
+										<div class="slider_bg">
+										</div>
+										<div class="handle">
+										</div>
+									</div>
+									<div id="highlight_slider_right" class="slider_right"><span></span></div>
+								</div>
+								<script type="text/javascript">
+									$J( function() {
+										var player = new HighlightPlayer( {
+											elemPlayerArea: 'highlight_player_area',
+											elemStrip: 'highlight_strip',
+											elemStripScroll: 'highlight_strip_scroll',
+											elemSlider: 'highlight_slider',
+											rgMovieFlashvars: rgMovieFlashvars,
+											rgScreenshotURLs: rgScreenshotURLs,
+											rgDefaultMovieFlashvars: rgCommonFlashVars,
+											bUseHTMLPlayer: bShouldUseHTML5
+										} );
+										$J('#highlight_slider_right').click( function() {
+											player.Transition( true );
+										});
+										$J('#highlight_slider_left').click( function() {
+											player.TransitionBack( true );
+										});
+
+										if( window.location.hash )
+										{
+											var ssid = window.location.hash.substr(1);
+											player.HighlightScreenshot(ssid);
+										}
+									} );
+								</script>
+													</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+			
+			<div class="queue_overflow_ctn">
+									<div class="queue_ctn">
+											<div class="queue_actions_ctn">
+							<p><a href="http://store.steampowered.com/login/?redir=app%2F396890">Sign in</a> to add this item to your wishlist, follow it, or mark it as not interested</p>
+						</div>
+					</div>
+							</div>
+
+			
+			
+		</div>
+
+		
+			<div class="page_content">
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data">
+					<div id="responsive_apppage_details_left_ctn"></div>
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+					
+					
+
+					
+
+					
+
+											<div class="block responsive_apppage_details_left" id="category_block">
+
+							<div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=2&snr=1_5_9__423">Single-player</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=29&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_cards.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=29&snr=1_5_9__423">Steam Trading Cards</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=17&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_editor.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=17&snr=1_5_9__423">Includes level editor</a></div><div class="game_area_details_specs"><div class="icon"><a href="http://store.steampowered.com/search/?category2=14&snr=1_5_9__423"><img class="category_icon" src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_commentary.png"></a></div><a class="name" href="http://store.steampowered.com/search/?category2=14&snr=1_5_9__423">Commentary available</a></div>
+							
+							
+													</div>
+																					<div class="block responsive_apppage_details_right">
+							<div class="block_title">
+								Languages:
+							</div>
+
+							
+<table  class="game_language_options" cellpadding="0" cellspacing="0">
+	<tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">Interface</th>
+		<th class="checkcol">Full Audio</th>
+		<th class="checkcol">Subtitles</th>
+	</tr>
+
+			<tr style="" class="">
+			<td style="width: 94px; text-align: left" class="ellipsis">
+				English			</td>
+							<td class="checkcol">
+					 <img src="http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png"/> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+	</table>
+
+						</div>
+					
+					
+					
+
+					<div class="block responsive_apppage_details_left game_details underlined_links">
+						<div class="block_content">
+							<div class="block_content_inner">
+								<div class="details_block">
+	<b>Title:</b> Gridworld<br>
+
+			<b>Genre:</b> <a href="http://store.steampowered.com/genre/Indie/?snr=1_5_9__408">Indie</a>, <a href="http://store.steampowered.com/genre/Simulation/?snr=1_5_9__408">Simulation</a><br>
+	
+			<b>Developer:</b>
+								<a href="http://store.steampowered.com/search/?developer=DopplerFrog&snr=1_5_9__408">DopplerFrog</a>
+				<br>
+	
+			<b>Publisher:</b>
+		<a href="http://store.steampowered.com/search/?publisher=DopplerFrog">DopplerFrog</a>		<br>
+	
+	
+			<b>Release Date:</b> 29 Dec, 2015<br>
+	
+	</div>
+
+
+<div class="details_block">
+	<br>
+
+	
+	
+	
+	
+	
+			<a class="linkbar" href="http://store.steampowered.com/news/?appids=396890">
+			View update history		</a>
+		<a class="linkbar" href="http://store.steampowered.com/news/?appids=396890">
+			Read related news		</a>
+	
+			<a class="linkbar" href="http://steamcommunity.com/app/396890/discussions/">
+			View discussions		</a>
+	
+		<a class="linkbar" href="http://steamcommunity.com/actions/Search?T=ClanAccount&K=Gridworld">
+		Find Community Groups	</a>
+</div>							</div>
+						</div>
+											</div>
+
+					<div class="block responsive_apppage_details_left">
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowShareDialog(); return false;"><span>Share</span></a>
+						<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(396890); return false;"><span>Embed</span></a>
+						<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(396890)"><span data-store-tooltip="Report this Product"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+					</div>
+
+					
+					
+					
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column">
+
+					
+										<div id="game_area_purchase">
+
+																			
+												
+
+						
+
+												
+												
+
+
+						<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+<div class="game_area_purchase_game_wrapper">
+		<div class="game_area_purchase_game">
+		<form name="add_to_cart_76517" action="http://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="b9ca5861e42bfbb7ecd6be22">
+			<input type="hidden" name="subid" value="76517">
+		</form>
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img linux"></span><span class="platform_img steamplay"></span></div>
+		<h1>Buy Gridworld</h1>
+								
+		<div class="game_purchase_action">
+						<div class="game_purchase_action_bg">
+															<div class="game_purchase_price price">
+							¥ 6						</div>
+													<div class="btn_addtocart">
+
+					 
+												<a class="btnv6_green_white_innerfade btn_medium" href="javascript:addToCart(76517);">
+							<span>Add to Cart</span>
+						</a>
+											
+				</div>
+							</div>
+		</div>
+	</div>
+
+		
+	</div>
+
+					</div>
+					<!-- game_area_purchase -->
+
+					
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+					
+											<!-- Announcements block -->
+						<div class="early_access_announcements">
+							<h2>
+								Recent updates							<span class="note">
+								<a href="http://steamcommunity.com/gid/[g:1:11261775]/announcements/">View all <em>(13)</em></a>
+							</span>
+						</h2>
+
+													<div class="post ">
+								<div class="container">
+									<h2>15 June</h2>
+									<h1><a href="http://steamcommunity.com/gid/[g:1:11261775]/announcements/detail/899972958672115630">Gridworld v1.26</a></h1>
+									<p>Hi Guys,<br><br>I just updated Gridworld to v1.26 which contains a lot of changes, additions, optimizations and tweaks.<br>Unfortunatelly, old saved files will no longer work. If you would like to continue a simulation in v1.25, please contact me.<br><br>patch notes:<br><br>version: v1.26<br>release date: 15-6-16<br><br>Additions/changes:<br>- Made some changes to the workings of the stinger neuron in order to encourage the preference for creature to evolve armor neurons as they where barely used before.<br>See the updated manual for more information.<br>- The camera no longer switches to a new creature after the creature the camera is following dies. <br>Instead I added the variable &quot;switch when killed&quot; to the microscope window. If checked, the camera automatically switches to a new creature when it dies. <br>If unchecked, the camera stays on the spot the creature died at.<br>- Random creatures can now be created with additional default neurons besides the random neurons. These additional neurons can be specified.<br>- Poison can now placed from the world editor.<br>- Made some changes to the workings of the DNA copier neuron. See the updated manual for an explanation.<br>- Added new variable to control the maximum amount of output tags in genes.<br>- Added new variable maximum amount of DNA.<br>- Added new variables of camera target to view in the microscope window.<br>- Biodiversity (amount of unique genotypes/DNA) is now also exported when exporting simulation results.<br>- Biodiversity is now also shown in &quot;settings simple&quot; window.<br>- Symbols can now be changed by clicking on them.<br>- Removed variable &quot;maximum rocks&quot;.<br>- Re enabled the lamp neuron. It has been optimized a bit but still causes lag, therefore it is disabled by default. <br>- Lights are now rendered by a symbol.<br>- Added new neuron type DNA Cloner.<br>- An anti poison neuron can now only protect agains one type of poison (red,green or blue).<br><br>UI:<br>- Fixed spelling and occasional wrong description from help texts.<br>- Improved simulation results menu.<br>- Moved &quot;edit lighting&quot; window from world editor to simulation settings.<br>- Some of the settings in the world editor have been moved to the simulation settings menu.<br><br>Optimizations:<br>- UI performance has been optimized.<br>- Rendering speed has been optimized.<br>- Rendering size of rocks is now calculated dynamically.<br>- Rendering size of lights is now calculated dynamically.<br>- Added a new rendering variable called &quot;dynamic buffer size&quot;. This variable increases the rendering speed but might cause out of memory issues when running multiple instances of Gridworld. The setting is enabled by default.<br><br>Bugfixes:<br>- Unmovable rocks can no longer gain/give any momentum from/to other objects<br>- Fixed bug in which neurons where sometimes not mirrored when force symmetry variable was used.<br>- DNA list now shows real values again.<br><br>Default settings changes:<br>- Decreased minimum possible mass of creature from 100 to 1.<br>- Increased default jet power from 2.0 to 3.0.<br>- Enabled neuron fire after task succes.<br>- Increased maximum poison decay time from 255 to 30000.<br>- Increased maximum pheromones decay time from 255 to 30000.<br>- Increased the default value of maximum amount of neural connections to 64.<br><br><br></p>
+								</div>
+								<div class="hr"></div>
+								<span class="comments">5 comments</span>
+								<span class="more"><a href="http://steamcommunity.com/gid/[g:1:11261775]/announcements/detail/899972958672115630">Read more</a></span>
+							</div>
+
+															<div class="divider"></div>
+																				<div class="post ">
+								<div class="container">
+									<h2>16 April</h2>
+									<h1><a href="http://steamcommunity.com/gid/[g:1:11261775]/announcements/detail/901093460680175125">Gridworld v1.23</a></h1>
+									<p>Hi Guys,<br><br>I just updated Gridworld to version 1.23.<br>Unfortunatelly, older saved worlds, creatures, and simulations settings no longer work. If you have any older simulations you would like to finish, please contact me.<br><br>patchnotes: <br><br>changes:<br>- Linux support<br>- Slight (UI) performance improvement<br>- Improved physics for multicellular creatures that are connected in a chain. (connector)<br>- Introduced new neuron &quot;chain end&quot;. chain end neuron is used for movement of chained creatures (creatures connected in a chain)<br>- Added a new font with upper and lower case chars<br>- Font can be selected in the options menu in the main menu<br>- Exporting creature now also exports a picture of the creature (for future workshop support)<br>- The loading world menu in the main menu now shows a preview texture of the selected world<br>- Increased maximum gravity value<br>- Decreased absolute maximum of creatures from 8000 to 4000<br>- Reintroduced blank neuron<br>- Added reset button for UI settings<br>- Introduced tag variable for tiles<br>- Tiles can now be replaced by tag<br>- Opening a neuron window now closes previously opened neuron windows.<br><br>bug fixes:<br>- Fixed option for rendering native cursor<br>- Fixed bug in which amount of piston neurons was not shown in the Microscope menu<br>- Fixed bug in which loading simulation settings would break the UI of the world editor.<br>- Exporting simulation results works again.</p>
+								</div>
+								<div class="hr"></div>
+								<span class="comments">2 comments</span>
+								<span class="more"><a href="http://steamcommunity.com/gid/[g:1:11261775]/announcements/detail/901093460680175125">Read more</a></span>
+							</div>
+
+																		</div>
+				
+				
+									<div class="game_page_autocollapse" style="max-height: 450px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>About This Game</h2>
+							<strong>What is Gridworld?</strong><br><br>Gridworld is an artificial life / evolution simulator in which abstract  virtual creatures compete for food and struggle for survival. Conditions in this two-dimensional ecosystem are right for evolution to occur through natural selection. <br>Creatures live short and replicate fast. Evolution can therefore be observed in hours or days instead of thousands of years. <br><br><strong>how does it work?</strong><br><br>Creatures in Gridworld are a simple and abstract versions of biological life. They can be recognized as colored blocks moving around the grid. Just like in nature,<br>creatures have DNA, a digital code that describes the morphology of the creatures. in Gridworld, the dna describes the morphology of the neural network (brain) of the creature. In turn, the brain decides how the creature behaves during its life. <br>When a piece of dna is copied when creatures reproduce, there is a small chance of mutation in the dna. This leads to diversity in the dna pool. Natural selection causes those creatures with the best adapted genes to have more offspring. This causes the best adapted genes to increase in numbers while the weaker genes are decreasing in numbers and are eventually rooted out.<br>Through this process of natural selection, creatures become increasingly well adapted to their environment within each generation. And thus, evolution occurs. <br><br><strong>How to use it?</strong><br><br>The cool thing about evolution is that it is an autonomous process that requires no guiding hand. <br>You can simply start a simulation and take your hands of completely. When you come back to check after a day or two, you will find a thriving eco system of virtual creatures. You can do more than just simply observing though. Gridworld's simulations are highly customizable. The user interface allows you to tweak any simulation parameter or change the environment as you like. <br>This way you can set up your own experiments and watch as your creatures adapt to the world and conditions that you provide for them.<br><br><strong>what is the goal?</strong><br><br>Gridworld is not a game but an evolution simulator.<br>There is no real goal in Gridworld other than playing, learning, observing and experimenting.<br>The role of the user is mainly passively observing the process of evolution as it unfolds in the simulation.						</div>
+					</div>
+				
+				
+					<div class="game_page_autocollapse sys_req" style="max-height: 220px;">
+		<h2>System Requirements</h2>
+					<div class="sysreq_tabs">
+									<div class="sysreq_tab active" data-os="win">
+						Windows					</div>
+									<div class="sysreq_tab " data-os="linux">
+						SteamOS + Linux					</div>
+								<div style="clear: left;"></div>
+			</div>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 7 64-bit or higher<br></li><li><strong>Processor:</strong> 2.0 Ghz Quad Core CPU<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Storage:</strong> 200 MB available space</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 7 64-bit or higher<br></li><li><strong>Processor:</strong> 2.4 Ghz Quad Core CPU or faster<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Storage:</strong> 500 MB available space</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+				</div>
+							<div class="game_area_sys_req sysreq_content " data-os="linux">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> 64-bit Ubuntu or equivalent<br></li><li><strong>Processor:</strong> 2.0 Ghz Quad Core CPU<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Storage:</strong> 200 MB available space<br></li><li><strong>Additional Notes:</strong> Java has to be installed separately</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> 64-bit Ubuntu or equivalent<br></li><li><strong>Processor:</strong> 2.0 Ghz Quad Core CPU<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Storage:</strong> 500 MB available space<br></li><li><strong>Additional Notes:</strong> Java has to be installed separately</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+				</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+				
+				
+														<div class="block" id="recommended_block">
+						<div class="block_header">
+							<div class="right">
+								<a href="http://store.steampowered.com/recommended/morelike/app/396890/?snr=1_5_9__300">See all</a>
+							</div>
+							<h4>More like this</h4>
+						</div>
+						<div class="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad" id="recommended_block_content">
+						</div>
+					</div>
+									
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data"></div>
+			</div>
+
+			<div style="clear: both;"></div>
+				
+			<div id="app_reviews_hash" class="app_reviews_area">
+				<script>
+	jQuery( document ).ready(function( $ ) {
+		CollapseLongReviews();
+	});
+</script>
+	<div class="user_reviews_header no_bottom_margin">
+		Customer reviews
+		<div class="user_reviews_updated">
+			Customer Review system updated! <a href="http://store.steampowered.com/news/21695/">Learn more</a>		</div>
+		
+	</div>
+	<div class="user_reviews_filter_bar">
+		<span class="user_reviews_filter_text">Filter:</span>
+		<div class="user_reviews_tab active" id="ReviewsTab_summary">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'summary', 9223372036854775807, 'english' );">
+				<span>Summary</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_all">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'all', 9223372036854775807, 'english' );">
+				<span>Most Helpful</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_recent">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'recent', 9223372036854775807, 'english' );">
+				<span>Recent</span>
+			</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_positive">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'positive', 9223372036854775807, 'english' );">
+									<span>Positive </span> <span class="user_reviews_count">(110)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_negative">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'negative', 9223372036854775807, 'english' );">
+									<span>Negative </span> <span class="user_reviews_count">(20)</span>
+							</a>
+		</div>
+		<div class="user_reviews_tab" id="ReviewsTab_funny">
+			<a href="javascript:void(0)" onclick="SelectReviews( 396890, 'funny', 9223372036854775807, 'english' );">
+				<span>Funny</span>
+			</a>
+		</div>
+		<div style="clear: left;"></div>
+	</div>
+
+	<div id="LoadingMoreReviewsall" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsrecent" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewspositive" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsnegative" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+	<div id="LoadingMoreReviewsfunny" style="display: none" class="loading_more_reviews">
+		<img src="http://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+		Loading reviews...	</div>
+
+	<div id="Reviews_positive" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_negative" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_recent" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_funny" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_all" style="display: none" class="user_reviews_container leftcol"></div>
+	<div id="Reviews_summary" class="user_reviews_container">
+		<div id="Reviewssummary0">
+			<div class="user_reviews_summary_bar">
+													<div class="summary_section" data-store-tooltip="84% of the 130 user reviews for this game are positive.">
+						<div class="title">Overall:</div>
+						<span class="game_review_summary positive">Very Positive</span>
+						<span>(130 reviews)</span>
+					</div>
+							</div>
+
+			<div class="rightcol recent_reviews">
+									<div class="user_reviews_sub_header">Recently Posted</div>
+					
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short24108770">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198030707783/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="70442055">Flaming Badger</span></div>
+											<div class="hours ellipsis">( 18.0 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 5 July										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					A novel little simulation, well worth a dollar. Just make sure you know what you're getting into before you buy it. It's a &quot;leave running overnight, come back and see what you've got, tweak the environment and try again&quot; sort of a game.<br><br>The devolper is keen on feedback and keeps making incremental improvements. A bit of knowledge of neural networks might aid your enjoyment of what's going on under the hood, but I don't know too much myself and I follow along just fine.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('24108770', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '24108770' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short24108770"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '24108770' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short24108770"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '24108770', 1, 'RecommendationVoteTagBtnrecent_short24108770_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short24108770_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23685475">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198026436579/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="66170851">sinfulJ</span></div>
+											<div class="hours ellipsis">( 66.4 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 21 June										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					My first not-review here goes. . . .  Its less the £1 to buy. . .  <br>I just wanted to give this a thumbs up and say that this game is interesting.  I mean you are God yh'no. <br>Its watching survival of the fittest or survival of those that survive.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23685475', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23685475' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23685475"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23685475' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23685475"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23685475', 1, 'RecommendationVoteTagBtnrecent_short23685475_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23685475_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23364965">
+
+			
+				<a href="http://steamcommunity.com/id/quietly/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="21655654">INUGAMI</span></div>
+											<div class="hours ellipsis">( 21.2 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 3 June										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Microbiology: the game. $1 well spent for simulation fans.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23364965', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23364965' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23364965"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23364965' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23364965"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23364965', 1, 'RecommendationVoteTagBtnrecent_short23364965_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23364965_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23260000">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198056046398/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="95780670">Thomas The Dank Engine</span></div>
+											<div class="hours ellipsis">( 9.6 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 28 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					i was looking for super cheap games, and for one dollar, i gave this a shot. Here is what i got out of it.<br>(NOTE: This is NOT a game however, so much as a simulation.)<br><br>Overview: GridWorld more or less introduces a concept of order coming from chaos. It starts by creating random bits of AI with random atributes. It has a custom grid that sections off these AI, and generates a field of food, with some basic enviromental conditions.<br><br>Gameplay:  While this is more of an educational simulation with the express purpose of demonstrating how evolution from chaos works on a micro scale, there are afew key events to look for.<br><br>*The Kickoff-<br>The goal is to find an AI with atributes that can sustain itself and can have offspring (an organism that can eat, move, and reproduce). This is where most people get irritated because they dont understand how RNG works, and assume the game is broken. But in actuality it can take afew hours for the big &quot;kick off&quot; to happen. But once it does, the organism will spread like wildfire, consume the food on the map, and then reach a population equalibrium. <br><br>*Observation of mutation and AI- <br>From here on out, the dominant AI will have a random chance of mutation with each reproductive cycle. The mutation  will either hurt or help the mutated AI. If it hurts, then the AI dies quickly. But if it helps, the mutated AI will slowly take over the pre-existing non mutated ones because of its better surviability. (my first time around, it was actually canibalism, go figure.)<br>Additionally, the AI has the ability to &quot;learn&quot; and can develop some interesting behavioral patterns, in a similar fashon to physical mutation. As an example, it may learn to avoid the lava boundary.<br><br>My opinion: <br>In my opinion, this is a well made simulation. It perfectly demonstrates order from randomness, and how evolution is a thing. I think the most irritating thing is the GUI, and id like a better explaination of all the functions, the different physical attributes, along with the AI copy function. Some things id like to see are achievements, as this is a gaming platform, i think some game type things are in order. I think the developer is working as hard as they can on improving these aspects, so i can forgive the games minor flaws. As for the negative reviews ive seen and complaints about how the game &quot;doesnt work&quot;, RNG sometimes isnt in your favor, but thats not the games issue thats just how math works. Anyways, its an all around decent educational simulation, and its kinda an envigorating feeling to have your own little AI world. I would recomend it to anyone with an interest in computer AI, biology, or if you have 99 cents. Thanks for reading!					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23260000', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23260000' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23260000"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23260000' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23260000"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23260000', 1, 'RecommendationVoteTagBtnrecent_short23260000_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23260000_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short23044887">
+
+			
+				<a href="http://steamcommunity.com/id/ridinginstyle00/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsDown_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="107568627">Ridinginstyle</span></div>
+											<div class="hours ellipsis">( 0.2 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 17 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					didnt like it for a dollar.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('23044887', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '23044887' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short23044887"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '23044887' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short23044887"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '23044887', 1, 'RecommendationVoteTagBtnrecent_short23044887_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short23044887_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22988373">
+
+			
+				<a href="http://steamcommunity.com/id/mufasawillrule/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="71851056">GG</span></div>
+											<div class="hours ellipsis">( 32.7 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 14 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Gridworld is a pretty fun toy, but it's 90% passive. Apart from setting initial parameters (world type, mutation frequency, etc.), it's mostly about letting your little petri dish world sit and develop. Checking in on it periodically is fun, as you can definitely see progress after several hours, but don't expect a whole lot of detailed interaction. The interface and details do take a little while to get used to, but it's cool to be able to look at fairly detailed information about each organism. I only wish the creator had put in more options to track &quot;species&quot; rather than just individuals.<br><br>If you like watching little worlds and systems develop on their own, this is the game for you (just don't go in expecting, as another user said, a world as detailed as Rick and Morty's battery). If you're less patient, or if you need to have more moment to moment control, you'd probably be better off buying another game.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22988373', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22988373' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22988373"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22988373' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22988373"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22988373', 1, 'RecommendationVoteTagBtnrecent_short22988373_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22988373_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22829424">
+
+			
+				<a href="http://steamcommunity.com/profiles/76561198140519648/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="180253920">Arithmo</span></div>
+											<div class="hours ellipsis">( 7.2 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 6 May										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Really Nice Graphics					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22829424', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22829424' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22829424"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22829424' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22829424"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22829424', 1, 'RecommendationVoteTagBtnrecent_short22829424_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22829424_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22541583">
+
+			
+				<a href="http://steamcommunity.com/id/goosemanthemushroomer/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="73518999">👌👌👌Meme Wizard👌👌👌</span></div>
+											<div class="hours ellipsis">( 1.3 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 20 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					a cheap neural network evolution game that has actual gameplay (tho i havent played any before tbh)<br>its pretty fun, launch it start a world press R i think that way game goes faster and go watch some mgs playthroughs (no commentary, otherwise you risk getting some cringy or boring ♥♥♥♥ ok) come back after half an hour and see that all your memes have died out <br>turn on the random meme spawner so it spawns random memes while you watch more mgs playthroughs<br>more time passed, you see all your memes keep dying<br>comeback again and witness racewars and parasitism<br><br>memes eat food and grow and evolve if they dont eat they die they also can hit lava and die too <br>first memes are random so its natural selection of memes, only best memes survive (i had dumb memes that could only spin around constantly and they died) and reproduce their behaviour becomes more compleks and stuff<br><br>very good game ok also works as a screensaver					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22541583', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22541583' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22541583"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22541583' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22541583"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22541583', 1, 'RecommendationVoteTagBtnrecent_short22541583_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22541583_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22332605">
+
+			
+				<a href="http://steamcommunity.com/id/BLARGOMATIC/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="75860945">BLARG</span></div>
+											<div class="hours ellipsis">( 62.6 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 9 April										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This is not a game.<br><br>This is a simulation of natural selection and random mutations, effectively simulating evolution. <br>I find it facsinating watching &quot;creatures&quot; form from vegtables laying on the ground, that are masters of their enviroment.<br><br>When I was running it, the simulation would get really slow. Average FPS in the single digits, with a laggy menu due to the low fps. Then my save file corrupted and I lost my pseudo-lifeforms. :( But there have been a few updates since then and I hope the lag issues have been addressed, perhaps my java was just out of date.<br><br>Get this and run it in the background to check on every so often. A fishtank that you don't have to feed.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22332605', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22332605' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22332605"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22332605' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22332605"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22332605', 1, 'RecommendationVoteTagBtnrecent_short22332605_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22332605_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box short">
+			<div style="clear: left;"></div>
+
+		<div id="ReviewContentrecent_short22073908">
+
+			
+				<a href="http://steamcommunity.com/id/AG_Developer/recommended/396890/" class="short_header tooltip" data-tooltip-content="See Full Review">
+					<div class="thumb">
+						<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsDown_v6.png" width="40" height="40">
+					</div>
+					<div class="persona_name"><span data-miniprofile="137552711">Developer</span></div>
+											<div class="hours ellipsis">( 0.5 hrs on record )</div>
+									</a>
+
+				<div class="shortcol">
+
+								
+					<div class="postedDate">Posted: 26 March										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I nearly pressed the Yes button but then i remembered all the times this game made me eat plastic explosive, wash it in with some bleach, shove a lit blasting wire up my ♥♥♥♥ into my colon past my intestine into my stomack where i would let it slowly burn into a giant organ firework.<br><br>Depressing Nostalgic Memories. Beautiful, Like Cancer. Which i wish i had after i bought this game.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('22073908', 'recent_short' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '22073908' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnrecent_short22073908"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '22073908' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnrecent_short22073908"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '22073908', 1, 'RecommendationVoteTagBtnrecent_short22073908_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnrecent_short22073908_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+				</div>
+
+			<div class="leftcol">
+										<div class="user_reviews_sub_header">Most Helpful Reviews&nbsp;
+							<span class="user_reviews_most_helpful_days">Overall</span>
+						</div>
+					
+			<div class="review_box">
+							<div class="header">
+					181 of 187 people (97%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/ChilledZero/recommended/396890/" class="tooltip" data-tooltip-content="See Full Review">10 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>18 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20136203">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/ChilledZero/">
+							<div class="playerAvatar online" data-miniprofile="84526295">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a6/a68eccfe52332d64a172388d944dedb469c68011.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a6/a68eccfe52332d64a172388d944dedb469c68011.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a6/a68eccfe52332d64a172388d944dedb469c68011_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/ChilledZero/" data-miniprofile="84526295">ChilledZero</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/ChilledZero/games/?tab=all">70 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/ChilledZero/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/ChilledZero/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">7.8 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 30 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					So first things first you will need 64bit Java to run this game well and without crashes. <br>Gridworld is a very interesting simulator of evolution. When I first began playing I knew little about the controls for changing terrain or food and was more or less at the mercy of natural selection with what came of my world. <br><br><div class="bb_h1"> My First 3 Hours </div><br>For the first hour of eager scrutiny of my first world I saw nothing but failures of creatures. Organisms that could reproduce but lacked a mouth. Creatures that emitted poison but lacked the ability to survive contact with that poison. Animals that could eat but not move, etc, etc. Most of them died off quite rapidly. I saw the slightest glimmer of hope when I noticed a creature moving, eating, and reproducing but when it would reproduce, the parent would die and the offspring without much energy to begin with, would die very soon after if not directly next to some food. By and large these creatures all seemed doomed and world would become a lifeless hulk of uneaten food. <br><br>I walked away from the computer and left my game on. watched a television show, came back and saw not much had changed. Having left the TV on I left the room again to turn it off, sat down at my computer and stared at the screen. <br><br>That's when I noticed a small group of creatures moving and eating food in the top right of the world.<br><br>I immediately zoomed in to see these organisms:<br>1. Moving<br>2. Eating<br>3. Reproducing<br>4. Conserving enough energy to reproduce while keeping the parent alive.<br><br>I WAS ECSTATIC. I sat back and watch these creatures, which I have dubbed 'Monchers', take over my world in no time. They spread like wildfire in a world abundant with food and devoid of competition. Now I see my little Monchers evolving with generation after generation, creating better, different, and sometimes flat out worse versions of themselves. Even as I type this the Monchers of my world are much more efficient than the first colony in that top right corner. <br><br>With food more scarce and competition increasing between the Moncher species I noticed Monchers with poison emitters to kill of competition, ones with more speed to collect food faster, and ones with less fancy &quot;Neurons&quot; as the game calls them, which are basically body parts or overall traits of your creature. With less traits though the monchers use less energy, allowing them to survive longer without a meal and pass on the genetic code.<br><br>With organisms that don't die within minutes, neurons actually become interesting features of your little animals. You wonder where evolution will take them next and what might succeed or fail. What species will die out or dominate.<br><br><div class="bb_h1"> In Conclusion </div><br>This game is an evolutionary petri dish of interesting results. Although actual interaction with the player is limited, it's more like a simulation than a game. An aquarium or jar of sea monkeys. But this is so much more than a jar of sea monkeys. It's like having a small world of your own. Species to watch and track. You'll see generations live and die. Creatures rise and fall. If you have the imagination to enjoy these small beings, and don't mind a back seat view of evolution, this is a very interesting game to leave up and watch from time to time.<br><br>You will not enjoy this game if you don't like the idea of:<br>VERY simple pixel graphics. <br>At times hours of gameplay without change.<br>Having to make your own stories and use your own imagination for maximum enjoyment. Often times the most world altering moments can happen quickly and without much fanfair. To someone without their mind enveloped in the game world this would appear quite anticlimactic. <br>This game requires a lot of patience and creativity.<br><br>If any of these reasons don't sound appealing to you I would recommend you NOT buy the game. Otherwise I would highly recommend it.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20136203', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20136203' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20136203"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20136203' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20136203"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20136203', 1, 'RecommendationVoteTagBtnsummary20136203_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20136203_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					130 of 132 people (98%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/Wdsy/recommended/396890/" class="tooltip" data-tooltip-content="See Full Review">3 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>9 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20282537">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/Wdsy/">
+							<div class="playerAvatar online" data-miniprofile="32018347">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e1/e13e2bd8b491f3eff1da4a56585788075adab8da.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e1/e13e2bd8b491f3eff1da4a56585788075adab8da.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e1/e13e2bd8b491f3eff1da4a56585788075adab8da_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/Wdsy/" data-miniprofile="32018347">Woodsy</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/Wdsy/games/?tab=all">334 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/Wdsy/recommended/">16 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/Wdsy/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">117.4 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 3 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					This is not quite a 'game' but a machine learning life simulator with a myriad of tweak-able parameters.<br><br>I started with a 400x400.<br>After a few days of evolution I changed from rock walls into lava.<br>I halved the weight and energy requirements of neurons.<br>They evolved to avoid the deadly lava after 2 hours.<br>I segmented the 'world' into 4 quadrants separated by lava.<br>This considerably changed the food distribution and replenishment dynamic.<br>One of the quads went entirely extinct causing the food to pool and resulted in less for the other three quads.<br>They adapted.<br>I seeded the extinct, but food rich, quadrant with a select few from each of the other 'living' quads.<br>All four continued to thrive, one using pheromones, one fighting and stealing energy, one reproducing rapidly and feeding primarily on carcasses and one evolving many eyes to efficiently find food.<br>I removed the lava dividing the areas to combine all quadrants only leaving the outer lava walls.<br>So here we are. They are currently mixing and fighting for resources.<br>I wonder if one species will become dominant or will they all co-exist.<br><br>How will you play God? :D					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20282537', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20282537' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20282537"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20282537' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20282537"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20282537', 1, 'RecommendationVoteTagBtnsummary20282537_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20282537_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					49 of 55 people (89%) found this review helpful										<br>2 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19984175">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/594981981/">
+							<div class="playerAvatar in-game" data-miniprofile="43788587">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/be/be0eb52d5226d099604b7850f709255dc0f51b5d.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/be/be0eb52d5226d099604b7850f709255dc0f51b5d.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/be/be0eb52d5226d099604b7850f709255dc0f51b5d_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/594981981/" data-miniprofile="43788587">Bradenm1</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/594981981/games/?tab=all">655 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/594981981/recommended/">3 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/594981981/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">36.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 26 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Edit: Before I get into this review I would like to point out what the game does. It plots AIs if you would like to call them that learn completely from scratch in this game to survive in what has been given to them, some don't even know how to move, or what food does or even what the lava does... You could say they learn from trail and error untill they are very smart. It does not follow any guidelines like AIs from CS:GO or any other games, because theses make their own guidelines or rules, which makes them unquie and this whole &quot;game&quot; unquie.<br><br><br>If you do not understand what neural networks are or even care about subjects related to Artificial Intelligence and or don't have much interest in that stuff don't bother with this Evolution Simulator even though all of them are like this, if you are still interested either way read below.<br><br>This is all obviously my opinion and how I feel about this game at current state.<br><br><b>Read if you wanted to buy</b><br>If you like knowing you have essentially a miniverse running on your computer and having the AI or Neurons roaming around and knowing you can control their lives and watch as they survive inside this Simulator and seeing them evolve then you got yourserlf a Steam &quot;game&quot; you should buy. The control is limited though but offers more features then other evolution simulators I have played. The miniverse is also limited to a piece of flat land.<br><br>If you don't like waiting for them to evolve this cannot be changed you cannot edit the speed of a process like to go faster so don't buy it if you are not patient or want to spend hours and hours or even days on end running this game to see something happen. Unless you got some quantum computer, the faster the computer the faster it will be. Limited to the render settings. The creatures learns everything from scratch so it takes time to understand what that lava does or what food does, etc.<br><br><b>concerns</b><br>-Menus are laggy when using the mouse and clicking on things...<br>-Needs Java 64-bit to run without crashing and to even start the game.<br>-Quite a lot of stuff happens on-screen and I don't undstand nearly all of it, I did see the developer was going to push out a guide which would be nice to see happen.<br><br><br><b>Things I would like maybe</b><br>-I would like to see generations so I can view the history of my creatures and spawn them, possibly.<br>-Custom world sizes<br>-Creatures structure, I do not understand what is the sensors or the mouth, etc. Is it meant to be like this?<br>-I would like to zoom out more then the default.<br>-More options in the options menu, fullscreen, etc.<br>-The scrollers that edit the vaules get stuck all the time and are kinda a pain to use, I would like to input my own custom numbers.<br><br>I have not looked a lot of things in-game because I simply do not understand what it does. I edit as I go. <br>Though their are a few free simulators like this out there this is one of the first ones I have seen on Steam and actaully under development and what not.<br><br>On the other hand I like where the developer is going with this, I feel this is more learning towards a early acess game. I will add more to this as I play the game.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19984175', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19984175' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19984175"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19984175' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19984175"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19984175', 1, 'RecommendationVoteTagBtnsummary19984175_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19984175_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					47 of 56 people (84%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/profiles/76561198046401738/recommended/396890/" class="tooltip" data-tooltip-content="See Full Review">3 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>35 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20321721">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198046401738/">
+							<div class="playerAvatar offline" data-miniprofile="86136010">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/57/57e28f25cd9e1043579e747f77027e131817b82e.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/57/57e28f25cd9e1043579e747f77027e131817b82e.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/57/57e28f25cd9e1043579e747f77027e131817b82e_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198046401738/" data-miniprofile="86136010">YdraTV</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198046401738/games/?tab=all">159 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198046401738/recommended/">1 review</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198046401738/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">1.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 5 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Well, it took a few minutes for me until a non-♥♥♥♥♥♥♥♥ species showed up. So far they have split up into two subspecies, one higher developed than the other, while it seems that neither has an edge on the other. Both seem to travel in packs, members are rather short-lived. But efficiency in food finding is good enough to keep em going.<br><br>Game doesn't have the best graphics, but it's fun to look at anyway.<br>It's like having seemonkeys.<br><br>One thing that would be improvable is to be able to deactivate creature spawn when left clicking.<br>Pretty annoying to spawn 4 new species when I want to select one of mine.<br><br>All in all 10/10 would disprove Christianity with a 4 Mb game again.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20321721', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20321721' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20321721"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20321721' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20321721"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20321721', 1, 'RecommendationVoteTagBtnsummary20321721_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20321721_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					35 of 38 people (92%) found this review helpful										<br>2 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20148085">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/profiles/76561198075052752/">
+							<div class="playerAvatar offline" data-miniprofile="114787024">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/profiles/76561198075052752/" data-miniprofile="114787024">bejoscha</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/profiles/76561198075052752/games/?tab=all">22 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/profiles/76561198075052752/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/profiles/76561198075052752/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">116.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 31 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					I am still looking into Gridworld, so take this review as a &quot;first impression&quot; review from a simulation-fan. I've always been fascinated by both evolution simulations and neural network simulations, so &quot;Gridworld&quot; was a must-have for me. Still, there are a few issues which I find highly annoying and hope that will be improved in updates in future. I've given the project as a whole a &quot;thumbs up&quot;, though, because I strongly hope things will be improved... Some of the points: <br><br>1) Give us more details! Maybe I have been blind and am just missing the obvious, but watching blinking colours is MUCH more fun, if you have a clue what its meaning is! Okay, most often it just differntiates differnt &quot;creatures&quot; or &quot;neurons&quot;, but it would be good to have that verified... Even more important: There HAS to be some manual explaining what the various neurons &quot;do&quot; in the world, or it is just boring to see them evolve. <br><br>2) I know that a simulation is not about &quot;looking nice&quot;, but the UI in Gridworld is &quot;lacking&quot; at least. I think one can live with the very primitive optics, but what is unacceptable is the lack of &quot;responsiveness&quot; of certain elements. First, I thought it is simply the &quot;workload&quot; making it slow, but when you stop the simulation, the UI becomes fully un-responsive! That is horrible beyond measure...<br><br>3) In a &quot;simulation game&quot;, where observing is more or less all you do, the program has to offer as many &quot;observing&quot; features as possible. I'm missing a punch! I can &quot;export&quot; facts, but where can i see them plottet as graphs? I would like to do record &quot;time-lapses&quot; of my creatures evolvement to play as a simple &quot;movie&quot;. I would like to have a &quot;Analysis-Screen&quot; for the neurons when I have a creature under the &quot;microsocope&quot;, i.e. see how it's neural network &quot;looks&quot; and &quot;behaves&quot;....<br><br>4) Autosave simulation. I've run a 14hrs simulation and it just &quot;disappeared&quot;. (Gridwork stopped working and vanished at one point.) Have at least a &quot;timed&quot; auto-save to be able to recover!<br><br>5) Randomness: The whole simulation is based on random evolution. I think it would be mandatory to provided the means to &quot;recreate&quot; the same random-numbers, i.e. the seed for the random generator should be an accessible option. Thus you can &quot;rerun&quot; a simulation to the identical effect and check what a &quot;modification&quot; of some sort would do.<br><br>6) Optics: Not the most important, but it would be very, very nice if the &quot;genes&quot; and &quot;networks&quot; could be turned into some &quot;creature-shape&quot; to be visually inspected. Only in the microscope (to have short rendering times.)					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20148085', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20148085' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20148085"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20148085' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20148085"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20148085', 1, 'RecommendationVoteTagBtnsummary20148085_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20148085_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					23 of 27 people (85%) found this review helpful										<br>4 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary19932064">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/N0rdir/">
+							<div class="playerAvatar offline" data-miniprofile="93938001">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/af/afff4ac22d5f19f4ac93a7bcb1d5aac32d42c0e0.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/af/afff4ac22d5f19f4ac93a7bcb1d5aac32d42c0e0.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/af/afff4ac22d5f19f4ac93a7bcb1d5aac32d42c0e0_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/N0rdir/" data-miniprofile="93938001">Bee</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/N0rdir/games/?tab=all">151 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/N0rdir/recommended/">13 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/N0rdir/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">20.2 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 25 December, 2015										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's an interesting game, well it's not a game. It's an &quot;evolution simulator&quot;. Where you get to watch pixels evolve into smarter pixels until you get a thriving pixel ecosystem. 7/10					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('19932064', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '19932064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary19932064"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '19932064' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary19932064"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '19932064', 1, 'RecommendationVoteTagBtnsummary19932064_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary19932064_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					17 of 18 people (94%) found this review helpful										<div class="commentCount"><a href="http://steamcommunity.com/id/dino_inc/recommended/396890/" class="tooltip" data-tooltip-content="See Full Review">5 <img src="http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png" align="center"></a></div>
+										<br>2 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20499010">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/dino_inc/">
+							<div class="playerAvatar offline" data-miniprofile="87353355">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/128e6ac47494f7af1e5d95e0875697f210ea1db1.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/128e6ac47494f7af1e5d95e0875697f210ea1db1.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/128e6ac47494f7af1e5d95e0875697f210ea1db1_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/dino_inc/" data-miniprofile="87353355">dino_inc</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/dino_inc/games/?tab=all">167 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/dino_inc/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/dino_inc/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">844.8 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 12 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					<div class="bb_h1">Absolutely the best idle game out there:</div>(This is a log of my creatures, it will vary in style as time passes.)<br><br>The first 21 hours were spent watching the game fail at randomly generating creatures.<br><br>The next 26 hours were spent watching my creatures finally get smart enough to find food on their own.<br><br>Next 110 hours had pretty much nothing happen to the creatures, besides getting ever so slightly better at running toward food. ~20500th generation and they do nothing new except produce tons of red pheremones that don't seem to affect anything.<br><br>Only 20 hours later, the creatures have decided that red poison is far more preferable than red pheremones and are now filling the screen with poison. The first stages of competition have appeared!<br><br>20 minutes later, the red poison creatures killed themselves and now the creatures are evolving to be super fast (and poison free).<br><br>I accidentally caused near extinction 30 hours later by making the neural energy cost really high for a moment, then just keeping it raised slightly, and now the creatures are slowing down to save energy (40 jets instead of a high of 45 jets). Creature count is way, way down and they still haven't done any more new interesting things.<br><br>Left it on for 2 days while I was away, came back, they were EXTINCT. Also, the game updated, causing old saves to no longer work. I started over.<br><br><div class="bb_h1">Creature 2</div><br>42 minutes after starting, viable life appeared (yay for random gen.) and they are currently randomly rotating to find food.<br><br>23 hours later, they are finding food again.<br><br>At 43 hours, they had developed into viruses, inserting their dna into every other creature they touched. To keep things  interesting, I surrounded them with a ring of lava. They suicide into the lava quite often.<br><br>The update that forced me to restart really sped up creature replication, they are only 48 hours old and are already at generation 46400.<br><br>They are still running into lava, at generation 115,000, 163 hours after starting the simulation (596 hours if this were running at 30 FPS, according to the game).<br><br>166 hours in, they now avoid lava! <br><br>209 hours in:<br><a class="bb_link" href="http://steamcommunity.com/sharedfiles/filedetails/?id=614764502" target="_blank" rel="noreferrer"  id="dynamiclink_0">http://steamcommunity.com/sharedfiles/filedetails/?id=614764502</a><br>also, here are some stats (140,000 generation): <a class="bb_link" href="http://steamcommunity.com/sharedfiles/filedetails/?id=614767184" target="_blank" rel="noreferrer"  id="dynamiclink_1">http://steamcommunity.com/sharedfiles/filedetails/?id=614767184</a><br><br>Generation 200,000! This game's natural selection seems to trend toward the most basic of creatures, as it has been 342 hours and my creatures consist of pretty much just jets, mouths, neurons, dna and eyes. Even my attempt to force stingers hasn't led to their development.<br><br>Game updated, highest generation was at 246,000. Nothing special happened.<br><br><div class="bb_h1">Creature 3</div><br>Testing to see what the game will decide is best adapted to a basic lava map.<br><br>Even faster this time, in only 10 hours the creatures are moving toward food. They still run into lava, however.<br><br><div class="bb_h1">My computer started getting too hot, this review is suspended indefinitely</div>					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20499010', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20499010' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20499010"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20499010' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20499010"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20499010', 1, 'RecommendationVoteTagBtnsummary20499010_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20499010_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					28 of 39 people (72%) found this review helpful										<br>27 people found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20338649">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/birdscool/">
+							<div class="playerAvatar offline" data-miniprofile="65192587">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/87/877dd683b34f4ed2652d6e62828771afaf38e38b.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/87/877dd683b34f4ed2652d6e62828771afaf38e38b.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/87/877dd683b34f4ed2652d6e62828771afaf38e38b_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/birdscool/" data-miniprofile="65192587">birdscool</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/birdscool/games/?tab=all">146 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/birdscool/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/birdscool/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">25.5 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 5 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					&gt;stare<br>&gt;stare<br>&gt;creature multiplies<br>&gt;creatures become rampaging horde<br>&gt;get excited and cheer for the little guys<br>&gt;watch as they all run into a wall and are too stupid to do anything else but sit there until they die<br><br>10/10					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20338649', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20338649' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20338649"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20338649' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20338649"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20338649', 1, 'RecommendationVoteTagBtnsummary20338649_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20338649_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					13 of 13 people (100%) found this review helpful														</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary20341795">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/ogresav/">
+							<div class="playerAvatar offline" data-miniprofile="77910270">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/da/da7185cffef92f4ba63af7806d78e16c402b81e3.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/da/da7185cffef92f4ba63af7806d78e16c402b81e3.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/da/da7185cffef92f4ba63af7806d78e16c402b81e3_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/ogresav/" data-miniprofile="77910270">ogresav</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/ogresav/games/?tab=all">469 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/ogresav/recommended/">8 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/ogresav/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">7.6 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 5 January										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					Really sick if you know what you're looking at. It's neural nets evolving through survival, without fitness functions or goals. Those that eat food and survive can pass their genes on, and that simple rule allows intelligent behavior to appear as a result.<br><br>10/10 if you want to see neural nets and a version of the genetic algorithm at work. Seems silly but these same things are used for all sorts of modern problems, from this game to facial recognition and image classification.<br><br>If you want to see little evolving AI pixel creatures eat green pixels in a simulation and slowly start to exhibit more intelligent behavior, buy it. If you are interested in machine intelligence, check it out. But it's a simulation, much less a game.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('20341795', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '20341795' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary20341795"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '20341795' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary20341795"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '20341795', 1, 'RecommendationVoteTagBtnsummary20341795_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary20341795_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+	
+			<div class="review_box">
+							<div class="header">
+					13 of 16 people (81%) found this review helpful										<br>1 person found this review funny				</div>
+						<div style="clear: left;"></div>
+
+		<div id="ReviewContentsummary21220915">
+
+			
+				<div class="leftcol">
+					<div class="avatar">
+						<a href="http://steamcommunity.com/id/SlowmotionWaterfall/">
+							<div class="playerAvatar offline" data-miniprofile="86884811">
+																<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5f/5fd166df83aab277f24041e616ca97290c6217c5.jpg" srcset="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5f/5fd166df83aab277f24041e616ca97290c6217c5.jpg 1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5f/5fd166df83aab277f24041e616ca97290c6217c5_medium.jpg 2x">							</div>
+						</a>
+					</div>
+					<div class="persona_name"><a href="http://steamcommunity.com/id/SlowmotionWaterfall/" data-miniprofile="86884811">Ceylon Tea</a></div>
+										<div class="num_owned_games"><a href="http://steamcommunity.com/id/SlowmotionWaterfall/games/?tab=all">468 products in account</a></div>
+															<div class="num_reviews"><a href="http://steamcommunity.com/id/SlowmotionWaterfall/recommended/">2 reviews</a></div>
+									</div>
+
+				<div class="rightcol">
+
+					<a href="http://steamcommunity.com/id/SlowmotionWaterfall/recommended/396890/" class="vote_header tooltip" data-tooltip-content="See Full Review">
+							<div class="thumb">
+								<img src="http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="40" height="40">
+							</div>
+
+
+						<div class="title ellipsis">Recommended</div>
+												<div class="hours ellipsis">157.7 hrs on record</div>
+											</a>
+
+								
+					<div class="postedDate">Posted: 14 February										</div>
+
+					
+
+
+
+
+
+
+				<div class="content">
+					It's as if you are Lisa Simpson and have your very own Tooth Civilization, Rick and Morty's battery, or that one Twilight Zone. An awesome digital petri dish simulator.					<div class="gradient"></div>
+				</div>
+
+				<div class="posted">
+					<div class="view_more"><a href="#" onclick="UserReviewShowMore('21220915', 'summary' ); return false;">Read More</a></div>
+					&nbsp;
+				</div>
+
+				<div class="hr"></div>
+				<div class="control_block">
+
+					<span class="text">Was this review helpful?</span>
+
+										<a href="javascript:void(0)" onclick="UserReviewVoteUp( '21220915' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteUpBtnsummary21220915"><span><i class="ico16 thumb_upv6"></i> Yes</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteDown( '21220915' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteDownBtnsummary21220915"><span><i class="ico16 thumb_downv6"></i> No</span></a>
+					<a href="javascript:void(0)" onclick="UserReviewVoteTag( '21220915', 1, 'RecommendationVoteTagBtnsummary21220915_1' )" class="btnv6_grey_black btn_small_thin ico_hover " id="RecommendationVoteTagBtnsummary21220915_1"><span><i class="ico16 funny"></i> Funny</span></a>
+
+				</div>
+			</div>
+			<div style="clear: left;"></div>
+		</div>
+	</div>
+
+						<div id="ViewAllReviewsall" class="view_all_reviews_btn">
+						<a href="http://steamcommunity.com/app/396890/reviews/?browsefilter=toprated&snr=1_5_9_">Browse all 130 reviews</a>
+					</div>
+							</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	<div style="clear: left"></div>
+				</div>
+		</div>
+
+	</div>
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal"  style="display: none">
+	<div id="widget_create">
+		<p>You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam.</p>
+
+				<p class="small">Enter up to 375 characters to add a description to your widget:</p>
+		<textarea name="w_text" placeholder="Gridworld is an artificial life / evolution simulator in which abstract virtual creatures compete for food and struggle for survival. Conditions in this two-dimensional ecosystem are right for evolution to occur through natural selection." maxlength="375"></textarea>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="#" onclick="CreateWidget(396890); return false;"><span>Create widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">Copy and paste the HTML below into your website to make the above widget appear</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+<div id="ShareModal" style="display: none">
+	<div class="share">Share:&nbsp; <a href="http://store.steampowered.com/share/facebook/app/396890" target="_blank" rel="noreferrer" title="Share on Facebook"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/facebook.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/twitter/app/396890" target="_blank" rel="noreferrer" title="Share on Twitter"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/twitter.gif"></a>&nbsp; <a href="http://store.steampowered.com/share/reddit/app/396890" target="_blank" rel="noreferrer" title="Share on Reddit"><img src="http://store.akamai.steamstatic.com/public/images/v5/social/reddit.gif"></a></div></div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>Popular user-defined tags for this product:<span class="app_tag_modal_tooltip" data-store-tooltip="These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag's popularity on this product.">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>Sign in</h2>
+					<p>Sign in to add your own tags to this product.</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/396890">
+							<span>Sign in</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 396890,
+				[{"tagid":492,"name":"Indie","count":25,"browseable":true},{"tagid":599,"name":"Simulation","count":22,"browseable":true},{"tagid":3964,"name":"Pixel Graphics","count":5,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null			);
+		});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div id="footer_spacer" class=""></div>
+<div id="footer"  class="">
+<div class="footer_content">
+	<div class="rule"></div>
+
+	<div id="footer_nav">
+
+		
+		
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_steam_pulldown">
+				<span>ABOUT STEAM</span>
+			</span>
+		<div class="popup_block_new" id="footer_steam_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/about/?snr=1_44_44__22">
+					What is Steam?				</a>
+				<!--
+					<a class="popup_menu_item" href="">
+						Download Steam now					</a>
+					-->
+				<a class="popup_menu_item" href="https://support.steampowered.com/kb_article.php?p_faqid=549#gifts" target="_blank" rel="noreferrer">
+					Gifting on Steam				</a>
+				<a class="popup_menu_item" href="https://steamcommunity.com/?snr=1_44_44__22">
+					The Steam Community				</a>
+			</div>
+					</div>
+	
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_valve_pulldown">
+				<span>ABOUT VALVE</span>
+			</span>
+		<div class="popup_block_new" id="footer_valve_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">
+					About Valve				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">
+					Business Solutions				</a>
+				<a class="popup_menu_item" href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">
+					Steamworks				</a>
+				<a class="popup_menu_item" href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">
+					Jobs				</a>
+			</div>
+		</div>
+			
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_help_pulldown">
+				<span>HELP</span>
+			</span>
+		<div class="popup_block_new" id="footer_help_dropdown" style="display: none;">
+						<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="https://help.steampowered.com/en/?snr=1_44_44__23">
+					Support				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/forums/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Forums				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/stats/?snr=1_44_44__23" target="_blank" rel="noreferrer">
+					Stats				</a>
+			</div>
+					</div>
+
+			
+			<span class="pulldown btnv6_blue_hoverfade btn_small" id="footer_feeds_pulldown">
+				<span>NEWS FEEDS</span>
+			</span>
+		<div class="popup_block_new" id="footer_feeds_dropdown" style="display: none;">
+			<div class="popup_body popup_menu">
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/news.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Steam News				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/newreleases.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Game Releases				</a>
+				<a class="popup_menu_item" href="http://store.steampowered.com/feeds/daily_deals.xml">
+					<img src="http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif" width="13" height="13" border="0" alt="" align="top">&nbsp;&nbsp;Daily Deals				</a>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+
+		<script type="text/javascript">
+			RegisterFlyout( 'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );
+			RegisterFlyout( 'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );
+			RegisterFlyout( 'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );
+			RegisterFlyout( 'footer_help_pulldown', 'footer_help_dropdown', null, null, true );
+			RegisterFlyout( 'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );
+		</script>
+	</div>
+
+	<br>
+
+    <div class="rule"></div>
+    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png" alt="Valve Software" border="0" /></a></div>
+    <div id="footer_text">
+        <div>&copy; 2016 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
+        <div>VAT included in all prices where applicable.&nbsp;&nbsp;
+
+            <a href="http://store.steampowered.com/privacy_agreement/" target="_blank" rel="noreferrer">Privacy Policy</a>
+            &nbsp; | &nbsp;
+            <a href="http://www.valvesoftware.com/legal.htm" target="_blank" rel="noreferrer">Legal</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+            &nbsp; | &nbsp;
+            <a href="http://store.steampowered.com/steam_refunds/" target="_blank" rel="noreferrer">Refunds</a>
+
+        </div>
+					<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>View mobile website</span>
+				</div>
+			</div>
+		    </div>
+
+
+
+    <div style="clear: left;"></div>
+
+    <div class="rule"></div>
+
+    <div class="valve_links">
+        <a href="http://www.valvesoftware.com/about.html" target="_blank" rel="noreferrer">About Valve</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/business/" target="_blank" rel="noreferrer">Business Solutions</a>
+        &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com/jobs.html" target="_blank" rel="noreferrer">Jobs</a>
+        &nbsp; | &nbsp;<a href="http://steamcommunity.com/greenlight" target="_blank" rel="noreferrer">Steam Distribution</a>
+		&nbsp; | &nbsp;<a href="http://www.facebook.com/Steam" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+		&nbsp; | &nbsp;<a href="http://twitter.com/steam_games" target="_blank" rel="noreferrer"><img src="http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam_games</a>
+    </div>
+
+</div>
+</div><script type="text/javascript">$J( function() {ReplaceDynamicLink( 'dynamiclink_0', "<a href=\"http:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=614764502\" class=\"dynamiclink_box  \" data-modal-content-sizetofit=\"true\">\r\n\t<img class=\"dynamiclink_preview\" src=\"http:\/\/images.akamai.steamusercontent.com\/ugc\/308863459225313645\/00A19843120C3B56FC1FE6D400A0724B723E431C\/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside|88:88&composite-to=*,*|88:88&background-color=black\">\r\n\t<div class=\"dynamiclink_content\">\r\n\t\t<div class=\"dynamiclink_name\">The beginnings of a pheremone warning system (Lava surrounds the map)! It doesn't actually seem to do anything, but it is a start.&nbsp;<\/div>\r\n\t\t<div><span class=\"dynamiclink_type\">A Screenshot of Gridworld<\/span><\/div>\r\n\t\t<div class=\"dynamiclink_author\">By: <span class=\"dynamiclink_authorname\">dino_inc<\/span><\/div>\r\n\t\t<div class=\"dynamiclink_description\">\r\n\t\t\t\t\t<\/div>\r\n\t<\/div>\r\n<\/a>\r\n" );ReplaceDynamicLink( 'dynamiclink_1', "<a href=\"http:\/\/steamcommunity.com\/sharedfiles\/filedetails\/?id=614767184\" class=\"dynamiclink_box  \" data-modal-content-sizetofit=\"true\">\r\n\t<img class=\"dynamiclink_preview\" src=\"http:\/\/images.akamai.steamusercontent.com\/ugc\/308863459225330618\/360CC46F9B92DC08456B6DA68C68F465E9532353\/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside|143:88&composite-to=*,*|143:88&background-color=black\">\r\n\t<div class=\"dynamiclink_content\">\r\n\t\t<div class=\"dynamiclink_name\">209 hours running.&nbsp;<\/div>\r\n\t\t<div><span class=\"dynamiclink_type\">A Screenshot of Gridworld<\/span><\/div>\r\n\t\t<div class=\"dynamiclink_author\">By: <span class=\"dynamiclink_authorname\">dino_inc<\/span><\/div>\r\n\t\t<div class=\"dynamiclink_description\">\r\n\t\t\t\t\t<\/div>\r\n\t<\/div>\r\n<\/a>\r\n" );} );</script>
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>
