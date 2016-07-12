@@ -15,6 +15,8 @@ class SteamItem(scrapy.Item):
     type = scrapy.Field()
     developer = scrapy.Field()
     publisher = scrapy.Field()
+    desc_short = scrapy.Field()
+    desc_long = scrapy.Field()
     pass
 
 
