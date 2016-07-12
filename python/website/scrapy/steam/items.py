@@ -10,13 +10,19 @@ import scrapy
 
 class SteamItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    title = scrapy.Field()
+    publish_time = scrapy.Field()
+    type = scrapy.Field()
+    developer = scrapy.Field()
+    publisher = scrapy.Field()
     pass
+
 
 class DmozItem(scrapy.Item):
     title = scrapy.Field()
     desc = scrapy.Field()
     link = scrapy.Field()
+
 
 class AlluserItem(scrapy.Item):
     title = scrapy.Field()
