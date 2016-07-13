@@ -11,11 +11,10 @@ import scrapy
 class SteamItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
-    detail = scrapy.Field()
-    # publish_time = scrapy.Field()
-    # type = scrapy.Field()
-    # developer = scrapy.Field()
-    # publisher = scrapy.Field()
+    publish_time = scrapy.Field()
+    type = scrapy.Field()
+    developer = scrapy.Field()
+    publisher = scrapy.Field()
     desc_short = scrapy.Field()
     desc_long = scrapy.Field()
     pass

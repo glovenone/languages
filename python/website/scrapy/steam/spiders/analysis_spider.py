@@ -17,13 +17,40 @@ class AnalysisSpider(scrapy.Spider):
         item = SteamItem()
 
 
-        #--------- title -------------
-        # item['title'] = response.xpath('//div[@class="apphub_AppName"]//text()').extract()
 
 
         #--------- 类型、开发商、发行商、发行日期 ------------
         # detail = response.xpath('//div[@class="details_block"][1]//text()').extract()
-        # item['detail'] = detail
+        detail_ori = response.xpath('//div[@class="details_block"][1]//text()').extract()
+        detail = []
+        type_decode = '类型:'.decode('utf-8')
+        type_key = 'type'
+        title_decode = '名称:'.decode('utf-8')
+        title_key = 'title'
+        developer_decode = '开发商:'.decode('utf-8')
+        developer_key = 'developer'
+        publisher_decode = '发行商:'.decode('utf-8')
+        publisher_key = 'publisher'
+        publish_date_decode = '发行日期:'.decode('utf-8')
+        publish_date_key = 'publish_time'
+        detail_decode_list = {type_decode:type_key, title_decode:title_key, developer_decode:developer_key, publisher_decode:publisher_key, publish_date_decode:publish_date_key}
+
+        detail_key = ''
+        for detail_val in detail_ori:
+            if(detail_val in detail_decode_list) :
+                detail_key = detail_decode_list[detail_val]
+                item[detail_key] = ''
+            elif(detail_key != ''):
+                item[detail_key] = item[detail_key] + detail_val
+                # if(is_mul == 1) :
+                #     item[detail_key] = item[detail_key] + detail_val
+                # else:
+                #     item[detail_key] = detail_val
+
+
+        #--------- title -------------
+        # item['title'] = response.xpath('//div[@class="apphub_AppName"]//text()').extract()
+
 
         #--------- desc -------------
         # item['desc_short'] = response.xpath('//div[@class="game_description_snippet"]/text()').extract()
@@ -39,7 +66,7 @@ class AnalysisSpider(scrapy.Spider):
         for i in item:
             print i
             print item[i]
-        print item
+        # print item
 
         # yield item
         print '====================='
