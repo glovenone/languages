@@ -17,6 +17,7 @@ class SteamItem(scrapy.Item):
     publisher = scrapy.Field()
     desc_short = scrapy.Field()
     desc_long = scrapy.Field()
+    pic = scrapy.Field()
     pass
 
 

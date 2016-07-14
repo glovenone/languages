@@ -17,7 +17,7 @@
 #     for i in user_ids:
 #         start_url = base_url + str(i) + '/'
 #         start_urls.append(start_url)
-#         command = 'wget --header="Accept-Language:zh-CN,zh;q=0.8" -O /Users/glove/baidu_sync/work/cowlevel/steam/steam_data_cn2/'+str(i)+'.html '+start_url
+#         command = 'wget --header="Accept-Language:zh-CN,zh;q=0.8" -O /Users/glove/Documents/steam_data_cn3/'+str(i)+'.html '+start_url
 #         os.system(command)
 #     f.close
 #

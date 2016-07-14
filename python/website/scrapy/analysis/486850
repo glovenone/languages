@@ -1,0 +1,8 @@
+publisher			TXBD·PKX·LF							
+publish_time	 2016年6月21日		
+desc_long								关于这款游戏							游戏规则：       每回合，回合的玩家需要出一张牌使自己的合计数值超过对方或相同，相同的情况下，双方会抽一张牌，并清空场地上的卡。(比如说，如果自己场上有3的话，并且对方场上有3+2，自己必须出一张牌使自己场上的数值超过或等于5，这情况下2以上或2的卡都行)，最后双方玩家都没有手牌的时候数值最大的那一方玩家胜利，并且每回合都要超过对方，否则视作输。卡牌种类：       卡牌共分为两种类型，1~7为普通牌，J，Q，K为特殊牌。特殊牌拥有逆转局势的效果。·J：双方合计数值归零，并各抽一张牌。·Q：双方合计数值互换。·K：摧毁对方牌面上的第一张牌。						
+title	 Card of spirits			
+pic	http://cdn.steamstatic.com.8686c.com/steam/apps/486850/ss_3e636ac837c9dc72a39db16ba951f5721a40c74a.jpg?t=1466722586,http://cdn.steamstatic.com.8686c.com/steam/apps/486850/ss_a913179b8bd11bbd17a0d40efa0ede2f11dd9cb0.jpg?t=1466722586,http://cdn.steamstatic.com.8686c.com/steam/apps/486850/ss_fd3e20ce8e8a510e0a6e76364191d9e8368cb5ae.jpg?t=1466722586,http://cdn.steamstatic.com.8686c.com/steam/apps/486850/ss_3a17ad17d01596dc0b07177fc6b818508d394c94.jpg?t=1466722586,http://cdn.steamstatic.com.8686c.com/steam/apps/486850/ss_e34222262f05da67e862911040520063ed7a2827.jpg?t=1466722586,
+type	 休闲				
+desc_short	-----								《卡灵》是一款以日式插画为主题的休闲卡牌类游戏。由7张普通牌和3张特殊牌共10张牌组成，双方通过出牌对比合计数值的大小，最后数值大的玩家胜利。							
+developer									TXBD·PKX·LF								
