@@ -50,9 +50,7 @@ class AnalysisSpider(scrapy.Spider):
 
 
     # --------- 类型、开发商、发行商、发行日期 ------------
-        # detail = response.xpath('//div[@class="details_block"][1]//text()').extract()
         detail_ori = response.xpath('//div[@class="details_block"][1]//text()').extract()
-        detail = []
         type_decode = '类型:'.decode('utf-8')
         type_key = 'type'
         title_decode = '名称:'.decode('utf-8')
@@ -86,9 +84,7 @@ class AnalysisSpider(scrapy.Spider):
         # --------- title -------------
         # item['title'] = response.xpath('//div[@class="apphub_AppName"]//text()').extract()
 
-        # about detail
-        # http://www.zhihu.com/question/38080188
-
+        #开始写文件
         dict = 'analysis'
         file_name = dict + '/' + appid
         handle = open(file_name, 'a')
