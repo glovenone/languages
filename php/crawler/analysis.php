@@ -55,21 +55,22 @@ print_R($language->plaintext);
  */
 
 $system_tabs = $html->find('.sysreq_tabs')[0]->children;
-foreach($system_tabs as $key=>$value) {
+$system_keys = array();
+foreach ($system_tabs as $key => $value) {
     $system_key = trim($value->plaintext);
-    if($system_key) {
+    if ($system_key) {
         $system_keys[] = $system_key;
     }
 }
 
-$system_data = $html->find('.game_area_sys_req_full');
-$sys_config = [];
-foreach($system_keys as $syskey_key=>$syskey_value) {
+$system_data   = $html->find('.game_area_sys_req_full');
+$system_config = [];
+foreach ($system_keys as $syskey_key => $syskey_value) {
     $system_tmp = $system_data[$syskey_key]->children[0]->plaintext;
-    $system_tmp = explode("\n",$system_tmp);
-    foreach($system_tmp as $value) {
+    $system_tmp = explode("\n", $system_tmp);
+    foreach ($system_tmp as $value) {
         $system_value = trim($value);
-        if($system_value) {
+        if ($system_value) {
             $system_config[$syskey_value][] = $system_value;
         }
     }
@@ -77,6 +78,8 @@ foreach($system_keys as $syskey_key=>$syskey_value) {
 $game['system_config'] = $system_config;
 
 
+$price = $html->find('.game_purchase_price')[0]->plaintext;
+$game['price'] = trim($price);
 
 print_r($game);
 $html->clear();
