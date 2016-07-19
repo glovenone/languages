@@ -3,7 +3,7 @@
 //simple_html_dom/simple_html_dom.php
 //https://github.com/samacs/simple_html_dom
 include('simple_html_dom/simple_html_dom.php');
-$filename = '431470.html';
+$filename = '481870.html';
 
 $html = file_get_html($filename);
 
@@ -43,7 +43,42 @@ $video_ori = $html->find('.highlight_movie');
 print_r($video_ori[0]->children[0]);
  */
 
-//print_r($game);
+$area_details = $html->find('.game_area_details_specs');
+foreach($area_details as $key=>$value) {
+    $game['special'][$value->plaintext] = 1;
+}
+
+/*
+//todo 
+$language = $html->find('table[class=game_language_options]');
+print_R($language->plaintext);
+ */
+
+$system_tabs = $html->find('.sysreq_tabs')[0]->children;
+foreach($system_tabs as $key=>$value) {
+    $system_key = trim($value->plaintext);
+    if($system_key) {
+        $system_keys[] = $system_key;
+    }
+}
+
+$system_data = $html->find('.game_area_sys_req_full');
+$sys_config = [];
+foreach($system_keys as $syskey_key=>$syskey_value) {
+    $system_tmp = $system_data[$syskey_key]->children[0]->plaintext;
+    $system_tmp = explode("\n",$system_tmp);
+    foreach($system_tmp as $value) {
+        $system_value = trim($value);
+        if($system_value) {
+            $system_config[$syskey_value][] = $system_value;
+        }
+    }
+}
+$game['system_config'] = $system_config;
+
+
+
+print_r($game);
 $html->clear();
 
 ?>
