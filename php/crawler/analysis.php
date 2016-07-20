@@ -81,6 +81,8 @@ $game['system_config'] = $system_config;
 $price = $html->find('.game_purchase_price')[0]->plaintext;
 $game['price'] = trim($price);
 
+$game['header_image'] = $html->find('.game_header_image_full')[0]->src;
+
 print_r($game);
 $html->clear();
 
