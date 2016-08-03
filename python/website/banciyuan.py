@@ -12,7 +12,7 @@ import time
 max_page = 300000
 base_num = 100000
 base_url = 'http://bcy.net/u/'
-default_pic = 'http://img1.doubanio.com/icon/user_normal.jpg'
+#default_pic = 'http://img1.doubanio.com/icon/user_normal.jpg'
 # 函数1 获取网页内容
 def douban_search(user_id_plus):
     print 'come on --------------------------------------------------------'+str(user_id_plus)
