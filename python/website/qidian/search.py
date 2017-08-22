@@ -14,19 +14,14 @@ max_page = 14959 #最大页数
 base_url = 'http://a.qidian.com/mm'
 
 # 函数1，根据关键字获取查询网页
-def do_search(pagenum, url=''):
+def do_search(pagenum):
     print 'come on --------------------------------------------------------'+str(pagenum)
-    if( url=='' ):
-#        pn_num = int(rn) * int(pagenum)
-        pn_num = pagenum
-        pn = str(pn_num)
-        url = base_url+'?orderId=&style=1&pageSize=20&siteid=0&hiddenField=0&page='+str(pagenum)
-        # url = 'http://tieba.baidu.com/f/search/res?isnew=1&kw=&qw=' + encoded_key_word + '&rn=' + rn + '&pn=' + pn + '&un=&only_thread=0&sm=1&sd=&ed=&'
+
+    url = base_url+'?orderId=&style=1&pageSize=20&siteid=0&hiddenField=0&page='+str(pagenum)
     html = urllib2.urlopen(url).read()
     return html
 
-
-# 函数2，处理一个要搜索的关键字
+# 处理分页
 def deal_key():
     if os.path.exists('data') == False:
          os.mkdir('data')
@@ -43,6 +38,7 @@ def deal_key():
 #        time.sleep(1)
     fp.close()
 
+# 分析某一页
 def analysisPage(htmlpage, fp):
     soup = BeautifulSoup(htmlpage)
     count=0 #计数用
@@ -71,6 +67,7 @@ def analysisPage(htmlpage, fp):
         print '--------------content_update-------------------';
         print content_update
 
+        #写入文件
         fp.write(title)
         fp.write("\t")
         fp.write(author_name)
@@ -84,12 +81,9 @@ def analysisPage(htmlpage, fp):
         fp.write("\n")
 
         count = count + 1
-# 3.读数组
-def search_file():
-        deal_key()
-#        time.sleep(20)
+
 
 # 脚本入口
 print('Start:')
-search_file()
+deal_key()
 print('End！')
