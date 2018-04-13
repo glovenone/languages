@@ -54,11 +54,20 @@ def analysisPage(htmlpage, fp):
         subtitle_info = info.find("span",{"class":"subtitle"}).findAll("a")
         author_name= subtitle_info[0].text
         book_type = subtitle_info[1].text
+        tags_info = info.find("span",{"class":"subtitle"}).findAll("a",{"class":"tags"})
+        tags = ''
+        for tag_item in tags_info:
+            tags = tags+"/"+tag_item.text
+
+
+        '''
         try: #发现这里会报错，添加错误处理
             tag = subtitle_info[2].text
         except IndexError:
             tag = ''
+        '''
 
+        detail = info.find("p",{"class":"detail"}).text
 
         number = info.find("p",{"class":"number"}).findAll("span")
         number_click = number[0].text
@@ -75,7 +84,9 @@ def analysisPage(htmlpage, fp):
         fp.write("\t")
         fp.write(book_type)
         fp.write("\t")
-        fp.write(tag)
+        fp.write(tags)
+        fp.write("\t")
+        fp.write(detail)
         fp.write("\t")
         fp.write(number_click)
         fp.write("\t")
